@@ -8,6 +8,7 @@
     text-align: center;
 
     height: 95vh;
+    padding: 2rem;
 
     &__secondaryHeading {
         font-size: 3rem;
@@ -37,6 +38,6 @@
     }
     
     &__image {
-        height: 50vh;
+        width: min(75%, 350px);
     }
 }

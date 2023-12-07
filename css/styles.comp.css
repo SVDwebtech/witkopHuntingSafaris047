@@ -109,6 +109,7 @@ body {
   color: black;
   text-align: center;
   height: 95vh;
+  padding: 2rem;
 }
 .header__secondaryHeading {
   font-size: 3rem;
@@ -132,7 +133,7 @@ body {
   font-weight: 700;
 }
 .header__image {
-  height: 50vh;
+  width: min(75%, 350px);
 }
 
 /*# sourceMappingURL=styles.comp.css.map */
