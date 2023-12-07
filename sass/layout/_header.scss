@@ -1,3 +1,42 @@
 .header {
-    background-color: magenta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    text-align: center;
+
+    height: 95vh;
+
+    &__secondaryHeading {
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+
+    }
+
+    &__byline {
+        display:block;
+        font-size: 1.5rem;
+    }
+
+    &__primaryHeading {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    &__paragraph {
+        font-size: 1.5rem;
+    }
+
+    &__paragraph--intro {
+        font-weight: 700;
+    }
+    
+    &__image {
+        height: 50vh;
+    }
 }

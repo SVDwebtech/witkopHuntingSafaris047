@@ -102,7 +102,37 @@ body {
 }
 
 .header {
-  background-color: magenta;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  height: 95vh;
+}
+.header__secondaryHeading {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.header__byline {
+  display: block;
+  font-size: 1.5rem;
+}
+.header__primaryHeading {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.header__paragraph {
+  font-size: 1.5rem;
+}
+.header__paragraph--intro {
+  font-weight: 700;
+}
+.header__image {
+  height: 50vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
