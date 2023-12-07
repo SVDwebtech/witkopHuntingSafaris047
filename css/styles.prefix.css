@@ -1,0 +1,138 @@
+/*
+0px			- 		600px:			mobile 		--> Mobile First Approach 
+											   	    (where normal styles apply)
+600px		- 		900px: 			tab-port 	-->	Tablet Portrait 
+900px		-		1200px:			tab-land	-->	Tablet Landscape
+1200px		-		1800px:			desk		-->	Desktop 
+1800px +							big-desk	-->	Big Desktop
+
+REMEMBER: 1em = 16px;
+$breakpoint argument choices
+	- tab-port and >	600 --> 900 	: min-width: 37.5em (600/16)
+	- tab-land and >	900 --> 1200	: min-width: 56.25em (900/16)
+	- desk and >		1200 --> 1800	: min-width: 75em (1200/16)
+	- big-desk and >    1800 +			: min-width: 112.5em (1800/16)
+
+ORDER: base + typography > general layout + grid > page layout > components
+
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* 	1rem is equal to 10px */
+  /* 	because 10px / 10 is equal to 1rem */
+  /* 	therefore 30px is equal to 3rem */
+  /* 	the default font size of the browser is 16px */
+  /* 	10px / 16px *100 = 62.5% */
+  font-size: 62.5%;
+}
+@media (min-width: 37.5em) {
+  html {
+    /* 	12px / 16px *100 = 75% */
+    font-size: 75%;
+  }
+}
+@media (min-width: 56.25em) {
+  html {
+    /* 	13px / 16px *100 = 81.25% */
+    font-size: 81.25%;
+  }
+}
+@media (min-width: 75em) {
+  html {
+    /* 	15px / 16px *100 = 93.75% */
+    font-size: 93.75%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    /* 	18px / 16px *100 = 112.5% */
+    font-size: 112.5%;
+  }
+}
+
+body {
+  /* This makes dealing with the sizes of elements much easier, 
+  	and generally eliminates a number of pitfalls you can stumble on
+  	 while laying out your content. */
+  /* The width and height properties include the content, padding, and border, 
+  	but do not include the margin.  Note that padding and border will be inside 
+  	of the box. */
+  box-sizing: border-box;
+  position: relative;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: yellowgreen;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-xtrasmall {
+  margin-bottom: 0.5rem;
+}
+
+.u-margin-top-xtrasmall {
+  margin-top: 1rem;
+}
+
+.u-margin-right-xtrasmall {
+  margin-right: 0.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  height: 95vh;
+}
+.header__secondaryHeading {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.header__byline {
+  display: block;
+  font-size: 1.5rem;
+}
+.header__primaryHeading {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.header__paragraph {
+  font-size: 1.5rem;
+}
+.header__paragraph--intro {
+  font-weight: 700;
+}
+.header__image {
+  height: 50vh;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvYWJzdHJhY3RzL19taXhpbnMuc2NzcyIsIi4uL3Nhc3MvYmFzZS9fYmFzZS5zY3NzIiwic3R5bGVzLmNvbXAuY3NzIiwiLi4vc2Fzcy9iYXNlL190eXBvZ3JhcGh5LnNjc3MiLCIuLi9zYXNzL2Jhc2UvX3V0aWxpdGllcy5zY3NzIiwiLi4vc2Fzcy9sYXlvdXQvX2hlYWRlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBOzs7Ozs7Ozs7Ozs7Ozs7OztDQUFBO0FDSEE7OztFQUdDLFNBQUE7RUFDQSxVQUFBO0VBQ0EsbUJBQUE7QUNrQkQ7O0FEZkE7RUFFQyx1QkFBQTtFQUNBLDJCQUFBO0VBQ0Esd0NBQUE7RUFDQSxxQ0FBQTtFQUNBLGtEQUFBO0VBQ0EsOEJBQUE7RUFDQSxnQkFBQTtBQ2lCRDtBRlJFO0VDakJGO0lBV0MsNEJBQUE7SUFDQyxjQUFBO0VDa0JBO0FBQ0Y7QUZQRTtFQ3hCRjtJQWdCQywrQkFBQTtJQUNDLGlCQUFBO0VDbUJBO0FBQ0Y7QUZORTtFQy9CRjtJQXFCQywrQkFBQTtJQUNDLGlCQUFBO0VDb0JBO0FBQ0Y7QUZMRTtFQ3RDRjtJQTBCQywrQkFBQTtJQUNDLGlCQUFBO0VDcUJBO0FBQ0Y7O0FEbEJBO0VBQ0M7O29DQUFBO0VBR0E7O2dCQUFBO0VBR0Esc0JBQUE7RUFFQSxrQkFBQTtBQ29CRDs7QURoQkE7RUFDQyxnQkFBQTtBQ21CRDs7QURmQTtFQUNDLHFCQUFBO0FDa0JEOztBQzdFQTtFQUNDLGtCQUFBO0VBQ0EseUNBQUE7RUFDQSxpQkFBQTtFQUNBLGdCQUFBO0VBQ0EsZ0JBQUE7QURnRkQ7O0FFcEZBO0VBQ0Msa0JBQUE7QUZ1RkQ7O0FFbkZBO0VBQ0MscUJBQUE7QUZzRkQ7O0FFakZBO0VBQ0MsZ0JBQUE7QUZvRkQ7O0FFOUVBO0VBQ0Msb0JBQUE7QUZpRkQ7O0FHckdBO0VBQ0ksYUFBQTtFQUNBLHNCQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtFQUVBLFlBQUE7RUFDQSxrQkFBQTtFQUVBLFlBQUE7QUhzR0o7QUdwR0k7RUFDSSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSx5QkFBQTtBSHNHUjtBR2xHSTtFQUNJLGNBQUE7RUFDQSxpQkFBQTtBSG9HUjtBR2pHSTtFQUNJLGNBQUE7RUFDQSxpQkFBQTtFQUNBLGdCQUFBO0VBQ0EsMEJBQUE7QUhtR1I7QUdoR0k7RUFDSSxpQkFBQTtBSGtHUjtBRy9GSTtFQUNJLGdCQUFBO0FIaUdSO0FHOUZJO0VBQ0ksWUFBQTtBSGdHUiIsImZpbGUiOiJzdHlsZXMucHJlZml4LmNzcyJ9 */
