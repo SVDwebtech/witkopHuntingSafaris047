@@ -105,6 +105,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  background-color: #161413;
 }
 
 .header {
