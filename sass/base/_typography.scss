@@ -42,6 +42,26 @@ body {
 
 .footer {
 	color: $cp-platinumWhite;
+	&__navList {
+		text-align: center;
+		@include respond(tab-land){
+			text-align: left;
+		}
+	}
+
+	&__navLinkMain {
+		color: $cp-sunsetOrange;
+		font-size: clamp(1.6rem, 4.3vw, 1.8rem);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+		margin-left: 1.65rem;
+		@include respond(tab-land){
+			margin-left: 0rem;
+		}
+	}
 
 	&__terms {
 		color: $cp-sunsetOrange;
@@ -50,7 +70,7 @@ body {
 	}
 
 	&__developer {
-		font-size: clamp(1.2rem, 4.3vw, 1.6rem);
+		font-size: clamp(1.2rem, 4.3vw, 1.4rem);
 	}
 
 	&__developerName {

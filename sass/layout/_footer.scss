@@ -13,6 +13,25 @@
             width: 100%;
       }
 
+      &__rightArrowIcon {
+            color: $cp-sunsetOrange;
+            margin-left: .25rem;
+      }
+
+      &__navList {
+            @include displayFlexColumnCenter;
+            @include respond(tab-land){
+			@include displayFlexRowCenter;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  align-items: flex-start;
+		}
+      }
+
+      &__navItem {
+            width: 150px;
+      }
+
       &__itemsWrapper--termsAndCopy {
             @include displayFlexColumnCenter;
             gap: 0rem;
@@ -34,7 +53,7 @@
 
       &__developer {
             @include displayFlexRowCenter;
-            gap: .5rem;
+            gap: .25rem;
             @include respond(tab-land) {
                   justify-content: flex-end;
             }
