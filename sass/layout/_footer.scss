@@ -1,5 +1,9 @@
 .footer {
       @include displayFlexColumnCenter;
-
       background-color: $cp-dark;
+      padding: 2rem 1rem 1rem;
+
+      &__developer {
+            
+      }
 }
