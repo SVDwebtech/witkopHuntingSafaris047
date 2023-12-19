@@ -72,6 +72,7 @@ ol, ul {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -81,6 +82,10 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
+}
+
+.footer {
+  color: #e4e4e4;
 }
 
 .u-center-text {
