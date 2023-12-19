@@ -13,7 +13,6 @@ $breakpoint argument choices
 	- big-desk and >  1800 +		: min-width: 112.5em (1800/16)
 
 ORDER: base + typography > general layout + grid > page layout > components
-
 */
 *,
 *::after,
@@ -100,6 +99,14 @@ body {
   margin-right: 0.5rem;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -133,6 +140,10 @@ body {
 }
 .header__image {
   width: min(75%, 350px);
+}
+
+body {
+  background-color: #e4e4e4;
 }
 
 /*# sourceMappingURL=styles.css.map */

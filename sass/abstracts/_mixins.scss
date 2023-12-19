@@ -1,6 +1,5 @@
-////////////////////////////////////////////////////////////////////////////////////////
-// MEDIA QUERY MANAGER
-///////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////    MEDIA QUERY MANAGER    /////////////////////////
 
 /*
 0px		- 		600px:			mobile 		--> Mobile First Approach (where normal styles apply)
@@ -17,7 +16,6 @@ $breakpoint argument choices
 	- big-desk and >  1800 +		: min-width: 112.5em (1800/16)
 
 ORDER: base + typography > general layout + grid > page layout > components
-
 */
 @mixin respond($breakpoint) {
 	
@@ -50,9 +48,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 	}
 }
 
-/////////////////////////////////////////////////////////////////////////////
-// heading mixins
-/////////////////////////////////////////////////////////////////////////////
+/////////////////////    text  mixins    ////////////////////////
 // to make background color for text visible
 @mixin backgroundTextTransparent {
 	-webkit-background-clip: text;
@@ -61,4 +57,12 @@ ORDER: base + typography > general layout + grid > page layout > components
 	color: transparent;
 }
 
+/////////////////////    flex mixins    /////////////////////
+@mixin displayFlexColumnCenter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
 
