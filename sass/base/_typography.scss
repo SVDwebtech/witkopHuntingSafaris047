@@ -1,7 +1,7 @@
 body {
 	color: $cp-dark;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.6rem;
+	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
 	font-weight: 400;
 	line-height: 1.6;
 
@@ -42,6 +42,12 @@ body {
 
 .footer {
 	color: $cp-platinumWhite;
+
+	&__terms {
+		color: $cp-sunsetOrange;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
 
 	&__developer {
 		font-size: clamp(1.2rem, 4.3vw, 1.6rem);

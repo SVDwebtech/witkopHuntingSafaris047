@@ -1,19 +1,36 @@
 .footer {
       @include displayFlexColumnCenter;
       align-items: stretch;
+      gap: 1rem;
       background-color: $cp-dark;
       padding: 2rem 1rem 1rem;
       @include respond(tab-port) {
             padding: 2rem 2rem 1rem;
       }
 
-      // &__footerSection {
-      //       width: 100%;
-      // }
+      &__hr {
+            border: 1px solid rgba($cp-platinumWhite, 0.3);
+            width: 100%;
+      }
 
-      // &__footerItem {
-      //       width: 100%;
-      // }
+      &__itemsWrapper--termsAndCopy {
+            @include displayFlexColumnCenter;
+            gap: 0rem;
+            @include respond(tab-land) {
+                  @include displayFlexRowCenter;
+                  justify-content: space-between;
+                  gap: .75rem;
+            }
+      }
+
+      &__copyright {
+            @include displayFlexColumnCenter;
+            gap: 0rem;
+            @include respond(tab-port) {
+                  @include displayFlexRowCenter;
+                  gap: .75rem;
+            }
+      }
 
       &__developer {
             @include displayFlexRowCenter;
