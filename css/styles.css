@@ -74,6 +74,7 @@ ol, ul {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 body {
@@ -86,6 +87,14 @@ body {
 
 .footer {
   color: #e4e4e4;
+}
+.footer__developer {
+  font-size: clamp(1.2rem, 4.3vw, 1.6rem);
+}
+.footer__developerName {
+  color: #fe8a17;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .u-center-text {
@@ -110,7 +119,30 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  align-items: stretch;
   background-color: #161413;
+  padding: 2rem 1rem 1rem;
+}
+@media (min-width: 37.5em) {
+  .footer {
+    padding: 2rem 2rem 1rem;
+  }
+}
+.footer__developer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 0.5rem;
+}
+@media (min-width: 56.25em) {
+  .footer__developer {
+    justify-content: flex-end;
+  }
+}
+.footer__developerName {
+  margin-left: 0.5rem;
 }
 
 .header {
@@ -121,7 +153,12 @@ body {
   color: black;
   text-align: center;
   height: 95vh;
-  padding: 2rem;
+  padding: 2rem 1rem;
+}
+@media (min-width: 37.5em) {
+  .header {
+    padding: 2rem;
+  }
 }
 .header__secondaryHeading {
   font-size: 3rem;
@@ -146,6 +183,24 @@ body {
 }
 .header__image {
   width: min(75%, 350px);
+}
+
+main {
+  padding: 2rem 1rem;
+}
+@media (min-width: 37.5em) {
+  main {
+    padding: 2rem;
+  }
+}
+
+.navbar {
+  padding: 1rem;
+}
+@media (min-width: 37.5em) {
+  .navbar {
+    padding: 2rem 2rem;
+  }
 }
 
 body {

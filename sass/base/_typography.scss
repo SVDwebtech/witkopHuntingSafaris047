@@ -42,4 +42,14 @@ body {
 
 .footer {
 	color: $cp-platinumWhite;
+
+	&__developer {
+		font-size: clamp(1.2rem, 4.3vw, 1.6rem);
+	}
+
+	&__developerName {
+		color: $cp-sunsetOrange;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
 }

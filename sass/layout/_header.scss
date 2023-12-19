@@ -9,6 +9,9 @@
 
     height: 95vh;
     padding: 2rem 1rem;
+    @include respond(tab-port) {
+        padding: 2rem;
+  }
 
     &__secondaryHeading {
         font-size: 3rem;

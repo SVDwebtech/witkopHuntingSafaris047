@@ -66,3 +66,11 @@ ORDER: base + typography > general layout + grid > page layout > components
 	gap: 2rem;
 }
 
+@mixin displayFlexRowCenter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
