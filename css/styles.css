@@ -94,11 +94,20 @@ body {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-.headingH3--bylineHeading3 {
+.headingH3--bylineHeadingH3 {
   text-align: center;
 }
 @media (min-width: 56.25em) {
-  .headingH3--bylineHeading3 {
+  .headingH3--bylineHeadingH3 {
+    text-align: left;
+  }
+}
+.headingH3--faqQuestion {
+  color: #b95829;
+  text-align: center;
+}
+@media (min-width: 56.25em) {
+  .headingH3--faqQuestion {
     text-align: left;
   }
 }

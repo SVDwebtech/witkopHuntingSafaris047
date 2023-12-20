@@ -18,7 +18,15 @@ body {
 	text-decoration: underline;
 	text-underline-offset: 4px;
 
-	&--bylineHeading3 {
+	&--bylineHeadingH3 {
+		text-align: center;
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
+
+	&--faqQuestion {
+		color: $cp-orangeBrown;
 		text-align: center;
 		@include respond(tab-land) {
 			text-align: left;
