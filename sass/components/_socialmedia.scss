@@ -1,3 +1,19 @@
 .socialMedia {
-    
+      @include displayFlexColumnCenter;
+      margin-bottom: 1rem;
+      @include respond(tab-land){
+            justify-content: flex-start;
+      }
+
+      
+      &__iconContainer {
+            @include displayFlexRowCenter;
+            justify-content: space-evenly;
+            width: min(100%, 35rem);
+      }
+
+      &__icon {
+            width: 3rem;
+            height: 3rem;
+      }
 }

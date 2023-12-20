@@ -18,6 +18,48 @@
             margin-left: .25rem;
       }
 
+      &__footerSection--logoBylineAndSocialMedia {
+            @include displayFlexColumnCenter;
+            @include respond(tab-land){
+                  @include displayFlexRowCenter;
+                  justify-content: flex-start;
+                  gap: 0rem;
+            }
+      }
+
+      &__logoImage {
+            width: 20rem;
+            height: 20rem;
+      }
+
+      &__itemsWrapper--headingBylineAndSocialMedia {
+            @include displayFlexColumnCenter;
+            @include respond(tab-land){
+                  align-items: flex-start;
+                  margin-left: 3rem;
+            }
+
+            @include respond(desk){
+                  @include displayFlexRowCenter;
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  gap: 3rem;
+            }
+      }
+
+      &__footerItem--headingAndByline {
+            @include displayFlexColumnCenter;
+            gap: .25rem;
+            @include respond(tab-land){
+                  align-items: flex-start;
+                  width: 450px;
+            }
+      }
+
+      &__paragraph--bylineParagraph {
+            width: min(100%, 36rem);
+      }
+
       &__navList {
             @include displayFlexColumnCenter;
             @include respond(tab-land){

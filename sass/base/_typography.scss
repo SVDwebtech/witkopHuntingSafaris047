@@ -9,11 +9,34 @@ body {
 
 .heading-h1 {}
 .heading-h2 {}
-.heading-h3 {}
+.headingH3 {
+	color: $cp-platinumWhite;
+	font-size: clamp(1.6rem, 4.3vw, 1.8rem);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+
+	&--bylineHeading3 {
+		text-align: center;
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
+}
 .heading-h4 {}
 
 .paragraph {
-	
+	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+	line-height: 1.2;
+	text-align: center;
+
+	&--bylineParagraph {
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
 }
 
 .btn {
@@ -42,6 +65,7 @@ body {
 
 .footer {
 	color: $cp-platinumWhite;
+	
 	&__navList {
 		text-align: center;
 		@include respond(tab-land){
