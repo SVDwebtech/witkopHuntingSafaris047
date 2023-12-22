@@ -7,6 +7,29 @@ body {
 
 }
 
+.headingH2 {
+	font-size: clamp(2.2rem, 7vw, 3.2rem);
+	font-weight: 900;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	-webkit-text-stroke-width: .5px;
+	-webkit-text-stroke-color: $cf-dark;
+
+	
+	background: linear-gradient(to bottom right, rgba($cf-sunsetOrange, 1) 25%, rgba($cf-orangeBrown, 1) 50%, rgba($cf-greyBlue, 1) 75%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+     
+	background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+
+	@include respond(tab-land) {
+		text-align: left;
+	}
+}
+
 .headingH3 {
 	color: $cp-platinumWhite;
 	font-size: clamp(1.6rem, 4.3vw, 1.8rem);

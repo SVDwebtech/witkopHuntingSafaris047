@@ -6,6 +6,9 @@
 
       &__faqContainer {
             @include displayFlexColumnCenter;
+            @include respond(tab-land) {
+                  align-items: flex-start;
+            }
       }
 
       &__faqList {
