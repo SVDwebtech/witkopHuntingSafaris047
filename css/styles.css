@@ -153,6 +153,7 @@ body {
   text-transform: uppercase;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #161413;
+  text-align: center;
   background: linear-gradient(to bottom right, #fe8a17 25%, #b95829 50%, #437c90 75%);
   background-size: cover;
   background-repeat: no-repeat;
