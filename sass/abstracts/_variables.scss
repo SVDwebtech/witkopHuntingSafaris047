@@ -11,7 +11,9 @@ $cp-dark: #161413;
 // font colors
 $cf-white: #e4e4e4;
 $cf-orangeBrown: #b95829;
+$cf-sunsetOrange: #fe8a17;
 $cf-greyBlue: #437c90;
+$cf-skyBlue: #38caff;
 $cf-dark: #161413;
 
 
@@ -24,13 +26,15 @@ $fs-btn: 1.5rem;
 $fs-p: 1rem;
 
 // border-radius
-$br-sm: .25rem;
-$br-m: .5rem;
-$br-l: 1rem;
+$br-small: .25rem;
+$br-medium: .5rem;
+$br-large: 1rem;
+$br-circle: 1000rem;
 
 // box-shadow
-$bs-dark: 0 0 5px 2px rgba(0, 0, 0, .3);
-$bs-btn: 0px 1px 2px 1px rgba(0, 0, 0, .5);
+$bs-dark: 0 0 12px 1px rgba(0, 0, 0, .2);
+$bs-btnDark: 0px 1px 2px 1px rgba(0, 0, 0, .5);
+$bs-btnLight: 0px 1px 2px 1px rgba(196, 196, 196, 0.898);
 $bs-btnHover: 0px 3px 4px 2px rgba(0, 0, 0, .5);
 
 //margin
@@ -41,7 +45,3 @@ $mb-h2: 2rem;
 $mb-h3: 1.5rem;
 $mb-h4: 1rem;
 $mb-p: 1rem;
-
-
-
-

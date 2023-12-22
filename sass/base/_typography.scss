@@ -7,8 +7,6 @@ body {
 
 }
 
-.heading-h1 {}
-.heading-h2 {}
 .headingH3 {
 	color: $cp-platinumWhite;
 	font-size: clamp(1.6rem, 4.3vw, 1.8rem);
@@ -26,14 +24,13 @@ body {
 	}
 
 	&--faqQuestion {
-		color: $cp-orangeBrown;
+		color: $cf-greyBlue;
 		text-align: center;
 		@include respond(tab-land) {
 			text-align: left;
 		}
 	}
 }
-.heading-h4 {}
 
 .paragraph {
 	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
@@ -45,31 +42,24 @@ body {
 			text-align: left;
 		}
 	}
-}
-
-.btn {
-	
-}
-
-
-
-.navbar {
-	
-}
-
-.header	{
-	
-}
-
-.about {
-	
-}
-
-.portfolio {
-	
-}
-
-	
+	&--faqQuestion, &--faqAnswer {
+		font-size: clamp(1.4rem, 4.3vw, 2rem);
+		text-align: center;
+		@include respond(tab-port) {
+			font-size: clamp(1.6rem, 3vw, 2rem);
+		}
+		@include respond(desk) {
+			text-align: left;
+		}
+	}
+	&--faqQuestion {
+		color: $cf-greyBlue;
+		font-weight: 900;
+	}
+	&--faqAnswer {
+		color: $cf-greyBlue;
+	}
+}	
 
 .footer {
 	color: $cp-platinumWhite;

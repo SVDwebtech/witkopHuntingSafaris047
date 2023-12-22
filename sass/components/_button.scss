@@ -1,17 +1,50 @@
-.btn:link, .btn:visited {
-    
-}
+.btn {  
+      border: 1px solid $cp-dark;
+      border-radius: $br-medium;
+      box-shadow: $bs-btnDark; 
+  
+      width: fit-content;
+  
+      padding: .60em .85em;
+      margin: 0 auto;
+  
+      cursor: pointer;
+      backface-visibility: hidden;
+      transition: all .2s;
+  
+      &:link, &:visited {
+          text-decoration: none;
+          transform: translateY(0px);
+      }
+  
+      &:active {
+          border-bottom: 2px solid $cp-grey;
+          border-right: 2px solid $cp-grey;
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .7);
+          transform: translateY(-1px);
+      }
+  
+      &--primary-orange {
+          background-color: orange; /////////////////////////////
+      }
+  
+      &--primary-white {
+          background-color: white, .85; /////////////////////////////
+          border: 2px solid black; ////////////////////////////////////
+          padding: .55em 1.25em;
+      }
 
-.btn {
-    
-    
-    
-}
-
-.btn:hover { 
-   
-}
-
-.btn:active {
-    
-}
+      &--faqArrow {
+            @include displayFlexRowCenter;
+            background: linear-gradient(to bottom right, 
+                        rgba($cp-platinumWhite, .1), 
+                        rgba($cp-platinumWhite, .2) 25%, 
+                        rgba($cp-dark, .2) 95%);
+            border: 2px solid $cp-greyBlue;
+            border-radius: $br-circle;
+            box-shadow: $bs-btnLight;
+            padding: 0rem;
+            width: 3rem;
+            height: 3rem;
+      }
+}     

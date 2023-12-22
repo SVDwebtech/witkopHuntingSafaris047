@@ -1,6 +1,73 @@
-.aside {
-      padding: 2rem 1rem;
+.sidebar {
+      padding: 5rem 1rem;
       @include respond(tab-port) {
+            padding: 5rem 2rem;
+      }
+
+      &__faqContainer {
+            @include displayFlexColumnCenter;
+      }
+
+      &__faqList {
+            @include displayFlexColumnCenter;
+            @include respond(tab-land) {
+                  @include displayFlexRowCenter;
+                  flex-wrap: wrap;
+                  justify-content: space-evenly;
+                  
+            }
+      }
+
+      &__faqItem {
+            @include displayFlexColumnCenter;
+            justify-content: space-evenly;
+            background: linear-gradient(to bottom right, 
+                        rgba($cp-platinumWhite, .2), 
+                        rgba($cp-platinumWhite, .1) 15%, 
+                        rgba($cp-dark, .3) 95%);
+            border: 2px solid $cp-greyBlue;
+            border-radius: $br-medium;
+            box-shadow: $bs-dark;
             padding: 2rem;
+            width: 100%;
+            min-height: 25rem;
+            @include respond(tab-land) {
+                  flex: 1 0 28rem;
+                  min-height: 37rem;
+            }
+            @include respond(desk) {
+                  min-height: 35rem;
+            }
+      }
+
+      &__contentWrapper {
+            width: 100%;
+            position: relative;
+      }
+
+      &__faqAnswer {
+            opacity: 0;
+            scale: 0;
+      }
+
+      &__faqButton {
+            justify-items: flex-start;
       }
 }
+
+.displayNone {
+      display: none;
+}
+
+.animateHide {
+      animation: hideFaqContent .5s linear;
+}
+
+.animateShow {
+      animation: showFaqContent .5s linear forwards;
+}
+
+.animateShowButton {
+      animation: showFaqButton 2.5s linear forwards;
+}
+

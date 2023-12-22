@@ -1,1 +1,72 @@
-
+@keyframes hideFaqContent {
+      0% {
+            opacity: 1;
+            scale: 1;
+      }
+      100% {
+            opacity: 0;
+            scale: 0;
+      }
+}
+@keyframes showFaqContent {
+      0% {
+            opacity: 0;
+            scale: 0;
+      }
+      100% {
+            opacity: 1;
+            scale: 1;
+      }
+}
+@keyframes showFaqButton {
+      0% {
+            background: linear-gradient(to bottom right, 
+                        rgba($cp-platinumWhite, .5), 
+                        rgba($cp-platinumWhite, .6) 25%, 
+                        rgba($cp-dark, .7) 95%);
+            transform: translateX(100px);
+            opacity: 0;
+            scale: 0;
+      }
+      45% {
+            transform: translateX(100px);
+            opacity: 0;
+            scale: 0;
+      }
+      50% {
+            opacity: .2;
+            scale: .2; 
+      }
+      65% {
+            transform: translateX(-10px);
+            opacity: .6;
+            scale: .4; 
+      }
+      
+      70% {
+            background: linear-gradient(to bottom right, 
+                        rgba($cp-platinumWhite, .1), 
+                        rgba($cp-platinumWhite, .2) 25%, 
+                        rgba($cp-dark, .2) 95%);
+            transform: translateX(0px);
+            opacity: 1;
+            scale: 1;
+            rotate: 0deg;
+      }
+      77% {
+            rotate: 45deg;
+            
+      }
+      84% {
+            rotate: 0deg;
+            
+      }
+      92% {
+            rotate: -45deg;
+            
+      }
+      100% {
+            rotate: 0deg;
+            
+      }
+}
