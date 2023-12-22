@@ -13,13 +13,17 @@
             @include respond(tab-land) {
                   @include displayFlexRowCenter;
                   flex-wrap: wrap;
-                  justify-content: space-evenly;
+                  justify-content: flex-start;
                   
             }
       }
 
       &__faqItem {
             @include displayFlexColumnCenter;
+            @include respond(tab-land) {
+                  @include displayFlexRowCenter;
+                  align-items: flex-start;
+            }
             justify-content: space-evenly;
             background: linear-gradient(to bottom right, 
                         rgba($cp-platinumWhite, .2), 
@@ -29,19 +33,29 @@
             border-radius: $br-medium;
             box-shadow: $bs-dark;
             padding: 2rem;
-            width: 100%;
+            width: min(100%, 45rem);
             min-height: 25rem;
+            @include respond(tab-port) {
+                  width: min(100%, 38rem);
+            }
             @include respond(tab-land) {
-                  flex: 1 0 28rem;
-                  min-height: 37rem;
-            }
-            @include respond(desk) {
-                  min-height: 35rem;
-            }
+                  width: min(100%, 43rem);
+                  min-height: 16rem;
+            }           
+            // @include respond(desk) {
+            //       width: min(100%, 45rem);
+            //       min-height: 16rem;
+            // }           
       }
 
       &__contentWrapper {
-            width: 100%;
+            width: min(100%, 38rem);
+            @include respond(tab-port) {
+                  width: min(100%, 25rem);
+            }
+            @include respond(tab-land) {
+                  width: min(100%, 80rem);
+            }
             position: relative;
       }
 

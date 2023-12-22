@@ -43,12 +43,8 @@ body {
 		}
 	}
 	&--faqQuestion, &--faqAnswer {
-		font-size: clamp(1.4rem, 4.3vw, 2rem);
-		text-align: center;
-		@include respond(tab-port) {
-			font-size: clamp(1.6rem, 3vw, 2rem);
-		}
-		@include respond(desk) {
+		color: $cf-greyBlue;
+		@include respond(tab-land) {
 			text-align: left;
 		}
 	}
@@ -57,7 +53,6 @@ body {
 		font-weight: 900;
 	}
 	&--faqAnswer {
-		color: $cf-greyBlue;
 	}
 }	
 
