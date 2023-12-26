@@ -29,6 +29,13 @@ body {
 	@include respond(tab-land) {
 		text-align: left;
 	}
+
+	&--contact {
+		padding-left: 0;
+		@include respond(tab-land) {
+			padding-left: 2rem;
+		}
+	}
 }
 
 .headingH3 {
@@ -56,6 +63,20 @@ body {
 	}
 }
 
+.headingH4 {
+	color: $cf-dark;
+	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+	font-weight: 700;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+
+	&--contactItem {
+		color: $cf-greyBlue;
+		text-shadow: 1px 1px 1px rgba($cf-dark, 1);
+	}
+}
+
 .paragraph {
 	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
 	line-height: 1.2;
@@ -65,6 +86,10 @@ body {
 		@include respond(tab-land) {
 			text-align: left;
 		}
+	}
+	&--contactItem {
+		color: $cf-greyBlue;
+		text-shadow: 1px 1px 1px rgba($cf-dark, 1);
 	}
 	&--faqQuestion, &--faqAnswer {
 		color: $cf-greyBlue;
