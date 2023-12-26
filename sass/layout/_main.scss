@@ -1,6 +1,40 @@
 main {
-    padding: 2rem 1rem;
-    @include respond(tab-port) {
-        padding: 2rem;
-  }
+    padding: 2rem 0rem;
+}
+
+.contact {
+    @include displayFlexColumnCenter;
+    align-items: stretch;
+
+    &__contactContentContainer {
+        @include displayFlexColumnCenter;
+        @include respond(tab-land) {
+            @include displayFlexRowCenter;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        background: url('../../img/WebsiteImages/ContacUsBg.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 5rem 2rem;
+    }
+    
+    &__contactItemContentWrapper {
+        @include displayFlexColumnCenter;
+        gap: .25rem;
+        background-color: rgba(255, 255, 255, .6);
+        border: 5px solid $cp-greyBlue;
+        border-radius: $br-circle;
+        box-shadow: 0px 0px 50px 3px rgba($cp-dark, .7);
+        width: clamp(25rem, 80vw, 30rem);
+        height: clamp(25rem, 80vw, 30rem);
+        margin: 0 auto;
+        backdrop-filter: blur(4px);
+    }
+
+    &__contactItemIcon {
+        width: 5rem;
+        height: 5rem;
+    }
 }
