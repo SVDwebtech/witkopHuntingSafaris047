@@ -26,9 +26,9 @@ body {
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 
-	@include respond(tab-land) {
-		text-align: left;
-	}
+	// @include respond(tab-land) {
+	// 	text-align: left;
+	// }
 
 	&--contact {
 		padding-left: 0;

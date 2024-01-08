@@ -6,9 +6,9 @@
 
       &__faqContainer {
             @include displayFlexColumnCenter;
-            @include respond(tab-land) {
-                  align-items: flex-start;
-            }
+            // @include respond(tab-land) {
+            //       align-items: flex-start;
+            // }
       }
 
       &__faqList {
@@ -19,6 +19,11 @@
                   justify-content: space-evenly;
                   
             }
+            background: url('../../img/WebsiteImages/FaqBg.webp');
+        background-size: cover;
+        background-position: 50% 35%;
+        background-repeat: no-repeat;
+        padding: 5rem 2rem;
       }
 
       &__faqItem {
@@ -32,12 +37,14 @@
                         rgba($cp-platinumWhite, .2), 
                         rgba($cp-platinumWhite, .1) 15%, 
                         rgba($cp-dark, .3) 95%);
+            background-color: rgba(255, 255, 255, .6);
             border: 2px solid $cp-greyBlue;
             border-radius: $br-medium;
             box-shadow: $bs-dark;
             padding: 2rem;
             width: min(100%, 45rem);
             min-height: 25rem;
+            backdrop-filter: blur(4px);
             @include respond(tab-port) {
                   width: min(100%, 38rem);
             }
