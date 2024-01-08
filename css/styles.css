@@ -404,7 +404,7 @@ body {
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
 }
 .sidebar__faqItem {
