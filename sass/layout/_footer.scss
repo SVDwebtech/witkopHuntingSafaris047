@@ -22,7 +22,7 @@
             @include displayFlexColumnCenter;
             @include respond(tab-land){
                   @include displayFlexRowCenter;
-                  justify-content: flex-start;
+                  justify-content: center;
                   gap: 0rem;
             }
       }
