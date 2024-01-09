@@ -73,7 +73,9 @@ body {
 
 	&--contactItem {
 		color: $cf-greyBlue;
-		text-shadow: 1px 1px 1px rgba($cf-dark, .8);
+		// -webkit-text-stroke-color: $cf-dark;
+		// -webkit-text-stroke-width: .5px;
+		text-shadow: 1px 1px 1px rgba($cf-dark, .9);
 	}
 }
 
@@ -89,7 +91,10 @@ body {
 	}
 	&--contactItem {
 		color: $cf-greyBlue;
-		text-shadow:  1px 1px 1px rgba($cf-dark, .8);
+		font-weight: 900;
+		// -webkit-text-stroke-color: $cf-dark;
+		// -webkit-text-stroke-width: .1px;
+		text-shadow:  1px 1px 1px rgba($cf-dark, .9);
 	}
 	&--faqQuestion, &--faqAnswer {
 		color: $cf-greyBlue;
