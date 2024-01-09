@@ -1,8 +1,8 @@
 .sidebar {
-      padding: 5rem 1rem;
-      @include respond(tab-port) {
-            padding: 5rem 2rem;
-      }
+      padding: 5rem 0rem;
+      // @include respond(tab-port) {
+      //       padding: 5rem 2rem;
+      // }
 
       &__faqContainer {
             @include displayFlexColumnCenter;
@@ -13,17 +13,16 @@
 
       &__faqList {
             @include displayFlexColumnCenter;
+            background: url('../../img/WebsiteImages/FaqBg.webp');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+            padding: 5rem 2rem;
             @include respond(tab-land) {
                   @include displayFlexRowCenter;
                   flex-wrap: wrap;
                   justify-content: space-evenly;
-                  
             }
-            background: url('../../img/WebsiteImages/FaqBg.webp');
-        background-size: cover;
-        background-position: 50% 35%;
-        background-repeat: no-repeat;
-        padding: 5rem 2rem;
       }
 
       &__faqItem {
@@ -34,17 +33,17 @@
             }
             justify-content: space-evenly;
             background: linear-gradient(to bottom right, 
-                        rgba($cp-platinumWhite, .2), 
-                        rgba($cp-platinumWhite, .1) 15%, 
-                        rgba($cp-dark, .3) 95%);
-            background-color: rgba(255, 255, 255, .6);
+                        rgba($cp-platinumWhite, .4), 
+                        rgba($cp-platinumWhite, .6) 55%, 
+                        rgba($cp-dark, .9));
+            background-color: rgba(255, 255, 255, .2);
             border: 2px solid $cp-greyBlue;
             border-radius: $br-medium;
             box-shadow: $bs-dark;
             padding: 2rem;
             width: min(100%, 45rem);
             min-height: 25rem;
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(3px);
             @include respond(tab-port) {
                   width: min(100%, 38rem);
             }
