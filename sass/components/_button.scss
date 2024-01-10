@@ -1,5 +1,7 @@
 .btn {  
-      border: 1px solid $cp-dark;
+      border: 1px solid $cp-grey;
+      border-bottom: 1px solid $cp-darkGrey;
+      border-right: 1px solid $cp-darkGrey;
       border-radius: $br-medium;
       box-shadow: $bs-btnDark; 
   
@@ -25,7 +27,7 @@
       }
   
       &--primary-orange {
-          background-color: orange; /////////////////////////////
+          background-color: rgb(255, 111, 0); /////////////////////////////
       }
   
       &--primary-white {

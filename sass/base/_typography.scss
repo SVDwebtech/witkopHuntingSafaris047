@@ -1,20 +1,33 @@
+// font-family: 'Jim Nightshade', cursive;  	 ----> H1
+// font-family: 'Open Sans', sans-serif;         ----> H2, H3 etc
+// font-family: 'Lato', sans-serif; 		 ----> Body text
+
 body {
 	color: $cp-dark;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
 	font-weight: 400;
 	line-height: 1.6;
-
 }
 
-
-.headingH1 {
-	color: $cf-platinumWhite;
-	font-size: clamp(3.2rem, 7vw, 4.2rem);
-	font-weight: 900;
-	letter-spacing: 3px;
-	text-transform: uppercase;
+.primaryHeading {
+	color: $cf-dark;
+	line-height: 1;
 	text-align: center;
+	&__name {
+		font-family: 'Jim Nightshade', cursive;
+		font-size: clamp(2.5rem, 7vw, 3.5rem);
+		text-shadow: 1px 1px 1px rgba($cf-platinumWhite, .8);
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	};
+	&__slogan {
+		color: rgba($cf-platinumWhite, .85);
+		font-family: 'Lato', sans-serif;
+		font-size: clamp(1.4rem, 4.2vw, 1.6rem);
+		font-weight: 400;
+		text-shadow: 1px 1px 1px rgba($cf-dark, .8);
+	};
 }
 
 .headingH2 {
@@ -93,11 +106,12 @@ body {
 	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
 	line-height: 1.2;
 	text-align: center;
-
-	&--bylineParagraph {
-		@include respond(tab-land) {
-			text-align: left;
-		}
+	&--heroIntro {
+		color: $cf-platinumWhite;
+	}
+	&--heroIntro {
+		color: rgba($cf-platinumWhite, .95);
+		text-shadow: 1px 1px 1px rgba($cf-dark, .8);
 	}
 	&--contactItem {
 		color: $cf-greyBlue;
@@ -118,7 +132,7 @@ body {
 	}
 	&--faqAnswer {
 	}
-}	
+}
 
 .footer {
 	color: $cp-platinumWhite;
