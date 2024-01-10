@@ -8,15 +8,18 @@
 
 .heroSection { 
     @include displayFlexColumnCenter;
-    padding: 2rem 2rem 5rem;
+    padding: 2rem;
     
     &__heroContentContainer {
         @include displayFlexColumnCenter;
         background: linear-gradient(to top, rgba($cp-platinumWhite, .1) 50%, rgba($cp-dark, .9));
-        background-color: rgba($cp-platinumWhite, .25);
+        background-color: rgba($cp-platinumWhite, .1);
         border-radius: $br-small;
         backdrop-filter: blur(2px);
         padding: 3rem 1rem;
+        @include respond(tab-land) {
+            @include displayFlexRowCenter;
+        }
     }; 
     &__logo {
         width: min(80%, 35rem);

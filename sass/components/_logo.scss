@@ -4,5 +4,10 @@
       &__img {
             width: 4.5rem;
       }
+      &__textLineBreak {
+            @media (min-width: 450px) {
+                  display: none;
+            }
+      }
     
 }

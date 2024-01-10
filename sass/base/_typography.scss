@@ -20,10 +20,17 @@ body {
 	}
 }
 
+.btn {
+	color: $cf-dark;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
 .navItem {
 	color: rgba($cf-platinumWhite, .7);
 	font-weight: 700;
-	text-shadow: 2px 2px 1px rgba($cf-dark, .8);
+	text-shadow: 1px 1px 1px rgba($cf-dark, 1);
 }
 
 .primaryHeading {
@@ -33,16 +40,18 @@ body {
 	&__name {
 		font-family: 'Jim Nightshade', cursive;
 		font-size: clamp(2.5rem, 7vw, 3.5rem);
-		text-shadow: 1px 1px 1px rgba($cf-platinumWhite, .8);
+		text-shadow: .25px .25px .25px rgba($cf-dark, 1), 1px 1px 1px rgba($cf-platinumWhite, 1);;
+		// text-shadow: 3px 3px 1px rgba($cf-dark, 1);
+		// text-shadow: 2px 2px 1px rgba($cf-platinumWhite, .95);
 		text-transform: uppercase;
 		letter-spacing: 2px;
 	};
 	&__slogan {
-		color: rgba($cf-platinumWhite, .85);
+		color: $cf-dark;
 		font-family: 'Lato', sans-serif;
 		font-size: clamp(1.4rem, 4.2vw, 1.6rem);
-		font-weight: 400;
-		text-shadow: 1px 1px 1px rgba($cf-dark, .8);
+		font-weight: 700;
+		text-shadow: 1px 1px 1px rgba($cf-platinumWhite, .3);
 	};
 }
 
@@ -123,11 +132,9 @@ body {
 	line-height: 1.2;
 	text-align: center;
 	&--heroIntro {
-		color: $cf-platinumWhite;
-	}
-	&--heroIntro {
-		color: rgba($cf-platinumWhite, .95);
-		text-shadow: 1px 1px 1px rgba($cf-dark, .8);
+		color: $cf-dark;
+		font-weight: 700;
+		text-shadow: 1px 1px 1px rgba($cf-platinumWhite, .3);
 	}
 	&--contactItem {
 		color: $cf-greyBlue;
@@ -145,8 +152,6 @@ body {
 	&--faqQuestion {
 		color: $cf-greyBlue;
 		font-weight: 900;
-	}
-	&--faqAnswer {
 	}
 }
 

@@ -187,10 +187,17 @@ body {
   line-height: 1.1;
 }
 
+.btn {
+  color: #161413;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .navItem {
   color: rgba(228, 228, 228, 0.7);
   font-weight: 700;
-  text-shadow: 2px 2px 1px rgba(22, 20, 19, 0.8);
+  text-shadow: 1px 1px 1px #161413;
 }
 
 .primaryHeading {
@@ -201,16 +208,16 @@ body {
 .primaryHeading__name {
   font-family: "Jim Nightshade", cursive;
   font-size: clamp(2.5rem, 7vw, 3.5rem);
-  text-shadow: 1px 1px 1px rgba(228, 228, 228, 0.8);
+  text-shadow: 0.25px 0.25px 0.25px #161413, 1px 1px 1px #e4e4e4;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 .primaryHeading__slogan {
-  color: rgba(228, 228, 228, 0.85);
+  color: #161413;
   font-family: "Lato", sans-serif;
   font-size: clamp(1.4rem, 4.2vw, 1.6rem);
-  font-weight: 400;
-  text-shadow: 1px 1px 1px rgba(22, 20, 19, 0.8);
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgba(228, 228, 228, 0.3);
 }
 
 .headingH2 {
@@ -284,11 +291,9 @@ body {
   text-align: center;
 }
 .paragraph--heroIntro {
-  color: #e4e4e4;
-}
-.paragraph--heroIntro {
-  color: rgba(228, 228, 228, 0.95);
-  text-shadow: 1px 1px 1px rgba(22, 20, 19, 0.8);
+  color: #161413;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgba(228, 228, 228, 0.3);
 }
 .paragraph--contactItem {
   color: #437c90;
@@ -307,6 +312,7 @@ body {
   color: #437c90;
   font-weight: 900;
 }
+
 .footer {
   color: #e4e4e4;
 }
@@ -387,7 +393,7 @@ body {
   transform: translateY(-1px);
 }
 .btn--primary-orange {
-  background-color: rgb(255, 111, 0);
+  background-color: #b95829;
 }
 .btn--primary-white {
   background-color: white, 0.85;
@@ -419,6 +425,11 @@ body {
 }
 .logo__img {
   width: 4.5rem;
+}
+@media (min-width: 450px) {
+  .logo__textLineBreak {
+    display: none;
+  }
 }
 
 .logoAndNumbers {
@@ -1023,7 +1034,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 2rem 5rem;
+  padding: 2rem;
 }
 .heroSection__heroContentContainer {
   display: flex;
@@ -1032,10 +1043,19 @@ body {
   align-items: center;
   gap: 2rem;
   background: linear-gradient(to top, rgba(228, 228, 228, 0.1) 50%, rgba(22, 20, 19, 0.9));
-  background-color: rgba(228, 228, 228, 0.25);
+  background-color: rgba(228, 228, 228, 0.1);
   border-radius: 0.25rem;
   backdrop-filter: blur(2px);
   padding: 3rem 1rem;
+}
+@media (min-width: 56.25em) {
+  .heroSection__heroContentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 .heroSection__logo {
   width: min(80%, 35rem);
