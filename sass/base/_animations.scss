@@ -1,3 +1,44 @@
+/////////////////////////  navListItems Animation  /////////////////////////
+@keyframes animateNavListContainerMoveIn {
+      0% {
+            transform: translateX(-100%);
+      }
+
+      100% {
+            transform: translateX(0%);
+      }
+}   
+@keyframes animateNavListContainerMoveOut {
+      0% {
+            transform: translateX(0%);
+      }
+
+      100% {
+            transform: translateX(-100%);
+      }
+}   
+@keyframes animateNavItemsMoveIn {
+      0% {
+            transform: translateY(25px);
+      }
+
+      100% {
+            transform: translateY(0px);
+            opacity: 1;
+      }
+}   
+@keyframes animateNavItemsMoveOut {
+      0% {
+            // transform: translateX(0px);
+            opacity: 1;
+      }
+
+      100% {
+            // transform: translateX(200px);
+            opacity: 0;
+      }
+}
+/////////////////////////  faqButton Animation  /////////////////////////
 @keyframes hideFaqContent {
       0% {
             opacity: 1;

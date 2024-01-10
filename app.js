@@ -1,4 +1,4 @@
-// app logic
+/////////////////////////    App Logic    ///////////////////////////////
 const hamburgerBtn = document.querySelector('.hamburgerBtn');
 
 const hamburgerTopBar = document.querySelector(".hamburgerBtn__hamburgerBar--top");
@@ -17,6 +17,7 @@ const navItem5 = document.querySelector('.navItem5');
 const navItem6 = document.querySelector('.navItem6');
 const navItem7 = document.querySelector('.navItem7');
 const navItem8 = document.querySelector('.navItem8');
+const navItem9 = document.querySelector('.navItem9');
 
 const profilePhoto = document.querySelector('.profilePhoto');
 const logo = document.querySelector('.logo');
@@ -27,40 +28,28 @@ const footer = document.querySelector('.footer');
 
 const hero = document.querySelector('.heroSection');
 
-////////////////////////////////////////////////////////////////////////////////////////
-// cardPhoto variables
-///////////////////////////////////////////////////////////////////////////////////////
 
-const cardPhotos = document.querySelectorAll(".photoCollage__cardPhoto");
+// // //////////////////////////////////////////////////////////////////////////////////////////
+// // // Terms and Conditions pop-up logic
+// // //////////////////////////////////////////////////////////////////////////////////////////
+// const termsAndConditionsBtn = document.querySelector('.termsAndConditionsBtn');
+// const tsAndCsCloseBtn = document.querySelector('.termsAndConditionsCloseBtn');
+// const tsAndCs = document.querySelector('.tsAndCs');
 
-for(let card of cardPhotos) {
-  card.addEventListener('click', function(){
-    card.classList.toggle("rotateCard");
-  })
-};
+// termsAndConditionsBtn.addEventListener('click', function() {
+//   if(tsAndCs.classList.contains('hidden')) {
+//     tsAndCs.classList.remove('hidden');
+//   } 
+// });
 
-// //////////////////////////////////////////////////////////////////////////////////////////
-// // Terms and Conditions pop-up logic
-// //////////////////////////////////////////////////////////////////////////////////////////
-const termsAndConditionsBtn = document.querySelector('.termsAndConditionsBtn');
-const tsAndCsCloseBtn = document.querySelector('.termsAndConditionsCloseBtn');
-const tsAndCs = document.querySelector('.tsAndCs');
-
-termsAndConditionsBtn.addEventListener('click', function() {
-  if(tsAndCs.classList.contains('hidden')) {
-    tsAndCs.classList.remove('hidden');
-  } 
-});
-
-tsAndCsCloseBtn.addEventListener('click', function() {
-      tsAndCs.classList.add('hidden');
-});
+// tsAndCsCloseBtn.addEventListener('click', function() {
+//       tsAndCs.classList.add('hidden');
+// });
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
 let footerHeight = footer.offsetHeight;
-// hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
 console.log(`${window.innerHeight - footerHeight}px`);
 
 let height = navbar.offsetHeight;
@@ -77,7 +66,6 @@ visualViewport.addEventListener("resize", () => {
 
 window.addEventListener('resize', function(){
   footerHeight = footer.offsetHeight;
-  // hero.style.minHeight = `${window.innerHeight - footerHeight}px`;
 });
 
 hamburgerBtn.addEventListener('click', () => {
@@ -100,7 +88,6 @@ hamburgerBtn.addEventListener('click', () => {
     }, 500);
     
     if(window.scrollY < 200 && !hamburgerMenu.classList.contains('navList--displayNone')){
-      // footer.style.position = "fixed";
       navbar.style.visibility = "hidden";
       navbar.style.opacity = "0";
       navbar.classList.remove('navbar--background');
@@ -128,6 +115,7 @@ hamburgerBtn.addEventListener('click', () => {
       navItem6.style.animationDelay = '1.20s';
       navItem7.style.animationDelay = '1.30s';
       navItem8.style.animationDelay = '1.40s';
+      navItem9.style.animationDelay = '1.50s';
     }, 20);
   } else {
     hamburgerMenu.classList.remove('navList--navListMoveIn')
@@ -145,6 +133,7 @@ hamburgerBtn.addEventListener('click', () => {
     navItem6.style.animationDelay = '.35s';
     navItem7.style.animationDelay = '.40s';
     navItem8.style.animationDelay = '.45s';
+    navItem9.style.animationDelay = '.50s';
     setTimeout(() => {
       hamburgerMenu.classList.remove('navList--display');
       hamburgerMenu.classList.add('navList--displayNone');
@@ -156,7 +145,6 @@ window.onscroll = () => {
   setTimeout(() => {
     if(window.scrollY > 200) 
     {  
-      // footer.style.position = "static";
       navbar.style.visibility = "visible";
       navbar.style.opacity = "1";
       navbar.classList.add('navbar--background');
@@ -164,7 +152,6 @@ window.onscroll = () => {
 
     else if(window.scrollY < 200 && hamburgerMenu.classList.contains('navList--displayNone'))
     {
-      // footer.style.position = "fixed";
       navbar.style.visibility = "hidden";
       navbar.style.opacity = "0";
       navbar.classList.remove('navbar--background');
@@ -195,6 +182,7 @@ for(let item of navItems) {
     navItem6.style.animationDelay = '.35s';
     navItem7.style.animationDelay = '.40s';
     navItem8.style.animationDelay = '.45s';
+    navItem9.style.animationDelay = '.50s';
     setTimeout(() => {
       hamburgerMenu.classList.remove('navList--display');
       hamburgerMenu.classList.add('navList--displayNone');
@@ -208,7 +196,6 @@ for(let item of navItems) {
 
     setTimeout(() => {
       if(window.scrollY < 200 ){
-        // footer.style.position = "fixed";
         navbar.style.visibility = "hidden";
         navbar.style.opacity = "0";
         navbar.classList.remove('navbar--background');
@@ -216,111 +203,6 @@ for(let item of navItems) {
     }, 800);
   });
 }
-
-/////////////////////////////////////////////////////////////////////////////////
-// carousel logic
-/////////////////////////////////////////////////////////////////////////////////
-
-const leftBtn = document.querySelector('.leftBtn');
-const rightBtn = document.querySelector('.rightBtn');
-const index = document.querySelectorAll('.index');
-// const service = document.querySelectorAll('.service');
-const card = document.querySelectorAll('.cardCarousel');
-
-let counter = 0
-
-leftBtn.addEventListener('click', function(){
-    if(counter === 0){
-      index[counter].classList.remove('highlightIndex');
-      index[index.length - 1].classList.add('highlightIndex');
-
-      // service[counter].classList.remove('highlightBorder');
-      // service[service.length - 1].classList.add('highlightBorder');
-
-      card[counter].classList.remove('visible');
-      card[counter].classList.add('hidden');
-      card[card.length - 1].classList.remove('hidden');
-      card[card.length - 1].classList.add('visible');
-
-      counter = index.length - 1;
-    } else {
-      index[counter].classList.remove('highlightIndex');
-      index[counter - 1].classList.add('highlightIndex');
-
-      // service[counter].classList.remove('highlightBorder');
-      // service[counter - 1].classList.add('highlightBorder');
-
-      card[counter].classList.remove('visible');
-      card[counter].classList.add('hidden');
-      card[counter - 1].classList.remove('hidden');
-      card[counter - 1].classList.add('visible');
-
-      counter--;
-    }
-})
-
-rightBtn.addEventListener('click', function(){
-    if(counter === 4){
-      index[counter].classList.remove('highlightIndex');
-      index[0].classList.add('highlightIndex');
-
-      // service[counter].classList.remove('highlightBorder');
-      // service[0].classList.add('highlightBorder');
-
-      card[counter].classList.remove('visible');
-      card[counter].classList.add('hidden');
-      card[0].classList.remove('hidden');
-      card[0].classList.add('visible');
-
-      counter = 0;
-    } else {
-      index[counter].classList.remove('highlightIndex');
-      index[counter + 1].classList.add('highlightIndex');
-
-      // service[counter].classList.remove('highlightBorder');
-      // service[counter + 1].classList.add('highlightBorder');
-
-      card[counter].classList.remove('visible');
-      card[counter].classList.add('hidden');
-      card[counter + 1].classList.add('visible');
-      card[counter + 1].classList.remove('hidden');
-
-      counter++;
-    }
-})
-
-/////////////////////////////////////////////////////////////////////////////////
-// loyalty club pop up
-/////////////////////////////////////////////////////////////////////////////////
-
-const loyaltyClubBtn = document.querySelector('.loyaltyClubBtn');
-const loyaltyClubCloseBtn = document.querySelector('.loyaltyClubCloseBtn');
-const loyaltyClubPopUp = document.querySelector('.loyaltyClubPopUp');
-
-loyaltyClubBtn.addEventListener('click', function(){
-  loyaltyClubPopUp.classList.remove('hidden');
-});
-
-loyaltyClubCloseBtn.addEventListener('click', function(){
-  loyaltyClubPopUp.classList.add('hidden');
-});
-
-/////////////////////////////////////////////////////////////////////////////////
-// copyright line break
-/////////////////////////////////////////////////////////////////////////////////
-const copyrightRights = document.querySelector('.copyright__rights');
-
-window.addEventListener('resize', function(){
-  let windowWidth = window.innerWidth;
-
-  if(windowWidth >= 600) {
-    copyrightRights.classList.remove('displayBlock');
-  } else {
-    copyrightRights.classList.add('displayBlock');
-  } 
-})
-
-//////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////    FAQ button logic    ///////////////////////////////
 

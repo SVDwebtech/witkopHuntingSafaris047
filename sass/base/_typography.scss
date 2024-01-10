@@ -3,11 +3,27 @@
 // font-family: 'Lato', sans-serif; 		 ----> Body text
 
 body {
-	color: $cp-dark;
-	font-family: Arial, Helvetica, sans-serif;
+	color: $cf-dark;
+	font-family: 'Lato', sans-serif;
 	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
 	font-weight: 400;
 	line-height: 1.6;
+}
+
+.logo {
+	&__text {
+		color: $cf-platinumWhite;
+		font-family: 'Jim Nightshade', cursive;
+		font-size: clamp(1.6rem, 4.3vw, 1.8rem);
+		font-weight: 400;
+		line-height: 1.1;
+	}
+}
+
+.navItem {
+	color: rgba($cf-platinumWhite, .7);
+	font-weight: 700;
+	text-shadow: 2px 2px 1px rgba($cf-dark, .8);
 }
 
 .primaryHeading {
