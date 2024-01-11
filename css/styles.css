@@ -763,7 +763,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: url("../../img/WebsiteImages/FaqBg.webp");
+  background: url("../img/WebsiteImages/FaqBg.webp");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -1021,7 +1021,7 @@ body {
 }
 
 .header {
-  background: url("../../img/WebsiteImages/ContacUsBg.webp");
+  background: url("../img/WebsiteImages/ContacUsBg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -1102,7 +1102,7 @@ main {
   align-items: center;
   gap: 2rem;
   gap: 3rem;
-  background: url("../../img/WebsiteImages/ContacUsBg.webp");
+  background: url("../img/WebsiteImages/ContacUsBg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
