@@ -1,9 +1,18 @@
 .header {
-    background: url("../img/WebsiteImages/ContacUsBg.webp");
+    background: url("../img/WebsiteImages/WelcomeWitkop.webp");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
+    background-size: 400%;
+    background-position: 55% 100%;
     position: relative;
+    @include respond(tab-port) {
+        background-size: 280%;
+    }
+    @include respond(tab-land) {
+        background-size: cover;
+    }
+    @include respond(desk) {
+        background-size: 150%;
+    }
 }
 
 .heroSection { 
@@ -12,10 +21,9 @@
     
     &__heroContentContainer {
         @include displayFlexColumnCenter;
-        background: linear-gradient(to top, rgba($cp-platinumWhite, .1) 50%, rgba($cp-dark, .9));
+        background: linear-gradient(to top, rgba($cp-platinumWhite, .5) 60%, rgba($cp-dark, .9));
         background-color: rgba($cp-platinumWhite, .1);
         border-radius: $br-small;
-        backdrop-filter: blur(2px);
         padding: 3rem 1rem;
         @include respond(tab-land) {
             @include displayFlexRowCenter;
