@@ -2,6 +2,109 @@ main {
     padding: 2rem 0rem;
 }
 
+.about {
+    @include displayFlexColumnCenter;
+    padding: 2rem;
+    &__aboutContentContainer {
+        @include displayFlexColumnCenter;
+    }
+    &__aboutItemContainer {
+        @include displayFlexColumnCenter;
+    }
+    &__aboutWitkop > *, &__aboutWessel > * {
+        margin: 0 0 1.5rem;
+    }
+    &__imgWitkop, &__imgWessel {
+        border: 2px solid $cp-sunsetOrange;
+        box-shadow: 0 0 2.5rem .25rem rgba($cp-dark, .3);
+        padding: .75rem;
+    }
+    &__imgWitkop--kudus, &__imgWessel--number1 {
+        float: left;
+        margin: 2rem 2rem 2rem 0;
+        clear:both;
+    }
+    &__imgWitkop--kudus {
+        width: min(45%, 18rem);
+        @include respond(tab-land) {
+            width: min(20%, 18rem);
+        }
+    }
+    &__imgWessel--number1 {
+        width: min(40%, 18rem);
+        @include respond(tab-land) {
+            width: min(16%, 18rem);
+        }
+    }
+    &__imgWitkop--sunrise, &__imgWessel--number2 {
+        float: right;
+        margin: 2rem 0 2rem 2rem;
+        clear: both;
+        @include respond(tab-land) {
+            clear: none;
+        }
+    }
+    &__imgWitkop--sunrise {
+        width: min(45%, 18rem);
+        @include respond(tab-land) {
+            width: min(20%, 18rem);
+        }
+    }
+    &__imgWessel--number2 {
+        width: min(35%, 12rem);
+        @include respond(tab-land) {
+            width: min(14%, 18rem);
+        }
+        @include respond(desk) {
+            width: min(10%, 18rem);
+        }
+    }
+    &__buttonsContainer {
+        @include displayFlexColumnCenter;
+        clear: both;
+    }
+    &__aboutTeam {
+        @include displayFlexColumnCenter;
+        gap: 3em;
+    }
+    &__aboutTeamNavItemContainer {
+        @include displayFlexColumnCenter;
+        gap: 5rem;
+        @include respond(tab-land) {
+            @include displayFlexRowCenter;
+            flex-wrap: wrap;
+            gap: 5rem;
+        }
+    }
+    &__aboutTeamNavItem {
+        flex: 1 0 28rem;
+        @include displayFlexColumnCenter;
+        @include respond(tab-land) {
+            flex: 1 0 60rem;
+            @include displayFlexRowCenter;
+            justify-content: flex-start;
+        }
+    }
+    &__aboutTeamMemberFig {
+        background: linear-gradient(to bottom right, rgba($cp-platinumWhite, 1), rgba($cp-greyBlue, 1) 65%, rgba($cp-dark, 1));
+        border: 4px solid $cp-sunsetOrange;
+        border-radius: $br-circle;
+        box-shadow: 0 0 2rem 1rem rgba($cp-dark, .3);
+        width: min(100%, 15rem);
+    }
+    &__aboutTeamMemberFigCaption {
+        @include displayFlexColumnCenter;
+        gap: .5rem;
+        width: min(100%, 50rem);
+        @include respond(tab-land) {
+            align-items: flex-start;
+        }
+    }
+    &__teamLineBreak {
+        display: none;
+    }
+}
+
 .contact {
     @include displayFlexColumnCenter;
     align-items: stretch;

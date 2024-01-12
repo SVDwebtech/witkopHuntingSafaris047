@@ -87,13 +87,18 @@ body {
 }
 
 .headingH3 {
-	color: $cp-platinumWhite;
+	color: $cp-greyBlue;
+	font-family: 'Open Sans', sans-serif;
 	font-size: clamp(1.6rem, 4.3vw, 1.8rem);
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 800;
 	letter-spacing: 2px;
-	text-decoration: underline;
-	text-underline-offset: 4px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1.2;
+
+	&--witkop, &--wessel {
+		text-align: center;
+	}
 
 	&--bylineHeadingH3 {
 		text-align: center;
@@ -113,17 +118,33 @@ body {
 
 .headingH4 {
 	color: $cf-dark;
-	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+	font-size: clamp(1.5rem, 4.3vw, 1.7rem);
 	font-weight: 700;
 	text-align: center;
 	text-transform: capitalize;
 	letter-spacing: 2px;
-
+	&--teamMember {
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
 	&--contactItem {
 		color: $cf-greyBlue;
-		// -webkit-text-stroke-color: $cf-dark;
-		// -webkit-text-stroke-width: .5px;
 		text-shadow: 1px 1px 1px rgba($cf-dark, .9);
+	}
+}
+.headingH5 {
+	color: $cf-dark;
+	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.1;
+	&--teamMemberTitle {
+		@include respond(tab-land) {
+			text-align: left;
+		}
 	}
 }
 
@@ -135,6 +156,11 @@ body {
 		color: $cf-dark;
 		font-weight: 700;
 		text-shadow: 1px 1px 1px rgba($cf-platinumWhite, .3);
+	}
+	&--aboutWitkop, &--aboutWessel, &--teamMemberDesc {
+		@include respond(tab-land) {
+			text-align: left;
+		}
 	}
 	&--contactItem {
 		color: $cf-greyBlue;
