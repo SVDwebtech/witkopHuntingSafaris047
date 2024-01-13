@@ -124,6 +124,8 @@ body {
 	text-transform: capitalize;
 	letter-spacing: 2px;
 	&--teamMember {
+		color: $cf-sunsetOrange;
+		text-transform: uppercase;
 		@include respond(tab-land) {
 			text-align: left;
 		}
@@ -142,6 +144,7 @@ body {
 	letter-spacing: 1px;
 	line-height: 1.1;
 	&--teamMemberTitle {
+		text-transform: capitalize;
 		@include respond(tab-land) {
 			text-align: left;
 		}
