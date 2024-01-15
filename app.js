@@ -1,4 +1,4 @@
-/////////////////////////    App Logic    ///////////////////////////////
+/////////////////////////    Navbar & Menu Logic    ///////////////////////////////
 const hamburgerBtn = document.querySelector('.hamburgerBtn');
 
 const hamburgerTopBar = document.querySelector(".hamburgerBtn__hamburgerBar--top");
@@ -203,6 +203,103 @@ for(let item of navItems) {
     }, 800);
   });
 }
+
+/////////////////////////    Carousel Logic    ///////////////////////////////
+// select dom elements
+const leftArrow = document.querySelector('.carouselLeftArrow');
+const rightArrow = document.querySelector('.carouselRightArrow');
+const index = document.querySelectorAll('.carouselIndex');
+const image = document.querySelectorAll('.carouselImage');
+// initialise counter for index
+let carouselIndexNumber = 0;
+// create eventlistener for right arrow btn
+rightArrow.addEventListener('click', function(){
+  carouselIndexNumber++;
+  if(carouselIndexNumber !== index.length) {
+    // change color of index
+    index[carouselIndexNumber].style.backgroundColor = 'orangered';
+    index[carouselIndexNumber - 1].style.backgroundColor = 'transparent';
+    // hide prev image
+    image[carouselIndexNumber-1].style.opacity = '0';
+    setTimeout(function() {
+      image[carouselIndexNumber-1].classList.toggle('carouselGallery__displayNone');
+    }, 1200)
+    // show next image
+    setTimeout(function() {
+      image[carouselIndexNumber].style.opacity = '0'
+      image[carouselIndexNumber].classList.toggle('carouselGallery__displayNone');
+      setTimeout(function() {
+        image[carouselIndexNumber].style.opacity = '1'
+      }, 50)
+    },1200);
+  } else {
+    // change color of index
+    carouselIndexNumber = 0;
+    index[carouselIndexNumber].style.backgroundColor = 'orangered';
+    index[index.length -1].style.backgroundColor = 'transparent';
+    // hide prev image
+    image[index.length -1].style.opacity = '0';
+    setTimeout(function() {
+      image[index.length -1].classList.toggle('carouselGallery__displayNone');
+    }, 1200)
+    // show next image
+    setTimeout(function() {
+      image[carouselIndexNumber].style.opacity = '0'
+      image[carouselIndexNumber].classList.toggle('carouselGallery__displayNone');
+      setTimeout(function() {
+        image[carouselIndexNumber].style.opacity = '1'
+      }, 50)
+    },1200);
+  }
+});
+// create eventlistener for left arrow btn
+leftArrow.addEventListener('click', function(){
+  carouselIndexNumber--;
+  if(carouselIndexNumber !== -1) {
+    // change color of index
+    index[carouselIndexNumber].style.backgroundColor = 'orangered';
+    index[carouselIndexNumber + 1].style.backgroundColor = 'transparent';
+    // hide prev image
+    image[carouselIndexNumber + 1].style.opacity = '0';
+    setTimeout(function() {
+      image[carouselIndexNumber + 1].classList.toggle('carouselGallery__displayNone');
+    }, 1200)
+    // show next image
+    setTimeout(function() {
+      image[carouselIndexNumber].style.opacity = '0'
+      image[carouselIndexNumber].classList.toggle('carouselGallery__displayNone');
+      setTimeout(function() {
+        image[carouselIndexNumber].style.opacity = '1'
+      }, 50)
+    },1200);
+  } else {
+    // change color of index
+    carouselIndexNumber = index.length - 1;
+    index[carouselIndexNumber].style.backgroundColor = 'orangered';
+    index[0].style.backgroundColor = 'transparent';
+    // hide prev image
+    image[0].style.opacity = '0';
+    setTimeout(function() {
+      image[0].classList.toggle('carouselGallery__displayNone');
+    }, 12000)
+    // show next image
+    setTimeout(function() {
+      image[carouselIndexNumber].style.opacity = '0'
+      image[carouselIndexNumber].classList.toggle('carouselGallery__displayNone');
+      setTimeout(function() {
+        image[carouselIndexNumber].style.opacity = '1'
+      }, 50)
+    },1200);
+  }
+});
+
+
+
+
+
+
+
+
 
 /////////////////////////    FAQ button logic    ///////////////////////////////
 

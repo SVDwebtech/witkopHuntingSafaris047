@@ -105,6 +105,11 @@ main {
     }
 }
 
+.gallery {
+    @include displayFlexColumnCenter;
+    align-items: stretch;
+}
+
 .contact {
     @include displayFlexColumnCenter;
     align-items: stretch;

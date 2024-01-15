@@ -1,0 +1,35 @@
+.carouselGallery {
+      @include displayFlexColumnCenter;
+      &__carouselImageContainer {
+            @include displayFlexColumnCenter;
+      }
+      &__carouselImage {
+            height: min(65vw, 25rem);
+            transition: opacity 1.2s;
+      }
+      &__displayNone {
+            display: none;
+      }
+	&__carouselNavContainer {
+            @include displayFlexRowCenter;
+            width: 75%;
+      }
+      &__carouselArrow {
+            width: 5rem;
+            height: 5rem;
+      }
+      &__carouselIndexContainer {
+            @include displayFlexRowCenter;
+            gap: 1rem;
+      }
+      &__carouselIndex {
+            border: 1px solid $cp-dark;
+            border-radius: $br-circle;
+            width:1rem;
+            height: 1rem;
+      }
+      &__carouselIndex:first-child {
+            background-color: $cp-sunsetOrange;
+      }
+      
+}
