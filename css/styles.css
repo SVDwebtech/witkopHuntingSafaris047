@@ -230,6 +230,7 @@ body {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #161413;
   text-align: center;
+  line-height: 1.2;
   background: linear-gradient(to bottom right, #e94104 30%, #437c90 50%, #161413 85%);
   background-size: cover;
   background-repeat: no-repeat;
@@ -238,15 +239,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (min-width: 56.25em) {
+  .headingH2 {
+    text-align: left;
+  }
+}
 .headingH2--contact {
   padding-left: 0;
 }
-@media (min-width: 56.25em) {
-  .headingH2--contact {
-    padding-left: 2rem;
-  }
-}
-
 .headingH3 {
   color: #437c90;
   font-family: "Open Sans", sans-serif;
@@ -259,6 +259,14 @@ body {
 }
 .headingH3--witkop, .headingH3--wessel {
   text-align: center;
+}
+@media (min-width: 56.25em) {
+  .headingH3--hunting {
+    text-align: left;
+  }
+}
+.headingH3--huntingPackages {
+  text-align: left;
 }
 .headingH3--bylineHeadingH3 {
   text-align: center;
@@ -280,11 +288,13 @@ body {
 
 .headingH4 {
   color: #161413;
+  font-family: "Open Sans", sans-serif;
   font-size: clamp(1.5rem, 4.3vw, 1.7rem);
   font-weight: 700;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 2px;
+  line-height: 1.2;
 }
 .headingH4--teamMember {
   color: #e94104;
@@ -295,6 +305,18 @@ body {
     text-align: left;
   }
 }
+.headingH4--huntingPackage {
+  color: #e94104;
+  font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+  text-transform: uppercase;
+  text-align: left;
+}
+.headingH4--huntingPackageTerms {
+  color: #161413;
+  font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+  text-transform: uppercase;
+  text-align: left;
+}
 .headingH4--contactItem {
   color: #437c90;
   text-shadow: 1px 1px 1px rgba(22, 20, 19, 0.9);
@@ -302,6 +324,7 @@ body {
 
 .headingH5 {
   color: #161413;
+  font-family: "Open Sans", sans-serif;
   font-size: clamp(1.4rem, 4.3vw, 1.6rem);
   font-weight: 700;
   text-align: center;
@@ -316,6 +339,18 @@ body {
   .headingH5--teamMemberTitle {
     text-align: left;
   }
+}
+.headingH5--huntingPackagePrice {
+  font-size: clamp(2rem, 4.3vw, 3rem);
+  text-transform: capitalize;
+  margin: 0;
+  text-align: left;
+}
+.headingH5--huntingPackageTerms {
+  font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+  text-transform: capitalize;
+  margin: 0;
+  text-align: left;
 }
 
 .paragraph {
@@ -332,6 +367,24 @@ body {
   .paragraph--aboutWitkop, .paragraph--aboutWessel, .paragraph--teamMemberDesc {
     text-align: left;
   }
+}
+.paragraph--hunting {
+  text-align: center;
+}
+.paragraph--huntingPackages {
+  text-align: center;
+}
+.paragraph--huntingPackageGameDesc {
+  font-size: clamp(1.2rem, 4.3vw, 1.4rem);
+  text-align: left;
+}
+.paragraph--huntingPackageExtrasDesc {
+  font-size: clamp(1.2rem, 4.3vw, 1.4rem);
+  font-weight: 800;
+  text-align: left;
+}
+.paragraph--huntingPackageTerms {
+  text-align: left;
 }
 .paragraph--contactItem {
   color: #437c90;
@@ -1348,6 +1401,258 @@ main {
   }
 }
 .about__teamLineBreak {
+  display: none;
+}
+
+.hunting {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 3rem;
+}
+@media (min-width: 56.25em) {
+  .hunting {
+    align-items: flex-start;
+  }
+}
+.hunting__huntingContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 2.5rem;
+}
+@media (min-width: 56.25em) {
+  .hunting__huntingContentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+  }
+}
+.hunting__huntingItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 1rem;
+  width: min(100%, 50rem);
+}
+@media (min-width: 56.25em) {
+  .hunting__huntingItem {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: min(100%, 35rem);
+  }
+}
+.hunting__huntingPackages {
+  position: relative;
+}
+.hunting__huntingPackagesMoreInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 1rem;
+  justify-content: flex-start;
+  background-color: #e4e4e4;
+  border: 2px solig #161413;
+  width: 100%;
+  height: 95vh;
+  padding: 2rem 1rem 7rem 1rem;
+  overflow: scroll;
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  z-index: 100;
+}
+.hunting__huntingPackageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 0.4rem;
+  border: 2px solid #437c90;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px 2px rgba(22, 20, 19, 0.3);
+  width: 95%;
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+.hunting__huntingImgCompContainer {
+  width: 100%;
+  min-height: 27rem;
+  position: relative;
+}
+.hunting__huntingImgCompContainer--starter {
+  min-height: 20rem;
+}
+.hunting__huntingImgCompContainer--classic {
+  min-height: 22rem;
+}
+.hunting__huntingImgCompContainer--grand {
+  min-height: 24rem;
+}
+.hunting__huntingImgCompContainer--elite {
+  min-height: 26rem;
+}
+.hunting__huntingImgCompContainer--kings {
+  min-height: 28rem;
+}
+.hunting__huntingImgCompImage {
+  background-color: #e4e4e4;
+  border: 1px solid #e94104;
+  box-shadow: 0 0 2.5rem 0.25rem rgba(22, 20, 19, 0.3);
+  width: 8rem;
+  padding: 0.25rem;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  z-index: 100;
+}
+.hunting__huntingImgCompImage--starter {
+  top: 34%;
+  left: 48%;
+}
+.hunting__huntingImgCompImage--classic {
+  top: 42%;
+  left: 60%;
+}
+.hunting__huntingImgCompImage--grand {
+  top: 44%;
+  left: 62%;
+}
+.hunting__huntingImgCompImage--elite {
+  top: 42%;
+  left: 62%;
+}
+.hunting__huntingImgCompImage--kings {
+  top: 38%;
+  left: 62%;
+}
+.hunting__huntingImgCompImage--warthog {
+  transform: translate(5%, -80%);
+  width: 9.5rem;
+}
+.hunting__huntingImgCompImage--impala {
+  transform: translate(-75%, -55%);
+  width: 7rem;
+}
+.hunting__huntingImgCompImage--blesbuck {
+  width: 9rem;
+}
+.hunting__huntingImgCompImage--wildebeest {
+  transform: translate(-88%, 50%);
+  width: 11rem;
+}
+.hunting__huntingImgCompImage--zebra {
+  transform: translate(-114%, -22%);
+  width: 12rem;
+}
+.hunting__huntingImgCompImage--hartebeest {
+  transform: translate(-30%, -75%);
+  width: 14rem;
+}
+.hunting__huntingImgCompImage--kudu {
+  transform: translate(-120%, -105%);
+  width: 12rem;
+}
+.hunting__huntingImgCompImage--sable {
+  transform: translate(-220%, 35%);
+  width: 6.5rem;
+}
+.hunting__huntingImgCompImage--eland {
+  transform: translate(-98%, 140%);
+  width: 9rem;
+}
+.hunting__huntingImgCompImage--buffalo {
+  transform: translate(-10%, 95%);
+  width: 9.5rem;
+}
+.hunting__huntingPackageDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  align-items: flex-start;
+  column-gap: 2.5rem;
+}
+@media (min-height: 600px) {
+  .hunting__huntingPackageDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    row-gap: 2rem;
+  }
+}
+.hunting__huntingPackageGameList, .hunting__huntingPackageExtrasList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+.hunting__huntingPackageTermsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 2rem;
+}
+.hunting__huntingPackageInclAndExclAndPaymentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 0.5rem;
+}
+.hunting__huntingPackageInclusionsList, .hunting__huntingPackageExclusionsList, .hunting__huntingPackagePaymentOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 0;
+}
+.hunting__huntingPackageTermsListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.25rem;
+  width: 75%;
+  margin: 0 auto;
+}
+.hunting__huntingPackageTermsListItem > * {
+  display: inline-flex;
+}
+.hunting__huntingTermCheckmarkIcon {
+  width: 0.5rem;
+  height: 0.5em;
+}
+.hunting__displayNone {
   display: none;
 }
 

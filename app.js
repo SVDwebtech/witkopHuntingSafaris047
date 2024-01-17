@@ -300,6 +300,19 @@ leftArrow.addEventListener('click', function(){
 
 
 
+/////////////////////////    More Info Button Logic    ///////////////////////////////
+const openPackagesBtn = document.querySelector('.openPackagesBtn');
+const closePackagesBtn = document.querySelector('.closePackagesBtn');
+const huntingPackages = document.querySelector('.huntingPackages');
+
+openPackagesBtn.addEventListener('click', function() {
+  huntingPackages.classList.toggle('hunting__displayNone');
+  huntingPackages.scrollTop = 0;
+});
+
+closePackagesBtn.addEventListener('click', function() {
+  huntingPackages.classList.toggle('hunting__displayNone');
+});
 
 /////////////////////////    FAQ button logic    ///////////////////////////////
 

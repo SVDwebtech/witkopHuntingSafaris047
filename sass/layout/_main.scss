@@ -105,6 +105,199 @@ main {
     }
 }
 
+.hunting {
+    padding: 5rem 2rem;
+    @include displayFlexColumnCenter;
+    gap: 3rem;
+    @include respond(tab-land) {
+        align-items: flex-start;
+    }
+    &__huntingContentContainer {
+        @include displayFlexColumnCenter;
+        gap: 2.5rem;
+        @include respond(tab-land) {
+            @include displayFlexRowCenter;
+            justify-content: flex-start;
+            align-items: stretch;   
+            flex-wrap: wrap;
+            row-gap: 3rem;
+        }
+    }
+    &__huntingItem {
+        @include displayFlexColumnCenter;
+        gap: 1rem;
+        width: min(100%, 50rem);
+        @include respond(tab-land) {
+            justify-content: space-between; 
+            align-items: flex-start;  
+            width: min(100%, 35rem);
+        }
+    }
+    &__huntingPackages {
+        position: relative;
+    }
+    &__huntingPackagesMoreInfo {
+        @include displayFlexColumnCenter;
+        gap: 1rem;
+        justify-content: flex-start;
+        background-color: rgba($cp-platinumWhite, 1);
+        border: 2px solig $cp-dark;
+        width: 100%;
+        height: 95vh;
+        padding: 2rem 1rem 7rem 1rem;
+        overflow: scroll;
+        position: fixed;
+        top: 6rem;
+        left: 0;
+        z-index:100;
+    }
+    &__huntingPackageContainer {
+        @include displayFlexColumnCenter;
+        gap: .4rem;
+        border: 2px solid $cp-greyBlue;
+        border-radius: $br-medium;
+        box-shadow: 0 0 20px 2px rgba($cp-dark, .3);
+        width: 95%;
+        padding: 1.25rem;
+        margin: 1rem 0;
+    }
+    &__huntingImgCompContainer {
+        width: 100%;
+        min-height: 27rem;
+        position: relative;
+    }
+    &__huntingImgCompContainer--starter {
+        min-height: 20rem;
+    }
+    &__huntingImgCompContainer--classic {
+        min-height: 22rem;
+    }
+    &__huntingImgCompContainer--grand {
+        min-height: 24rem;
+    }
+    &__huntingImgCompContainer--elite {
+        min-height: 26rem;
+    }
+    &__huntingImgCompContainer--kings {
+        min-height: 28rem;
+    }
+    &__huntingImgCompImage {
+        background-color: $cp-platinumWhite;
+        border: 1px solid $cp-sunsetOrange;
+        box-shadow: 0 0 2.5rem .25rem rgba($cp-dark, .3);
+        width: $huntingImgSize;
+        padding: .25rem;
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        z-index: 100;
+    }
+    &__huntingImgCompImage--starter {
+        top: 34%;
+        left: 48%;
+    }
+    &__huntingImgCompImage--classic {
+        top: 42%;
+        left: 60%;
+    }
+    &__huntingImgCompImage--grand {
+        top: 44%;
+        left: 62%;
+    }
+    &__huntingImgCompImage--elite {
+        top: 42%;
+        left: 62%;
+    }
+    &__huntingImgCompImage--kings {
+        top: 38%;
+        left: 62%;
+    }
+    &__huntingImgCompImage--warthog {
+        transform: translate(5%, -80%);
+        width: calc($huntingImgSize + 1.5rem);
+    }
+    &__huntingImgCompImage--impala {
+        transform: translate(-75%, -55%);
+        width: calc($huntingImgSize - 1rem);
+    }
+    &__huntingImgCompImage--blesbuck {
+        width: calc($huntingImgSize + 1rem);
+    }
+    &__huntingImgCompImage--wildebeest {
+        transform: translate(-88%, 50%);
+        width: calc($huntingImgSize + 3rem);
+    }
+    &__huntingImgCompImage--zebra {
+        transform: translate(-114%, -22%);
+        width: calc($huntingImgSize + 4rem);
+    }
+    &__huntingImgCompImage--hartebeest {
+        transform: translate(-30%, -75%);
+        width: calc($huntingImgSize + 6rem);
+    }
+    &__huntingImgCompImage--kudu {
+        transform: translate(-120%, -105%);
+        width: calc($huntingImgSize + 4rem);
+    }
+    &__huntingImgCompImage--sable {
+        transform: translate(-220%, 35%);
+        width: calc($huntingImgSize - 1.5rem);
+    }
+    &__huntingImgCompImage--eland {
+        transform: translate(-98%, 140%);
+        width: calc($huntingImgSize + 1rem);
+    }
+    &__huntingImgCompImage--buffalo {
+        transform: translate(-10%, 95%);
+        width: calc($huntingImgSize + 1.5rem);
+    }
+    &__huntingPackageDetailsContainer {
+        @include displayFlexRowCenter;
+        align-items: flex-start;
+        column-gap: 2.5rem;
+        @media (min-height: 600px) {
+            @include displayFlexColumnCenter;
+            row-gap: 2rem;
+        }
+    }
+    &__huntingPackageGameList, &__huntingPackageExtrasList {
+        @include displayFlexColumnCenter;
+        align-items: flex-start;
+        gap: .25rem;
+    } 
+    &__huntingPackageTermsContainer {
+        @include displayFlexColumnCenter;
+        gap: 2rem;
+    }
+    &__huntingPackageInclAndExclAndPaymentContainer {
+        @include displayFlexColumnCenter;
+        gap: .5rem;
+    }
+    &__huntingPackageInclusionsList, &__huntingPackageExclusionsList, &__huntingPackagePaymentOptions {
+        @include displayFlexColumnCenter;
+        gap: 0;
+    }
+    &__huntingPackageTermsListItem {
+        @include displayFlexRowCenter;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: .25rem;
+        width: 75%;
+        margin: 0 auto;
+        // list-style: square;
+    }
+    &__huntingPackageTermsListItem > * {
+        display: inline-flex;
+    }
+    &__huntingTermCheckmarkIcon {
+        width: .5rem;
+        height: .5em;
+    }
+    &__displayNone {
+        display: none;
+    }
+}
+
 .gallery {
     @include displayFlexColumnCenter;
     align-items: stretch;

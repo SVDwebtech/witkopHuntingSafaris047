@@ -63,6 +63,7 @@ body {
 	-webkit-text-stroke-width: .5px;
 	-webkit-text-stroke-color: $cf-dark;
 	text-align: center;
+	line-height: 1.2;
 
 	
 	background: linear-gradient(to bottom right, rgba($cf-sunsetOrange, 1) 30%, rgba($cf-greyBlue, 1) 50%, rgba($cf-dark, 1) 85%);
@@ -74,14 +75,14 @@ body {
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 
-	// @include respond(tab-land) {
-	// 	text-align: left;
-	// }
+	@include respond(tab-land) {
+		text-align: left;
+	}
 
 	&--contact {
 		padding-left: 0;
 		@include respond(tab-land) {
-			padding-left: 2rem;
+			// padding-left: 2rem;
 		}
 	}
 }
@@ -100,13 +101,20 @@ body {
 		text-align: center;
 	}
 
+	&--hunting {
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
+	&--huntingPackages {
+		text-align: left;
+	}
 	&--bylineHeadingH3 {
 		text-align: center;
 		@include respond(tab-land) {
 			text-align: left;
 		}
 	}
-
 	&--faqQuestion {
 		color: $cf-greyBlue;
 		text-align: center;
@@ -118,17 +126,37 @@ body {
 
 .headingH4 {
 	color: $cf-dark;
+	font-family: 'Open Sans', sans-serif;
 	font-size: clamp(1.5rem, 4.3vw, 1.7rem);
 	font-weight: 700;
 	text-align: center;
 	text-transform: capitalize;
 	letter-spacing: 2px;
+	line-height: 1.2;
 	&--teamMember {
 		color: $cf-sunsetOrange;
 		text-transform: uppercase;
 		@include respond(tab-land) {
 			text-align: left;
 		}
+	}
+	&--huntingPackage {
+		color: $cf-sunsetOrange;
+		font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+		text-transform: uppercase;
+		text-align: left;
+		// @include respond(tab-land) {
+		// 	text-align: left;
+		// }
+	}
+	&--huntingPackageTerms {
+		color: $cf-dark;
+		font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+		text-transform: uppercase;
+		text-align: left;
+		// @include respond(tab-land) {
+		// 	text-align: left;
+		// }
 	}
 	&--contactItem {
 		color: $cf-greyBlue;
@@ -137,6 +165,7 @@ body {
 }
 .headingH5 {
 	color: $cf-dark;
+	font-family: 'Open Sans', sans-serif;
 	font-size: clamp(1.4rem, 4.3vw, 1.6rem);
 	font-weight: 700;
 	text-align: center;
@@ -148,6 +177,24 @@ body {
 		@include respond(tab-land) {
 			text-align: left;
 		}
+	}
+	&--huntingPackagePrice {
+		font-size: clamp(2rem, 4.3vw, 3rem);
+		text-transform: capitalize;
+		margin: 0;
+		text-align: left;
+		// @include respond(tab-land) {
+		// 	text-align: left;
+		// }
+	}
+	&--huntingPackageTerms {
+		font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+		text-transform: capitalize;
+		margin: 0;
+		text-align: left;
+		// @include respond(tab-land) {
+		// 	text-align: left;
+		// }
 	}
 }
 
@@ -165,11 +212,30 @@ body {
 			text-align: left;
 		}
 	}
+	&--hunting {
+		text-align: center;
+		// @include respond(tab-land) {
+		// 	text-align: left;
+		// }
+	}
+	&--huntingPackages {
+		text-align: center;
+	}
+	&--huntingPackageGameDesc {
+		font-size: clamp(1.2rem, 4.3vw, 1.4rem);
+		text-align: left;
+	}
+	&--huntingPackageExtrasDesc {
+		font-size: clamp(1.2rem, 4.3vw, 1.4rem);
+		font-weight: 800;
+		text-align: left;
+	}
+	&--huntingPackageTerms {
+		text-align: left;
+	}
 	&--contactItem {
 		color: $cf-greyBlue;
 		font-weight: 900;
-		// -webkit-text-stroke-color: $cf-dark;
-		// -webkit-text-stroke-width: .1px;
 		text-shadow:  1px 1px 1px rgba($cf-dark, .9);
 	}
 	&--faqQuestion, &--faqAnswer {
