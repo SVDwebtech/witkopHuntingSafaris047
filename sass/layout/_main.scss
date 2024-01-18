@@ -293,6 +293,16 @@ main {
         width: .5rem;
         height: .5em;
     }
+////  hunting accommodation ////
+    &__accommImg {
+        width: $accommImgSize;
+    }
+
+
+
+
+
+////  display none class for button logic //// 
     &__displayNone {
         display: none;
     }
