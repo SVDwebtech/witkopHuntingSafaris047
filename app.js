@@ -204,6 +204,94 @@ for(let item of navItems) {
   });
 }
 
+/////////////////////////    Accommodation Carousel Logic    ///////////////////////////////
+// select dom elements
+const leftArrowAccomm = document.querySelector('.carouselAccommLeftArrow');
+const rightArrowAccomm = document.querySelector('.carouselAccommRightArrow');
+const indexAccomm = document.querySelectorAll('.carouselAccommIndex');
+const imageAccomm = document.querySelectorAll('.carouselAccommImage');
+// initialise counter for index
+let carouselIndexNumber = 0;
+// create eventlistener for right arrow btn
+rightArrowAccomm.addEventListener('click', function(){
+  carouselIndexNumber++;
+  if(carouselIndexNumber !== indexAccomm.length) {
+    // change color of index
+    indexAccomm[carouselIndexNumber].style.backgroundColor = 'orangered';
+    indexAccomm[carouselIndexNumber - 1].style.backgroundColor = 'transparent';
+    // hide prev image
+    imageAccomm[carouselIndexNumber-1].style.opacity = '0';
+    setTimeout(function() {
+      imageAccomm[carouselIndexNumber-1].classList.toggle('carouselAccomm__displayNone');
+    }, 1200)
+    // show next image
+    setTimeout(function() {
+      imageAccomm[carouselIndexNumber].style.opacity = '0'
+      imageAccomm[carouselIndexNumber].classList.toggle('carouselAccomm__displayNone');
+      setTimeout(function() {
+        imageAccomm[carouselIndexNumber].style.opacity = '1'
+      }, 50)
+    },1200);
+  } else {
+    // change color of index
+    carouselIndexNumber = 0;
+    indexAccomm[carouselIndexNumber].style.backgroundColor = 'orangered';
+    indexAccomm[indexAccomm.length -1].style.backgroundColor = 'transparent';
+    // hide prev image
+    imageAccomm[indexAccomm.length -1].style.opacity = '0';
+    setTimeout(function() {
+      imageAccomm[indexAccomm.length -1].classList.toggle('carouselAccomm__displayNone');
+    }, 1200)
+    // show next image
+    setTimeout(function() {
+      imageAccomm[carouselIndexNumber].style.opacity = '0'
+      imageAccomm[carouselIndexNumber].classList.toggle('carouselAccomm__displayNone');
+      setTimeout(function() {
+        imageAccomm[carouselIndexNumber].style.opacity = '1'
+      }, 50)
+    },1200);
+  }
+});
+// create eventlistener for left arrow btn
+leftArrowAccomm.addEventListener('click', function(){
+  carouselIndexNumber--;
+  if(carouselIndexNumber !== -1) {
+    // change color of index
+    indexAccomm[carouselIndexNumber].style.backgroundColor = 'orangered';
+    indexAccomm[carouselIndexNumber + 1].style.backgroundColor = 'transparent';
+    // hide prev image
+    imageAccomm[carouselIndexNumber + 1].style.opacity = '0';
+    setTimeout(function() {
+      imageAccomm[carouselIndexNumber + 1].classList.toggle('carouselAccomm__displayNone');
+    }, 1200)
+    // show next image
+    setTimeout(function() {
+      imageAccomm[carouselIndexNumber].style.opacity = '0'
+      imageAccomm[carouselIndexNumber].classList.toggle('carouselAccomm__displayNone');
+      setTimeout(function() {
+        imageAccomm[carouselIndexNumber].style.opacity = '1'
+      }, 50)
+    },1200);
+  } else {
+    // change color of index
+    carouselIndexNumber = indexAccomm.length - 1;
+    indexAccomm[carouselIndexNumber].style.backgroundColor = 'orangered';
+    indexAccomm[0].style.backgroundColor = 'transparent';
+    // hide prev image
+    imageAccomm[0].style.opacity = '0';
+    setTimeout(function() {
+      imageAccomm[0].classList.toggle('carouselAccomm__displayNone');
+    }, 1200)
+    // show next image
+    setTimeout(function() {
+      imageAccomm[carouselIndexNumber].style.opacity = '0'
+      imageAccomm[carouselIndexNumber].classList.toggle('carouselAccomm__displayNone');
+      setTimeout(function() {
+        imageAccomm[carouselIndexNumber].style.opacity = '1'
+      }, 50)
+    },1200);
+  }
+});
 /////////////////////////    Carousel Logic    ///////////////////////////////
 // select dom elements
 const leftArrow = document.querySelector('.carouselLeftArrow');
@@ -211,31 +299,31 @@ const rightArrow = document.querySelector('.carouselRightArrow');
 const index = document.querySelectorAll('.carouselIndex');
 const image = document.querySelectorAll('.carouselImage');
 // initialise counter for index
-let carouselIndexNumber = 0;
+let indexCounter = 0;
 // create eventlistener for right arrow btn
 rightArrow.addEventListener('click', function(){
-  carouselIndexNumber++;
-  if(carouselIndexNumber !== index.length) {
+  indexCounter++;
+  if(indexCounter !== index.length) {
     // change color of index
-    index[carouselIndexNumber].style.backgroundColor = 'orangered';
-    index[carouselIndexNumber - 1].style.backgroundColor = 'transparent';
+    index[indexCounter].style.backgroundColor = 'orangered';
+    index[indexCounter - 1].style.backgroundColor = 'transparent';
     // hide prev image
-    image[carouselIndexNumber-1].style.opacity = '0';
+    image[indexCounter-1].style.opacity = '0';
     setTimeout(function() {
-      image[carouselIndexNumber-1].classList.toggle('carouselGallery__displayNone');
+      image[indexCounter-1].classList.toggle('carouselGallery__displayNone');
     }, 1200)
     // show next image
     setTimeout(function() {
-      image[carouselIndexNumber].style.opacity = '0'
-      image[carouselIndexNumber].classList.toggle('carouselGallery__displayNone');
+      image[indexCounter].style.opacity = '0'
+      image[indexCounter].classList.toggle('carouselGallery__displayNone');
       setTimeout(function() {
-        image[carouselIndexNumber].style.opacity = '1'
+        image[indexCounter].style.opacity = '1'
       }, 50)
     },1200);
   } else {
     // change color of index
-    carouselIndexNumber = 0;
-    index[carouselIndexNumber].style.backgroundColor = 'orangered';
+    indexCounter = 0;
+    index[indexCounter].style.backgroundColor = 'orangered';
     index[index.length -1].style.backgroundColor = 'transparent';
     // hide prev image
     image[index.length -1].style.opacity = '0';
@@ -244,50 +332,50 @@ rightArrow.addEventListener('click', function(){
     }, 1200)
     // show next image
     setTimeout(function() {
-      image[carouselIndexNumber].style.opacity = '0'
-      image[carouselIndexNumber].classList.toggle('carouselGallery__displayNone');
+      image[indexCounter].style.opacity = '0'
+      image[indexCounter].classList.toggle('carouselGallery__displayNone');
       setTimeout(function() {
-        image[carouselIndexNumber].style.opacity = '1'
+        image[indexCounter].style.opacity = '1'
       }, 50)
     },1200);
   }
 });
 // create eventlistener for left arrow btn
 leftArrow.addEventListener('click', function(){
-  carouselIndexNumber--;
-  if(carouselIndexNumber !== -1) {
+  indexCounter--;
+  if(indexCounter !== -1) {
     // change color of index
-    index[carouselIndexNumber].style.backgroundColor = 'orangered';
-    index[carouselIndexNumber + 1].style.backgroundColor = 'transparent';
+    index[indexCounter].style.backgroundColor = 'orangered';
+    index[indexCounter + 1].style.backgroundColor = 'transparent';
     // hide prev image
-    image[carouselIndexNumber + 1].style.opacity = '0';
+    image[indexCounter + 1].style.opacity = '0';
     setTimeout(function() {
-      image[carouselIndexNumber + 1].classList.toggle('carouselGallery__displayNone');
+      image[indexCounter + 1].classList.toggle('carouselGallery__displayNone');
     }, 1200)
     // show next image
     setTimeout(function() {
-      image[carouselIndexNumber].style.opacity = '0'
-      image[carouselIndexNumber].classList.toggle('carouselGallery__displayNone');
+      image[indexCounter].style.opacity = '0'
+      image[indexCounter].classList.toggle('carouselGallery__displayNone');
       setTimeout(function() {
-        image[carouselIndexNumber].style.opacity = '1'
+        image[indexCounter].style.opacity = '1'
       }, 50)
     },1200);
   } else {
     // change color of index
-    carouselIndexNumber = index.length - 1;
-    index[carouselIndexNumber].style.backgroundColor = 'orangered';
+    indexCounter = index.length - 1;
+    index[indexCounter].style.backgroundColor = 'orangered';
     index[0].style.backgroundColor = 'transparent';
     // hide prev image
     image[0].style.opacity = '0';
     setTimeout(function() {
       image[0].classList.toggle('carouselGallery__displayNone');
-    }, 12000)
+    }, 1200)
     // show next image
     setTimeout(function() {
-      image[carouselIndexNumber].style.opacity = '0'
-      image[carouselIndexNumber].classList.toggle('carouselGallery__displayNone');
+      image[indexCounter].style.opacity = '0'
+      image[indexCounter].classList.toggle('carouselGallery__displayNone');
       setTimeout(function() {
-        image[carouselIndexNumber].style.opacity = '1'
+        image[indexCounter].style.opacity = '1'
       }, 50)
     },1200);
   }
@@ -300,7 +388,7 @@ leftArrow.addEventListener('click', function(){
 
 
 
-/////////////////////////    More Info Button Logic    ///////////////////////////////
+/////////////////////////    More Info --> Hunting Packages:  Button Logic    ///////////////////////////////
 const openPackagesBtn = document.querySelector('.openPackagesBtn');
 const closePackagesBtn = document.querySelector('.closePackagesBtn');
 const huntingPackages = document.querySelector('.huntingPackages');
@@ -312,6 +400,20 @@ openPackagesBtn.addEventListener('click', function() {
 
 closePackagesBtn.addEventListener('click', function() {
   huntingPackages.classList.toggle('hunting__displayNone');
+});
+
+/////////////////////////    More Info --> Accommodation:  Button Logic    ///////////////////////////////
+const openAccommInfoBtn = document.querySelector('.openAccommInfoBtn');
+const closeAccommInfoBtn = document.querySelector('.closeAccommInfoBtn');
+const accommInfo = document.querySelector('.accommInfo');
+
+openAccommInfoBtn.addEventListener('click', function() {
+  accommInfo.classList.toggle('hunting__displayNone');
+  accommInfo.scrollTop = 0;
+});
+
+closeAccommInfoBtn.addEventListener('click', function() {
+  accommInfo.classList.toggle('hunting__displayNone');
 });
 
 /////////////////////////    FAQ button logic    ///////////////////////////////

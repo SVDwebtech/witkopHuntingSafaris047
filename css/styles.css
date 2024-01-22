@@ -386,6 +386,20 @@ body {
 .paragraph--huntingPackageTerms {
   text-align: left;
 }
+.paragraph--accomm {
+  text-align: center;
+  width: fit-content;
+}
+@media (min-width: 56.25em) {
+  .paragraph--accomm {
+    text-align: left;
+  }
+}
+.paragraph--accommFigcaption {
+  color: #e4e4e4;
+  font-size: clamp(1.5rem, 4.3vw, 1.7rem);
+  text-shadow: 1px 1px 1px rgba(22, 20, 19, 0.9);
+}
 .paragraph--contactItem {
   color: #437c90;
   font-weight: 900;
@@ -504,6 +518,81 @@ body {
   padding: 0rem;
   width: 3rem;
   height: 3rem;
+}
+
+.carouselAccomm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 0.75rem;
+  width: min(100%, 35rem);
+  margin: 0 auto;
+}
+@media (min-width: 56.25em) {
+  .carouselAccomm {
+    flex: 1 0 35rem;
+  }
+}
+.carouselAccomm__carouselImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.carouselAccomm__carouselFigure {
+  position: relative;
+  transition: opacity 1.2s;
+}
+.carouselAccomm__carouselFigcaption {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+.carouselAccomm__carouselImage {
+  border: 1px solid #e94104;
+  box-shadow: 0 0 35px 1px rgba(3, 3, 3, 0.65);
+  height: min(65vw, 25rem);
+  padding: 0.5rem;
+}
+.carouselAccomm__displayNone {
+  display: none;
+}
+.carouselAccomm__carouselNavContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.carouselAccomm__carouselArrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 3rem;
+  height: 3rem;
+}
+.carouselAccomm__carouselIndexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 0.75rem;
+}
+.carouselAccomm__carouselIndex {
+  border: 1px solid #161413;
+  border-radius: 1000rem;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.carouselAccomm__carouselIndex:first-child {
+  background-color: #e94104;
 }
 
 .carouselGallery {
@@ -1515,7 +1604,7 @@ main {
   background-color: #e4e4e4;
   border: 1px solid #e94104;
   box-shadow: 0 0 2.5rem 0.25rem rgba(22, 20, 19, 0.3);
-  width: 8rem;
+  width: 7.5rem;
   padding: 0.25rem;
   position: absolute;
   top: 37%;
@@ -1544,42 +1633,42 @@ main {
 }
 .hunting__huntingImgCompImage--warthog {
   transform: translate(5%, -80%);
-  width: 9.5rem;
+  width: 9rem;
 }
 .hunting__huntingImgCompImage--impala {
   transform: translate(-75%, -55%);
-  width: 7rem;
+  width: 6.5rem;
 }
 .hunting__huntingImgCompImage--blesbuck {
-  width: 9rem;
+  width: 8.5rem;
 }
 .hunting__huntingImgCompImage--wildebeest {
   transform: translate(-88%, 50%);
-  width: 11rem;
+  width: 10.5rem;
 }
 .hunting__huntingImgCompImage--zebra {
   transform: translate(-114%, -22%);
-  width: 12rem;
+  width: 11.5rem;
 }
 .hunting__huntingImgCompImage--hartebeest {
   transform: translate(-30%, -75%);
-  width: 14rem;
+  width: 13.5rem;
 }
 .hunting__huntingImgCompImage--kudu {
   transform: translate(-120%, -105%);
-  width: 12rem;
+  width: 11.5rem;
 }
 .hunting__huntingImgCompImage--sable {
   transform: translate(-220%, 35%);
-  width: 6.5rem;
+  width: 6rem;
 }
 .hunting__huntingImgCompImage--eland {
   transform: translate(-98%, 140%);
-  width: 9rem;
+  width: 8.5rem;
 }
 .hunting__huntingImgCompImage--buffalo {
   transform: translate(-10%, 95%);
-  width: 9.5rem;
+  width: 9rem;
 }
 .hunting__huntingPackageDetailsContainer {
   display: flex;
@@ -1649,11 +1738,146 @@ main {
   display: inline-flex;
 }
 .hunting__huntingTermCheckmarkIcon {
-  width: 0.5rem;
-  height: 0.5em;
+  width: 1.5rem;
+  height: 1.5em;
+}
+.hunting__huntingAccommodation {
+  position: relative;
+}
+.hunting__accommInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+  background-color: #e4e4e4;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 2rem 7rem 2rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  z-index: 100;
+}
+@media (min-width: 56.25em) {
+  .hunting__accommInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+}
+.hunting__accommInfoContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 1;
+  width: min(100%, 45rem);
+}
+@media (min-width: 56.25em) {
+  .hunting__accommInfoContentWrapper {
+    align-items: flex-start;
+    width: 100%;
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 112.5em) {
+  .hunting__accommInfoContentWrapper {
+    max-width: 2000px;
+  }
+}
+.hunting__introParagraphsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 1rem;
+}
+@media (min-width: 56.25em) {
+  .hunting__introParagraphsContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 20rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .hunting__accommParagraph {
+    width: 45%;
+  }
+}
+@media (min-width: 75em) {
+  .hunting__accommParagraph {
+    width: 45%;
+  }
+}
+@media (min-width: 56.25em) {
+  .hunting__accommCarouselAndFacilitiesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 5rem;
+  }
 }
 .hunting__accommImg {
   width: 12rem;
+}
+.hunting__facilitiesInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 1.25rem;
+}
+@media (min-width: 56.25em) {
+  .hunting__facilitiesInfoContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 45%;
+  }
+}
+.hunting__accommFacilitiesListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (min-width: 56.25em) {
+  .hunting__accommFacilitiesListContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.hunting__accommFacilitiesListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+.hunting__accommFacilitiesCheckmarkIcon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .hunting__displayNone {
   display: none;

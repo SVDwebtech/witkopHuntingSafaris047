@@ -233,6 +233,18 @@ body {
 	&--huntingPackageTerms {
 		text-align: left;
 	}
+	&--accomm {
+		text-align: center;
+		width: fit-content;
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
+	&--accommFigcaption {
+		color: $cf-platinumWhite;
+		font-size: clamp(1.5rem, 4.3vw, 1.7rem);
+		text-shadow:  1px 1px 1px rgba($cf-dark, .9);
+	}
 	&--contactItem {
 		color: $cf-greyBlue;
 		font-weight: 900;
