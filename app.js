@@ -420,6 +420,19 @@ openHowItWorksInfoBtn.addEventListener('click', function() {
 closeHowItWorksInfoBtn.addEventListener('click', function() {
   howItWorksInfo.classList.toggle('hunting__displayNone');
 });
+/////////////////////////    More Info --> Other Activities:  Button Logic    ///////////////////////////////
+const openActivitiesInfoBtn = document.querySelector('.openActivitiesInfoBtn');
+const closeActivitiesInfoBtn = document.querySelector('.closeActivitiesInfoBtn');
+const activitiesInfo = document.querySelector('.activitiesInfo');
+
+openActivitiesInfoBtn.addEventListener('click', function() {
+  activitiesInfo.classList.toggle('hunting__displayNone');
+  activitiesInfo.scrollTop = 0;
+});
+
+closeActivitiesInfoBtn.addEventListener('click', function() {
+  activitiesInfo.classList.toggle('hunting__displayNone');
+});
 
 /////////////////////////    FAQ button logic    ///////////////////////////////
 

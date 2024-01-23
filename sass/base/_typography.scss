@@ -168,11 +168,11 @@ body {
 		text-transform: uppercase;
 		opacity: .15;
 	}
-	&--stepsArticle {
+	&--stepsArticle, &--activitiesInfoArticle {
 		color: $cf-sunsetOrange;
 		font-size: clamp(1.6rem, 4.3vw, 1.8rem);
 		text-transform: uppercase;
-		text-align: left;
+		text-align: center;
 		@include respond(tab-land) {
 			text-align: left;
 		}
@@ -264,7 +264,7 @@ body {
 		font-size: clamp(1.5rem, 4.3vw, 1.7rem);
 		text-shadow:  1px 1px 1px rgba($cf-dark, .9);
 	}
-	&--steps {
+	&--steps, &--activitiesInfo {
 		@include respond(tab-land) {
 			text-align: left;
 		}
@@ -275,7 +275,7 @@ body {
 		font-weight: 700;
 		text-transform: uppercase;
 	}
-	&--stepsArticle {
+	&--stepsArticle, &--activitiesInfoArticle {
 		color: $cf-platinumWhite;
 		text-align: center;
 		width: fit-content;
