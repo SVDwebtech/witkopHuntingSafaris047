@@ -195,6 +195,9 @@ body {
   text-transform: uppercase;
   font-weight: 700;
 }
+.btn--secondary-orange {
+  color: #e94104;
+}
 
 .navItem {
   color: rgba(228, 228, 228, 0.7);
@@ -317,6 +320,23 @@ body {
   text-transform: uppercase;
   text-align: left;
 }
+.headingH4--stepsHowItWorks {
+  color: #e4e4e4;
+  font-size: clamp(10rem, 4.3vw, 12rem);
+  text-transform: uppercase;
+  opacity: 0.15;
+}
+.headingH4--stepsArticle {
+  color: #e94104;
+  font-size: clamp(1.6rem, 4.3vw, 1.8rem);
+  text-transform: uppercase;
+  text-align: left;
+}
+@media (min-width: 56.25em) {
+  .headingH4--stepsArticle {
+    text-align: left;
+  }
+}
 .headingH4--contactItem {
   color: #437c90;
   text-shadow: 1px 1px 1px rgba(22, 20, 19, 0.9);
@@ -399,6 +419,27 @@ body {
   color: #e4e4e4;
   font-size: clamp(1.5rem, 4.3vw, 1.7rem);
   text-shadow: 1px 1px 1px rgba(22, 20, 19, 0.9);
+}
+@media (min-width: 56.25em) {
+  .paragraph--steps {
+    text-align: left;
+  }
+}
+.paragraph--stepsHowItWorks {
+  color: #e94104;
+  font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph--stepsArticle {
+  color: #e4e4e4;
+  text-align: center;
+  width: fit-content;
+}
+@media (min-width: 56.25em) {
+  .paragraph--stepsArticle {
+    text-align: left;
+  }
 }
 .paragraph--contactItem {
   color: #437c90;
@@ -499,6 +540,10 @@ body {
 }
 .btn--primary-orange {
   background-color: #e94104;
+}
+.btn--secondary-orange {
+  background-color: transparent;
+  border: 2px solid #e94104;
 }
 .btn--primary-white {
   background-color: white, 0.85;
@@ -1878,6 +1923,127 @@ main {
 .hunting__accommFacilitiesCheckmarkIcon {
   width: 1.5rem;
   height: 1.5rem;
+}
+.hunting__huntingHowItWorks {
+  position: relative;
+}
+.hunting__stepsInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  background-color: #e4e4e4;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 2rem 7rem 2rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  z-index: 100;
+}
+.hunting__stepsInfoContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+  gap: 3rem;
+  width: min(100%, 45rem);
+}
+@media (min-width: 56.25em) {
+  .hunting__stepsInfoContentWrapper {
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+@media (min-width: 112.5em) {
+  .hunting__stepsInfoContentWrapper {
+    max-width: 2000px;
+  }
+}
+.hunting__howItWorksStepsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 2rem;
+  width: min(100%, 45rem);
+}
+@media (min-width: 56.25em) {
+  .hunting__howItWorksStepsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+    column-gap: 4rem;
+    width: 100%;
+  }
+}
+.hunting__howItWorksSteps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #161413;
+  border: 4px solid #437c90;
+  border-radius: 1000rem;
+  box-shadow: 4px 4px 15px 2px rgba(22, 20, 19, 0.6);
+  width: 15rem;
+  height: 15rem;
+  padding: 2rem;
+  position: relative;
+}
+.hunting__headingH4StepsHowItWorks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.hunting__docInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 3rem;
+}
+@media (min-width: 56.25em) {
+  .hunting__docInfoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+}
+.hunting__docInfoArticle {
+  flex: 1 0 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+  gap: 2rem;
+  background-color: #161413;
+  border: 4px solid #437c90;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 12px 2px rgba(22, 20, 19, 0.6);
+  padding: 2rem;
 }
 .hunting__displayNone {
   display: none;

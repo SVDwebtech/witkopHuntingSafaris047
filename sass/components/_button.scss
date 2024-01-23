@@ -29,6 +29,11 @@
       &--primary-orange {
           background-color: $cp-sunsetOrange;
       }
+
+      &--secondary-orange {
+          background-color: transparent;
+          border: 2px solid $cp-sunsetOrange;
+      }
   
       &--primary-white {
           background-color: white, .85; /////////////////////////////

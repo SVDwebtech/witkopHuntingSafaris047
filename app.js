@@ -380,14 +380,6 @@ leftArrow.addEventListener('click', function(){
     },1200);
   }
 });
-
-
-
-
-
-
-
-
 /////////////////////////    More Info --> Hunting Packages:  Button Logic    ///////////////////////////////
 const openPackagesBtn = document.querySelector('.openPackagesBtn');
 const closePackagesBtn = document.querySelector('.closePackagesBtn');
@@ -414,6 +406,19 @@ openAccommInfoBtn.addEventListener('click', function() {
 
 closeAccommInfoBtn.addEventListener('click', function() {
   accommInfo.classList.toggle('hunting__displayNone');
+});
+/////////////////////////    More Info --> How It Works:  Button Logic    ///////////////////////////////
+const openHowItWorksInfoBtn = document.querySelector('.openHowItWorksInfoBtn');
+const closeHowItWorksInfoBtn = document.querySelector('.closeHowItWorksInfoBtn');
+const howItWorksInfo = document.querySelector('.howItWorksInfo');
+
+openHowItWorksInfoBtn.addEventListener('click', function() {
+  howItWorksInfo.classList.toggle('hunting__displayNone');
+  howItWorksInfo.scrollTop = 0;
+});
+
+closeHowItWorksInfoBtn.addEventListener('click', function() {
+  howItWorksInfo.classList.toggle('hunting__displayNone');
 });
 
 /////////////////////////    FAQ button logic    ///////////////////////////////

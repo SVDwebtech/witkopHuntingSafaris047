@@ -25,6 +25,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
+
+	&--secondary-orange {
+		color: $cf-sunsetOrange;
+	}
 }
 
 .navItem {
@@ -158,6 +162,21 @@ body {
 		// 	text-align: left;
 		// }
 	}
+	&--stepsHowItWorks {
+		color: $cf-platinumWhite;
+		font-size: clamp(10rem, 4.3vw, 12rem);
+		text-transform: uppercase;
+		opacity: .15;
+	}
+	&--stepsArticle {
+		color: $cf-sunsetOrange;
+		font-size: clamp(1.6rem, 4.3vw, 1.8rem);
+		text-transform: uppercase;
+		text-align: left;
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
 	&--contactItem {
 		color: $cf-greyBlue;
 		text-shadow: 1px 1px 1px rgba($cf-dark, .9);
@@ -244,6 +263,25 @@ body {
 		color: $cf-platinumWhite;
 		font-size: clamp(1.5rem, 4.3vw, 1.7rem);
 		text-shadow:  1px 1px 1px rgba($cf-dark, .9);
+	}
+	&--steps {
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
+	&--stepsHowItWorks {
+		color: $cf-sunsetOrange;
+		font-size: clamp(1.4rem, 4.3vw, 1.6rem);
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&--stepsArticle {
+		color: $cf-platinumWhite;
+		text-align: center;
+		width: fit-content;
+		@include respond(tab-land) {
+			text-align: left;
+		}
 	}
 	&--contactItem {
 		color: $cf-greyBlue;
