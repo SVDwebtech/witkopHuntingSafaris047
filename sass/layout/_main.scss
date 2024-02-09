@@ -589,39 +589,39 @@ main {
         }
     }
     &__contactItem--wessel {
-        background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .45) 30%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Wessel.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+        background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .45) 30%, rgba($cp-dark, 1) 75%), url('../img/WebsiteImages/Wessel.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
         background-size: contain;
     }
     &__contactItem--mellissa {
-        background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .45) 30%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Melissa.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+        background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .45) 30%, rgba($cp-dark, 1) 75%), url('../img/WebsiteImages/Melissa.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
         background-size: contain;
     }
     @media (min-width: 345px) {
         &__contactItem--wessel {
-            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 60%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Wessel.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 60%, rgba($cp-dark, 1) 75%), url('../img/WebsiteImages/Wessel.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
             background-size: contain;
         }
         &__contactItem--mellissa {
-            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 60%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Melissa.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 60%, rgba($cp-dark, 1) 75%), url('../img/WebsiteImages/Melissa.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
             background-size: contain;
         }
     }
     @include respond(desk) {
         &__contactItem--wessel {
-            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 55%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Wessel.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 55%, rgba($cp-dark, 1) 75%), url('../img/WebsiteImages/Wessel.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
             background-size: contain;
         }
         &__contactItem--mellissa {
-            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 55%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Melissa.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 55%, rgba($cp-dark, 1) 75%), url('../img/WebsiteImages/Melissa.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
             background-size: contain;
         }
     }
     &__contactItem--email {
-        background: linear-gradient(to bottom, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .75) 55%, rgba($cp-dark, 1)), url('../../img/WebsiteImages/Contact/ContactEmailKudus.webp');
+        background: linear-gradient(to bottom, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .75) 55%, rgba($cp-dark, 1)), url('../img/WebsiteImages/Contact/ContactEmailKudus.webp');
         background-size: cover;
     }
     &__contactItem--address {
-        background: linear-gradient(to bottom, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .75) 55%, rgba($cp-dark, 1)), url('../../img/WebsiteImages/Contact/ContactAddressBuffels.webp');
+        background: linear-gradient(to bottom, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .75) 55%, rgba($cp-dark, 1)), url('../img/WebsiteImages/Contact/ContactAddressBuffels.webp');
         background-size: cover;
     }
     // @media (min-width: 345px) {

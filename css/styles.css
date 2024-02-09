@@ -2254,39 +2254,39 @@ main {
   }
 }
 .contact__contactItem--wessel {
-  background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.45) 30%, #161413 75%), url("../../img/WebsiteImages/Wessel.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
+  background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.45) 30%, #161413 75%), url("../img/WebsiteImages/Wessel.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
   background-size: contain;
 }
 .contact__contactItem--mellissa {
-  background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.45) 30%, #161413 75%), url("../../img/WebsiteImages/Melissa.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
+  background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.45) 30%, #161413 75%), url("../img/WebsiteImages/Melissa.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
   background-size: contain;
 }
 @media (min-width: 345px) {
   .contact__contactItem--wessel {
-    background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.98) 60%, #161413 75%), url("../../img/WebsiteImages/Wessel.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
+    background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.98) 60%, #161413 75%), url("../img/WebsiteImages/Wessel.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
     background-size: contain;
   }
   .contact__contactItem--mellissa {
-    background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.98) 60%, #161413 75%), url("../../img/WebsiteImages/Melissa.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
+    background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.98) 60%, #161413 75%), url("../img/WebsiteImages/Melissa.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
     background-size: contain;
   }
 }
 @media (min-width: 75em) {
   .contact__contactItem--wessel {
-    background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.98) 55%, #161413 75%), url("../../img/WebsiteImages/Wessel.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
+    background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.98) 55%, #161413 75%), url("../img/WebsiteImages/Wessel.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
     background-size: contain;
   }
   .contact__contactItem--mellissa {
-    background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.98) 55%, #161413 75%), url("../../img/WebsiteImages/Melissa.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
+    background: linear-gradient(to bottom right, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.98) 55%, #161413 75%), url("../img/WebsiteImages/Melissa.webp"), linear-gradient(to bottom right, rgba(67, 124, 144, 0.35) -50%, #161413 45%);
     background-size: contain;
   }
 }
 .contact__contactItem--email {
-  background: linear-gradient(to bottom, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.75) 55%, #161413), url("../../img/WebsiteImages/Contact/ContactEmailKudus.webp");
+  background: linear-gradient(to bottom, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.75) 55%, #161413), url("../img/WebsiteImages/Contact/ContactEmailKudus.webp");
   background-size: cover;
 }
 .contact__contactItem--address {
-  background: linear-gradient(to bottom, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.75) 55%, #161413), url("../../img/WebsiteImages/Contact/ContactAddressBuffels.webp");
+  background: linear-gradient(to bottom, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.75) 55%, #161413), url("../img/WebsiteImages/Contact/ContactAddressBuffels.webp");
   background-size: cover;
 }
 .contact__contactItem {
