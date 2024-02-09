@@ -179,7 +179,13 @@ body {
 	}
 	&--contactItem {
 		color: $cf-greyBlue;
+		font-size: clamp(1.7rem, 4.3vw, 1.9rem);
+		font-weight: 800;
 		text-shadow: 1px 1px 1px rgba($cf-dark, .9);
+		text-align: right;
+		@include respond(tab-port) {
+			text-align: center;
+		}
 	}
 }
 .headingH5 {
@@ -214,6 +220,10 @@ body {
 		// @include respond(tab-land) {
 		// 	text-align: left;
 		// }
+	}
+	&--contactItem {
+		color: $cf-greyBlue;
+		font-weight: 700;
 	}
 }
 
@@ -284,9 +294,22 @@ body {
 		}
 	}
 	&--contactItem {
-		color: $cf-greyBlue;
+		color: $cf-sunsetOrange;
+		font-size: clamp(1rem, 4.2vw, 1.6rem);
 		font-weight: 900;
 		text-shadow:  1px 1px 1px rgba($cf-dark, .9);
+		text-align: right;
+		text-decoration: underline;
+		text-underline-offset: 3px;
+		@media (min-width: 345px) {
+			text-align: justify;
+		}
+		@include respond(tab-port) {
+			text-align: justify;
+		}
+		// @include respond(tab-land) {
+		// 	font-size: clamp(.2rem, 4.2vw, 1.6rem);
+		// }
 	}
 	&--faqQuestion, &--faqAnswer {
 		color: $cf-greyBlue;

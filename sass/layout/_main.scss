@@ -1,4 +1,6 @@
 main {
+    @include displayFlexColumnCenter;
+    gap: 5rem;
     padding: 2rem 0rem;
 }
 
@@ -540,60 +542,134 @@ main {
 
 .contact {
     @include displayFlexColumnCenter;
-    align-items: stretch;
+    gap: 2rem;
 
     &__contactContentContainer {
         @include displayFlexColumnCenter;
         gap: 3rem;
+        width: min(100%, 45rem);
+        padding: 1rem;
         @include respond(tab-land) {
             @include displayFlexRowCenter;
+            align-items: stretch;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-            gap: 2rem;
+            column-gap: 3rem;
+            row-gap: 3rem;
+            width: 100%;
+            padding: 2rem;
         }
-        background: url('../img/WebsiteImages/ContacUsBg.webp');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 5rem 2rem;
     }
-    
-    &__contactItemContentWrapper {
+    &__contactItem {
         @include displayFlexColumnCenter;
+        align-items: flex-end;
         gap: 1rem;
-        // background: linear-gradient(to bottom right, 
-        //                 rgba($cp-platinumWhite, .4), 
-        //                 rgba($cp-platinumWhite, .5) 35%, 
-        //                 rgba($cp-dark, 1));
-        //     background-color: rgba(255, 255, 255, .3);
-        // border: 5px solid $cp-greyBlue;
-        // border-radius: $br-circle;
-        // box-shadow: 0px 0px 50px 3px rgba($cp-dark, .7);
-        // width: clamp(25rem, 80vw, 30rem);
-        // height: clamp(25rem, 80vw, 30rem);
-        // margin: 0 auto;
-        // backdrop-filter: blur(3px);
+        border: 3px solid $cp-sunsetOrange;
+        border-radius: $br-small;
+        box-shadow: 0 0 12px 2px rgba($cp-dark, .6);
+        width: 100%;
+        min-height: 20rem;
+        padding: 2rem;
+        @media (min-width: 345px) {
+            justify-content: flex-end;
+            align-items: center;
+        }
+        @include respond(tab-land) {
+            flex: 1 0 35rem;
+            min-height: 22rem;
+        }
+        @include respond(desk) {
+            flex: 1 0 40rem;
+        }
+        @media (min-width: 1500px) {
+            flex: 1 0 48rem;
+            justify-content: center;
+        }
+        @include respond(big-desk) {
+            flex: 1 0 50rem;
+        }
     }
-
-    &__iconAndHeadingWrapper {
+    &__contactItem--wessel {
+        background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .45) 30%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Wessel.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+        background-size: contain;
+    }
+    &__contactItem--mellissa {
+        background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .45) 30%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Melissa.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+        background-size: contain;
+    }
+    @media (min-width: 345px) {
+        &__contactItem--wessel {
+            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 60%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Wessel.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+            background-size: contain;
+        }
+        &__contactItem--mellissa {
+            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 60%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Melissa.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+            background-size: contain;
+        }
+    }
+    @include respond(desk) {
+        &__contactItem--wessel {
+            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 55%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Wessel.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+            background-size: contain;
+        }
+        &__contactItem--mellissa {
+            background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 55%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Melissa.webp'), linear-gradient(to bottom right, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+            background-size: contain;
+        }
+    }
+    &__contactItem--email {
+        background: linear-gradient(to bottom, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .75) 55%, rgba($cp-dark, 1)), url('../../img/WebsiteImages/Contact/ContactEmailKudus.webp');
+        background-size: cover;
+    }
+    &__contactItem--address {
+        background: linear-gradient(to bottom, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .75) 55%, rgba($cp-dark, 1)), url('../../img/WebsiteImages/Contact/ContactAddressBuffels.webp');
+        background-size: cover;
+    }
+    // @media (min-width: 345px) {
+    //     &__contactItem--email {
+    //         background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 60%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Contact/ContactEmailKudus.webp'), linear-gradient(to top, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+    //         background-size: contain;
+    //     }
+    //     &__contactItem--address {
+    //         background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 60%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Contact/ContactAddressBuffels.webp'), linear-gradient(to top, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
+    //         background-size: contain;
+    //     }
+    // }
+    &__contactItem {
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+    &__contactItem--email, &__contactItem--address {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__contactDetails {
         @include displayFlexColumnCenter;
-        gap: .25rem;
-        background: linear-gradient(to bottom right, 
-                        rgba($cp-platinumWhite, .4), 
-                        rgba($cp-platinumWhite, .5) 35%, 
-                        rgba($cp-dark, 1));
-            background-color: rgba(255, 255, 255, .3);
-        border: 5px solid $cp-greyBlue;
-        border-radius: $br-circle;
-        box-shadow: 0px 0px 50px 3px rgba($cp-dark, .7);
-        width: clamp(14rem, 20vw, 20rem);
-        height: clamp(14rem, 20vw, 20rem);
-        margin: 0 auto;
-        backdrop-filter: blur(3px);
+        align-items: flex-end;
+        gap: .5rem;
+        @media (min-width: 345px) {
+            @include displayFlexRowCenter;
+            align-items: flex-start;
+        }
+        @include respond(tab-port) {
+            @include displayFlexRowCenter;
+            gap: .35rem;
+            align-items: flex-start;
+        }
     }
-
     &__contactItemIcon {
         width: 5rem;
         height: 5rem;
+        // @include respond(tab-port) {
+        //     align-self: center;
+        // }
+    }
+    &__lineBreak {
+        @media (min-width: 345px) {
+            display: none;
+        }
+        @include respond(tab-port) {
+            display: none;
+        }
     }
 }
