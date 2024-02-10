@@ -110,6 +110,12 @@ body {
 			text-align: left;
 		}
 	}
+	&--hunting-main {
+		color: $cp-sunsetOrange;
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
 	&--huntingPackages, &--accom {
 		text-align: left;
 	}
@@ -240,6 +246,10 @@ body {
 		@include respond(tab-land) {
 			text-align: left;
 		}
+	}
+	&--hunting-main {
+		color: $cp-platinumWhite;
+		text-align: center;
 	}
 	&--hunting {
 		text-align: center;
