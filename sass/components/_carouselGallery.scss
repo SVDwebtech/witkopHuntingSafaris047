@@ -1,18 +1,33 @@
 .carouselGallery {
       @include displayFlexColumnCenter;
+      width: min(100%, 60rem);
       &__carouselImageContainer {
             @include displayFlexColumnCenter;
       }
       &__carouselImage {
+            display: block;
             height: min(65vw, 25rem);
+            width: auto;
+            background: linear-gradient(to bottom right, rgba($cp-dark, .1), rgba($cp-dark, .95) 80%);
+            border: 4px solid $cp-sunsetOrange;
+            border-radius: $br-small;
+            box-shadow: 0 0 50px 10px rgba($cp-dark, .25);
+            padding: 0rem;
             transition: opacity 1.2s;
+      }
+      @media (min-width: 600px) AND (min-height: 700px) {
+            &__carouselImage {
+                  display: block;
+                  height: min(85vw, 35rem);
+                  width: auto;
+            }
       }
       &__displayNone {
             display: none;
       }
 	&__carouselNavContainer {
             @include displayFlexRowCenter;
-            width: 75%;
+            min-width: 100%;
       }
       &__carouselArrow {
             width: 5rem;

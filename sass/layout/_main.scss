@@ -1,6 +1,6 @@
 main {
     @include displayFlexColumnCenter;
-    gap: 5rem;
+    gap: 8rem;
     padding: 2rem 0rem;
 }
 
@@ -538,6 +538,7 @@ main {
 .gallery {
     @include displayFlexColumnCenter;
     align-items: stretch;
+    gap: 3rem;
 }
 
 .contact {
