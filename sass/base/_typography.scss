@@ -317,19 +317,12 @@ body {
 		@include respond(tab-port) {
 			text-align: justify;
 		}
-		// @include respond(tab-land) {
-		// 	font-size: clamp(.2rem, 4.2vw, 1.6rem);
-		// }
 	}
 	&--faqQuestion, &--faqAnswer {
 		color: $cf-greyBlue;
-		// @include respond(tab-land) {
-		// 	text-align: left;
-		// }
 	}
 	&--faqQuestion {
-		color: $cf-greyBlue;
-		font-weight: 900;
+		font-weight: 700;
 	}
 }
 

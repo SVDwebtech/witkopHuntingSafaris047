@@ -487,8 +487,7 @@ body {
   color: #437c90;
 }
 .paragraph--faqQuestion {
-  color: #437c90;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .footer {
@@ -1112,8 +1111,8 @@ body {
   align-items: center;
   gap: 2rem;
   justify-content: space-evenly;
-  background: linear-gradient(to bottom right, #161413 30%, rgba(22, 20, 19, 0.9) 85%, rgba(22, 20, 19, 0.85));
-  background-color: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(to bottom right, #161413 65%, rgba(22, 20, 19, 0.85) 90%, rgba(22, 20, 19, 0.75));
+  background-color: #437c90;
   border: 3px solid #e94104;
   border-radius: 0.25rem;
   box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.25);

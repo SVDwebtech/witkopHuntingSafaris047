@@ -23,16 +23,12 @@
 
       &__faqItem {
             @include displayFlexColumnCenter;
-            // @include respond(tab-land) {
-            //       @include displayFlexRowCenter;
-            //       align-items: flex-start;
-            // }
             justify-content: space-evenly;
             background: linear-gradient(to bottom right, 
-                        rgba($cp-dark, 1) 30%,
-                        rgba($cp-dark, .9) 85%, 
-                        rgba($cp-dark, .85));
-            background-color: rgba(255, 255, 255, .2);
+                        rgba($cp-dark, 1) 65%,
+                        rgba($cp-dark, .85) 90%, 
+                        rgba($cp-dark, .75));
+            background-color: $cp-greyBlue;
             border: 3px solid $cp-sunsetOrange;
             border-radius: $br-small;
             box-shadow: $bs-dark;
