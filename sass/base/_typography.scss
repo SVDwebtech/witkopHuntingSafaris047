@@ -1,5 +1,6 @@
 // font-family: 'Jim Nightshade', cursive;  	 ----> H1
-// font-family: 'Open Sans', sans-serif;         ----> H2, H3 etc
+// font-family: "Titan One", sans-serif;	       ----> H2
+// font-family: 'Open Sans', sans-serif;         ----> H3 etc
 // font-family: 'Lato', sans-serif; 		 ----> Body text
 
 body {
@@ -60,12 +61,13 @@ body {
 }
 
 .headingH2 {
-	font-size: clamp(2.2rem, 7vw, 3.2rem);
+	font-family: "Titan One", sans-serif;
+	font-size: clamp(2.4rem, 7vw, 3.4rem);
 	font-weight: 900;
-	letter-spacing: 3px;
+	letter-spacing: 4px;
 	text-transform: uppercase;
 	-webkit-text-stroke-width: .5px;
-	-webkit-text-stroke-color: $cf-dark;
+	-webkit-text-stroke-color: rgba($cf-dark, .75);
 	text-align: center;
 	line-height: 1.2;
 
@@ -78,6 +80,8 @@ body {
 	background-clip: text;
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
+
+     filter: drop-shadow(3px 3px 2px rgba($cp-dark, .45));
 
 	@include respond(tab-land) {
 		text-align: center;

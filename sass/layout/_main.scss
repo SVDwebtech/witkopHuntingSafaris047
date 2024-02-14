@@ -29,13 +29,13 @@ main {
     }
     &__aboutContentContainer {
         @include displayFlexColumnCenter;
-        padding: 2rem;
+        padding: 0 2rem;
     }
     &__aboutItemContainer {
         @include displayFlexColumnCenter;
     }
     &__aboutWitkop > *, &__aboutWessel > * {
-        margin: 0 0 1.5rem;
+        margin: 0 0 1rem;
     }
     &__imgWitkop, &__imgWessel {
         border: 2px solid $cp-sunsetOrange;
