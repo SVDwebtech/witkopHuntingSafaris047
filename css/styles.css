@@ -1345,36 +1345,13 @@ body {
   margin-left: 0.5rem;
 }
 
-.header {
-  background: url("../img/WebsiteImages/WelcomeWitkop.webp");
-  background-repeat: no-repeat;
-  background-size: 400%;
-  background-position: 55% 100%;
-  position: relative;
-}
-@media (min-width: 37.5em) {
-  .header {
-    background-size: 280%;
-  }
-}
-@media (min-width: 56.25em) {
-  .header {
-    background-size: cover;
-  }
-}
-@media (min-width: 75em) {
-  .header {
-    background-size: 150%;
-  }
-}
-
 .heroSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
+  filter: drop-shadow(0px 10px 2px rgba(22, 20, 19, 0.45));
 }
 .heroSection__heroContentContainer {
   display: flex;
@@ -1382,10 +1359,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: linear-gradient(to top, rgba(228, 228, 228, 0.5) 60%, rgba(22, 20, 19, 0.9));
+  justify-content: flex-end;
+  background: linear-gradient(to bottom, #437c90 5%, rgba(67, 124, 144, 0.25)) 20%;
   background-color: rgba(228, 228, 228, 0.1);
   border-radius: 0.25rem;
-  padding: 3rem 1rem;
+  min-height: 50rem;
+  padding: 2rem 2rem 7rem;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 75% 100%, 0 95%);
 }
 @media (min-width: 56.25em) {
   .heroSection__heroContentContainer {
@@ -1405,6 +1385,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+.heroSection__heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .primaryHeading {
