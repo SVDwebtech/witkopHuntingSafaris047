@@ -6,7 +6,7 @@
         @include displayFlexColumnCenter;
         justify-content: flex-end;
         background: linear-gradient(to bottom, rgba($cp-greyBlue, 1) 5%, rgba($cp-greyBlue, .25)) 20%;
-        background-color: rgba($cp-platinumWhite, .1);
+        background-color: rgba($cp-platinumWhite, 1);
         border-radius: $br-small;
         min-height: 50rem;
         padding: 2rem 2rem 7rem;
@@ -20,13 +20,7 @@
     };
     &__headingAndButtonsContainer {
         @include displayFlexColumnCenter;
-    }
-    &__heroImage {
-        display: block;
-        width: 100%;
-        height: auto;
-    }     
-    
+    }   
 }
 
 .primaryHeading {

@@ -1361,7 +1361,7 @@ body {
   gap: 2rem;
   justify-content: flex-end;
   background: linear-gradient(to bottom, #437c90 5%, rgba(67, 124, 144, 0.25)) 20%;
-  background-color: rgba(228, 228, 228, 0.1);
+  background-color: #e4e4e4;
   border-radius: 0.25rem;
   min-height: 50rem;
   padding: 2rem 2rem 7rem;
@@ -1385,11 +1385,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-.heroSection__heroImage {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .primaryHeading {
@@ -1423,7 +1418,32 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
+  position: relative;
+  padding: clamp(15rem, 55vw, 100rem) 0 0;
+}
+@media (min-width: 450px) {
+  .about {
+    padding: clamp(28rem, 60vw, 100rem) 0 0;
+  }
+}
+@media (min-width: 37.5em) {
+  .about {
+    padding: clamp(28rem, 63vw, 100rem) 0 0;
+  }
+}
+@media (min-width: 56.25em) {
+  .about {
+    padding: clamp(28rem, 65vw, 100rem) 0 0;
+  }
+}
+.about__heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: clamp(-10rem, 20vw, -8rem);
+  left: 0;
+  z-index: -100;
 }
 .about__aboutContentContainer {
   display: flex;
@@ -1431,6 +1451,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 2rem;
 }
 .about__aboutItemContainer {
   display: flex;

@@ -6,9 +6,30 @@ main {
 
 .about {
     @include displayFlexColumnCenter;
-    padding: 2rem;
+    position: relative;
+    padding: clamp(15rem, 55vw, 100rem) 0 0;
+    @media (min-width: 450px) {
+        padding: clamp(28rem, 60vw, 100rem) 0 0;
+    }
+    @include respond(tab-port) {
+        padding: clamp(28rem, 63vw, 100rem) 0 0;
+    }
+    @include respond(tab-land) {
+        padding: clamp(28rem, 65vw, 100rem) 0 0;
+    }
+    &__heroImage {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        position: absolute;
+        top: clamp(-10rem, 20vw, -8rem);
+        left: 0;
+        z-index: -100;
+    }
     &__aboutContentContainer {
         @include displayFlexColumnCenter;
+        padding: 2rem;
     }
     &__aboutItemContainer {
         @include displayFlexColumnCenter;
