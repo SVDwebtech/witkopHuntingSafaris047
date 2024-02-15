@@ -36,7 +36,7 @@
       &__itemsWrapper--headingBylineAndSocialMedia {
             @include displayFlexColumnCenter;
             @include respond(tab-land){
-                  align-items: flex-start;
+                  align-items: center;
                   margin-left: 3rem;
             }
 
@@ -52,7 +52,7 @@
             @include displayFlexColumnCenter;
             gap: .25rem;
             @include respond(tab-land){
-                  align-items: flex-start;
+                  align-items: center;
                   width: 450px;
             }
       }
@@ -69,6 +69,7 @@
                   flex-wrap: wrap;
                   justify-content: space-between;
                   align-items: flex-start;
+                  padding: 0 1rem;
 		}
       }
 
@@ -83,6 +84,7 @@
                   @include displayFlexRowCenter;
                   justify-content: space-between;
                   gap: .75rem;
+                  padding: 0 1rem;
             }
       }
 
@@ -100,6 +102,7 @@
             gap: .25rem;
             @include respond(tab-land) {
                   justify-content: flex-end;
+                  padding: 0 1rem;
             }
       }
 
