@@ -24,21 +24,23 @@
       &__faqItem {
             @include displayFlexColumnCenter;
             justify-content: space-evenly;
-            background: linear-gradient(to bottom right, 
-                        rgba($cp-dark, 1) 65%,
-                        rgba($cp-dark, .85) 90%, 
-                        rgba($cp-dark, .75));
+            background: linear-gradient(to bottom right,
+                        rgba($cp-dark, .45), 
+                        rgba($cp-dark, .65) 5%,
+                        rgba($cp-dark, 1) 15% 70%,
+                        rgba($cp-dark, .70) 87%, 
+                        rgba($cp-dark, .40));
             background-color: $cp-greyBlue;
             border: 3px solid $cp-sunsetOrange;
             border-radius: $br-small;
-            box-shadow: $bs-dark;
-            padding: 2rem;
+            box-shadow: 0 0 12px 2px rgba($cp-dark, .6);
+            padding: 2rem 1rem;
             width: 100%;
             min-height: 25rem;
             backdrop-filter: blur(3px);
             @include respond(tab-land) {
                   flex: 1 0 35rem;
-                  min-height: 16rem;
+                  min-height: 27rem;
             }                    
             @include respond(desk) {
                   flex: 1 0 40rem;
@@ -55,10 +57,10 @@
       &__contentWrapper {
             width: min(100%, 38rem);
             @include respond(tab-port) {
-                  width: min(100%, 25rem);
+                  width: min(100%, 35rem);
             }
             @include respond(tab-land) {
-                  width: min(100%, 80rem);
+                  width: min(100%, 30rem);
             }
             position: relative;
       }

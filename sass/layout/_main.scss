@@ -708,16 +708,6 @@ main {
         background: linear-gradient(to bottom, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .35) 65%, rgba($cp-dark, 1)), url('../img/WebsiteImages/Contact/ContactAddressBuffels.webp');
         background-size: cover;
     }
-    // @media (min-width: 345px) {
-    //     &__contactItem--email {
-    //         background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 60%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Contact/ContactEmailKudus.webp'), linear-gradient(to top, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
-    //         background-size: contain;
-    //     }
-    //     &__contactItem--address {
-    //         background: linear-gradient(to bottom right, rgba($cp-greyBlue, 0) 15%, rgba($cp-dark, .98) 60%, rgba($cp-dark, 1) 75%), url('../../img/WebsiteImages/Contact/ContactAddressBuffels.webp'), linear-gradient(to top, rgba($cp-greyBlue, .35) -50%, rgba($cp-dark, 1) 45%);
-    //         background-size: contain;
-    //     }
-    // }
     &__contactItem {
         background-repeat: no-repeat;
         background-position-x: 0px;
@@ -744,9 +734,6 @@ main {
     &__contactItemIcon {
         width: 5rem;
         height: 5rem;
-        // @include respond(tab-port) {
-        //     align-self: center;
-        // }
     }
     &__lineBreak {
         @media (min-width: 345px) {

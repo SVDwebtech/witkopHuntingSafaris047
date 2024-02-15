@@ -47,7 +47,8 @@
                         rgba($cp-greyBlue, 1), 
                         rgba($cp-greyBlue, .95) 25%, 
                         rgba($cp-platinumWhite, .2) 95%);
-            border: 2px solid $cp-sunsetOrange;
+            background-color: $cp-dark;
+            border: 3px solid $cp-sunsetOrange;
             border-radius: $br-circle;
             box-shadow: $bs-btnLight;
             padding: 0rem;
