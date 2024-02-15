@@ -270,10 +270,12 @@ body {
 		text-align: center;
 	}
 	&--huntingPackageGameDesc {
+		color: $cf-platinumWhite;
 		font-size: clamp(1.2rem, 4.3vw, 1.4rem);
 		text-align: left;
 	}
 	&--huntingPackageExtrasDesc {
+		color: $cf-greyBlue;
 		font-size: clamp(1.2rem, 4.3vw, 1.4rem);
 		font-weight: 800;
 		text-align: left;
