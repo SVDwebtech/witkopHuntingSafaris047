@@ -1780,6 +1780,9 @@ main {
 .hunting__huntingImgCompContainer--buffalopackage {
   min-height: 15rem;
 }
+.hunting__huntingImgCompContainer--neat {
+  min-height: 18rem;
+}
 .hunting__huntingImgCompImage {
   background-color: #e4e4e4;
   border: 1px solid #e94104;
@@ -1813,6 +1816,10 @@ main {
 }
 .hunting__huntingImgCompImage--buffalopackage {
   top: 48%;
+  left: 50%;
+}
+.hunting__huntingImgCompImage--neat {
+  top: 35%;
   left: 50%;
 }
 .hunting__huntingImgCompImage--warthog {
@@ -1857,6 +1864,18 @@ main {
 .hunting__huntingImgCompImage--buffalo-package {
   transform: translate(-50%, -50%);
   width: 17.5rem;
+}
+.hunting__huntingImgCompImage--gems1-neat {
+  transform: translate(-20%, 45%);
+  width: 6rem;
+}
+.hunting__huntingImgCompImage--gems2-neat {
+  transform: translate(-50%, -60%);
+  width: 6rem;
+}
+.hunting__huntingImgCompImage--gems3-neat {
+  transform: translate(-108%, 12%);
+  width: 6rem;
 }
 .hunting__huntingPackageDetailsContainer {
   display: flex;

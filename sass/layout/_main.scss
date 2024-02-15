@@ -275,6 +275,9 @@ main {
     &__huntingImgCompContainer--buffalopackage {
         min-height: 15rem;
     }
+    &__huntingImgCompContainer--neat {
+        min-height: 18rem;
+    }
     &__huntingImgCompImage {
         background-color: $cp-platinumWhite;
         border: 1px solid $cp-sunsetOrange;
@@ -308,6 +311,10 @@ main {
     }
     &__huntingImgCompImage--buffalopackage {
         top: 48%;
+        left: 50%;
+    }
+    &__huntingImgCompImage--neat {
+        top: 35%;
         left: 50%;
     }
     &__huntingImgCompImage--warthog {
@@ -352,6 +359,18 @@ main {
     &__huntingImgCompImage--buffalo-package {
         transform: translate(-50%, -50%);
         width: calc($huntingImgSize + 10rem);
+    }
+    &__huntingImgCompImage--gems1-neat {
+        transform: translate(-20%, 45%);
+        width: calc($huntingImgSize - 1.5rem);
+    }
+    &__huntingImgCompImage--gems2-neat {
+        transform: translate(-50%, -60%);
+        width: calc($huntingImgSize - 1.5rem);
+    }
+    &__huntingImgCompImage--gems3-neat {
+        transform: translate(-108%, 12%);
+        width: calc($huntingImgSize - 1.5rem);
     }
     &__huntingPackageDetailsContainer {
         @include displayFlexRowCenter;
