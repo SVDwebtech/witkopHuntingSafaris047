@@ -119,10 +119,7 @@ main {
         &__imgWessel--number2 {
             width: min(18%, 20rem);
         }
-    }
-
-    
-    
+    }   
     
     &__buttonsContainer {
         @include displayFlexColumnCenter;
@@ -130,11 +127,11 @@ main {
     }
     &__aboutTeam {
         @include displayFlexColumnCenter;
-        gap: 3em;
+        gap: 2.5rem;
     }
     &__aboutTeamNavItemContainer {
         @include displayFlexColumnCenter;
-        gap: 5rem;
+        gap: 3rem;
         @include respond(tab-land) {
             @include displayFlexRowCenter;
             flex-wrap: wrap;
@@ -145,28 +142,32 @@ main {
         flex: 1 0 28rem;
         @include displayFlexColumnCenter;
         @include respond(tab-land) {
-            flex: 1 0 60rem;
-            @include displayFlexRowCenter;
-            justify-content: flex-start;
+            flex: 1 0 30rem;
+        }
+        @include respond(desk) {
+            flex: 1 0 40rem;
+        }
+        @media (min-width: 1500px) {
+            flex: 1 0 48rem;
         }
     }
     &__aboutTeamMemberFig {
         background: linear-gradient(to bottom right, rgba($cp-platinumWhite, 1), rgba($cp-greyBlue, 1) 65%, rgba($cp-dark, 1));
         border: 4px solid $cp-sunsetOrange;
         border-radius: $br-circle;
-        box-shadow: 0 0 2rem 1rem rgba($cp-dark, .3);
+        box-shadow: 0 0 1.5rem .5rem rgba($cp-dark, .45);
         width: min(100%, 15rem);
     }
     &__aboutTeamMemberFigCaption {
         @include displayFlexColumnCenter;
         gap: .5rem;
-        width: min(100%, 50rem);
+        width: min(100%, 35rem);
         @include respond(tab-land) {
-            align-items: flex-start;
+            align-items: center;
         }
     }
     &__teamLineBreak {
-        display: none;
+        display: block;
     }
 }
 

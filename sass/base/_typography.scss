@@ -151,7 +151,7 @@ body {
 		color: $cf-sunsetOrange;
 		text-transform: uppercase;
 		@include respond(tab-land) {
-			text-align: left;
+			text-align: center;
 		}
 	}
 	&--huntingPackage {
@@ -210,7 +210,7 @@ body {
 	&--teamMemberTitle {
 		text-transform: capitalize;
 		@include respond(tab-land) {
-			text-align: left;
+			text-align: center;
 		}
 	}
 	&--huntingPackagePrice {
@@ -246,9 +246,14 @@ body {
 		font-weight: 700;
 		text-shadow: 1px 1px 1px rgba($cf-platinumWhite, .3);
 	}
-	&--aboutWitkop, &--aboutWessel, &--teamMemberDesc {
+	&--aboutWitkop, &--aboutWessel {
 		@include respond(tab-land) {
 			text-align: left;
+		}
+	}
+	&--teamMemberDesc {
+		@include respond(tab-land) {
+			text-align: center;
 		}
 	}
 	&--hunting-main {
