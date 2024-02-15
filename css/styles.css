@@ -2380,7 +2380,7 @@ main {
   background-size: cover;
 }
 .contact__contactItem--address {
-  background: linear-gradient(to bottom, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.75) 55%, #161413), url("../img/WebsiteImages/Contact/ContactAddressBuffels.webp");
+  background: linear-gradient(to bottom, rgba(67, 124, 144, 0) 15%, rgba(22, 20, 19, 0.35) 65%, #161413), url("../img/WebsiteImages/Contact/ContactAddressBuffels.webp");
   background-size: cover;
 }
 .contact__contactItem {
