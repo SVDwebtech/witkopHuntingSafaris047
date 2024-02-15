@@ -1219,6 +1219,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 3rem 0;
 }
 @media (min-width: 56.25em) {
   .footer__footerSection--logoBylineAndSocialMedia {
@@ -1283,6 +1284,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 3rem 0;
 }
 @media (min-width: 56.25em) {
   .footer__navList {

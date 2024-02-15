@@ -20,6 +20,7 @@
 
       &__footerSection--logoBylineAndSocialMedia {
             @include displayFlexColumnCenter;
+            padding: 3rem 0;
             @include respond(tab-land){
                   @include displayFlexRowCenter;
                   justify-content: center;
@@ -62,6 +63,7 @@
 
       &__navList {
             @include displayFlexColumnCenter;
+            padding: 3rem 0;
             @include respond(tab-land){
 			@include displayFlexRowCenter;
                   flex-wrap: wrap;
