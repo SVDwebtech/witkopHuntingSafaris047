@@ -1443,10 +1443,12 @@ main {
   display: block;
   width: 100%;
   height: auto;
+  box-shadow: 0 0 2rem 0.05rem rgba(22, 20, 19, 0.95);
   position: absolute;
   top: clamp(-10rem, 20vw, -8rem);
   left: 0;
   z-index: -100;
+  overflow: hidden;
 }
 .about__aboutContentContainer {
   display: flex;
@@ -1464,63 +1466,85 @@ main {
   gap: 2rem;
 }
 .about__aboutWitkop > *, .about__aboutWessel > * {
-  margin: 0 0 1rem;
+  margin: 0 0 2rem;
 }
 .about__imgWitkop, .about__imgWessel {
+  display: block;
+  width: 98%;
+  height: auto;
   border: 2px solid #e94104;
-  box-shadow: 0 0 2.5rem 0.25rem rgba(22, 20, 19, 0.3);
+  box-shadow: 0 0 2rem 0.25rem rgba(22, 20, 19, 0.45);
   padding: 0.75rem;
+  margin: 2rem auto;
 }
-.about__imgWitkop--kudus, .about__imgWessel--number1 {
-  float: left;
-  margin: 2rem 2rem 2rem 0;
-  clear: both;
-}
-.about__imgWitkop--kudus {
-  width: min(45%, 18rem);
-}
-@media (min-width: 56.25em) {
-  .about__imgWitkop--kudus {
-    width: min(20%, 18rem);
+@media (min-width: 37.5em) {
+  .about__imgWitkop--kudus, .about__imgWessel--number1 {
+    float: left;
+    margin: 2rem 2rem 2rem 0;
+    clear: both;
   }
-}
-.about__imgWessel--number1 {
-  width: min(40%, 18rem);
-}
-@media (min-width: 56.25em) {
-  .about__imgWessel--number1 {
-    width: min(16%, 18rem);
-  }
-}
-.about__imgWitkop--sunrise, .about__imgWessel--number2 {
-  float: right;
-  margin: 2rem 0 2rem 2rem;
-  clear: both;
-}
-@media (min-width: 56.25em) {
   .about__imgWitkop--sunrise, .about__imgWessel--number2 {
+    float: right;
+    margin: 2rem 0 2rem 2rem;
+    clear: both;
+  }
+  .about__imgWitkop--kudus {
+    width: min(55%, 45rem);
+  }
+  .about__imgWessel--number1 {
+    width: min(40%, 30rem);
+  }
+  .about__imgWitkop--sunrise {
+    width: min(37%, 35rem);
+  }
+  .about__imgWessel--number2 {
+    width: min(35%, 30rem);
+  }
+}
+@media (min-width: 750px) {
+  .about__imgWessel--number2 {
     clear: none;
   }
 }
-.about__imgWitkop--sunrise {
-  width: min(45%, 18rem);
-}
 @media (min-width: 56.25em) {
-  .about__imgWitkop--sunrise {
-    width: min(20%, 18rem);
+  .about__imgWitkop--kudus {
+    width: min(40%, 55rem);
   }
-}
-.about__imgWessel--number2 {
-  width: min(35%, 12rem);
-}
-@media (min-width: 56.25em) {
+  .about__imgWessel--number1 {
+    width: min(45%, 35rem);
+  }
+  .about__imgWitkop--sunrise {
+    width: min(30%, 35rem);
+    clear: none;
+  }
   .about__imgWessel--number2 {
-    width: min(14%, 18rem);
+    width: min(30%, 35rem);
   }
 }
 @media (min-width: 75em) {
+  .about__imgWitkop--kudus {
+    width: min(35%, 45rem);
+  }
+  .about__imgWessel--number1 {
+    width: min(35%, 25rem);
+  }
+  .about__imgWitkop--sunrise {
+    width: min(20%, 30rem);
+    clear: none;
+  }
   .about__imgWessel--number2 {
-    width: min(10%, 18rem);
+    width: min(20%, 25rem);
+  }
+}
+@media (min-width: 112.5em) {
+  .about__imgWitkop--kudus {
+    width: min(30%, 40rem);
+  }
+  .about__imgWessel--number1 {
+    width: min(18%, 18rem);
+  }
+  .about__imgWessel--number2 {
+    width: min(18%, 20rem);
   }
 }
 .about__buttonsContainer {
