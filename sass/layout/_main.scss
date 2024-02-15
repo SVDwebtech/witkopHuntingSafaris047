@@ -156,7 +156,7 @@ main {
     }
     &__aboutTeamMemberFig {
         background: linear-gradient(to bottom right, rgba($cp-platinumWhite, 1), rgba($cp-greyBlue, 1) 65%, rgba($cp-dark, 1));
-        border: 4px solid $cp-sunsetOrange;
+        border: 2px solid $cp-sunsetOrange;
         border-radius: $br-circle;
         box-shadow: 0 0 1.5rem .5rem rgba($cp-dark, .45);
         width: min(100%, 15rem);
@@ -197,7 +197,7 @@ main {
         gap: 2rem;
         background: linear-gradient(to bottom right, rgba($cp-greyBlue, .3), rgba($cp-dark, .75), rgba($cp-dark, 1) 55%);
         background-color: $cp-greyBlue;
-        border: 4px solid $cp-sunsetOrange;
+        border: 2px solid $cp-sunsetOrange;
         border-radius: $br-small;
         box-shadow: 0 0 25px 2px rgba($cp-dark, .6);
         padding: 2rem;
@@ -226,7 +226,6 @@ main {
         gap: 1rem;
         justify-content: flex-start;
         background-color: rgba($cp-platinumWhite, 1);
-        border: 2px solig $cp-dark;
         width: 100%;
         height: 95vh;
         padding: 2rem 1rem 7rem 1rem;
@@ -239,7 +238,7 @@ main {
     &__huntingPackageContainer {
         @include displayFlexColumnCenter;
         gap: .4rem;
-        border: 2px solid $cp-greyBlue;
+        border: 2px solid $cp-sunsetOrange;
         border-radius: $br-medium;
         box-shadow: 0 0 20px 2px rgba($cp-dark, .3);
         width: 95%;
@@ -517,7 +516,7 @@ main {
     &__howItWorksSteps {
         @include displayFlexColumnCenter;
         background-color: $cp-dark;
-        border: 4px solid $cp-greyBlue;
+        border: 2px solid $cp-sunsetOrange;
         border-radius: $br-circle;
         box-shadow: 4px 4px 15px 2px rgba($cp-dark, .6);
         width: 15rem;
@@ -548,7 +547,7 @@ main {
         justify-content: flex-start;
         gap: 2rem;
         background-color: $cp-dark;
-        border: 4px solid $cp-greyBlue;
+        border: 2px solid $cp-sunsetOrange;
         border-radius: $br-small;
         box-shadow: 0 0 12px 2px rgba($cp-dark, .6);
         padding: 2rem;
@@ -597,7 +596,7 @@ main {
         justify-content: flex-start;
         gap: 2rem;
         background-color: $cp-dark;
-        border: 4px solid $cp-greyBlue;
+        border: 2px solid $cp-sunsetOrange;
         border-radius: $br-small;
         box-shadow: 0 0 12px 2px rgba($cp-dark, .6);
         padding: 2rem;
@@ -647,7 +646,7 @@ main {
         @include displayFlexColumnCenter;
         align-items: flex-end;
         gap: 1rem;
-        border: 3px solid $cp-sunsetOrange;
+        border: 2px solid $cp-sunsetOrange;
         border-radius: $br-small;
         box-shadow: 0 0 12px 2px rgba($cp-dark, .6);
         width: 100%;
