@@ -248,7 +248,7 @@ main {
         border: 2px solid $cp-sunsetOrange;
         border-radius: $br-medium;
         box-shadow: 0 0 20px 2px rgba($cp-dark, .3);
-        width: 95%;
+        width: min(95%, 30rem);
         padding: 1.25rem;
         margin: 1rem 0;
     }
@@ -271,6 +271,9 @@ main {
     }
     &__huntingImgCompContainer--kings {
         min-height: 28rem;
+    }
+    &__huntingImgCompContainer--buffalopackage {
+        min-height: 15rem;
     }
     &__huntingImgCompImage {
         background-color: $cp-platinumWhite;
@@ -302,6 +305,10 @@ main {
     &__huntingImgCompImage--kings {
         top: 38%;
         left: 62%;
+    }
+    &__huntingImgCompImage--buffalopackage {
+        top: 48%;
+        left: 50%;
     }
     &__huntingImgCompImage--warthog {
         transform: translate(5%, -80%);
@@ -341,6 +348,10 @@ main {
     &__huntingImgCompImage--buffalo {
         transform: translate(-10%, 95%);
         width: calc($huntingImgSize + 1.5rem);
+    }
+    &__huntingImgCompImage--buffalo-package {
+        transform: translate(-50%, -50%);
+        width: calc($huntingImgSize + 10rem);
     }
     &__huntingPackageDetailsContainer {
         @include displayFlexRowCenter;

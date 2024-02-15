@@ -214,13 +214,11 @@ body {
 		}
 	}
 	&--huntingPackagePrice {
+		color: $cf-platinumWhite;
 		font-size: clamp(2rem, 4.3vw, 3rem);
 		text-transform: capitalize;
 		margin: 0;
-		text-align: left;
-		// @include respond(tab-land) {
-		// 	text-align: left;
-		// }
+		text-align: center;
 	}
 	&--huntingPackageTerms {
 		font-size: clamp(1.4rem, 4.3vw, 1.6rem);

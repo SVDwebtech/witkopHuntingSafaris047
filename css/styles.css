@@ -378,10 +378,11 @@ body {
   }
 }
 .headingH5--huntingPackagePrice {
+  color: #e4e4e4;
   font-size: clamp(2rem, 4.3vw, 3rem);
   text-transform: capitalize;
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
 .headingH5--huntingPackageTerms {
   font-size: clamp(1.4rem, 4.3vw, 1.6rem);
@@ -1752,7 +1753,7 @@ main {
   border: 2px solid #e94104;
   border-radius: 0.5rem;
   box-shadow: 0 0 20px 2px rgba(22, 20, 19, 0.3);
-  width: 95%;
+  width: min(95%, 30rem);
   padding: 1.25rem;
   margin: 1rem 0;
 }
@@ -1775,6 +1776,9 @@ main {
 }
 .hunting__huntingImgCompContainer--kings {
   min-height: 28rem;
+}
+.hunting__huntingImgCompContainer--buffalopackage {
+  min-height: 15rem;
 }
 .hunting__huntingImgCompImage {
   background-color: #e4e4e4;
@@ -1806,6 +1810,10 @@ main {
 .hunting__huntingImgCompImage--kings {
   top: 38%;
   left: 62%;
+}
+.hunting__huntingImgCompImage--buffalopackage {
+  top: 48%;
+  left: 50%;
 }
 .hunting__huntingImgCompImage--warthog {
   transform: translate(5%, -80%);
@@ -1845,6 +1853,10 @@ main {
 .hunting__huntingImgCompImage--buffalo {
   transform: translate(-10%, 95%);
   width: 9rem;
+}
+.hunting__huntingImgCompImage--buffalo-package {
+  transform: translate(-50%, -50%);
+  width: 17.5rem;
 }
 .hunting__huntingPackageDetailsContainer {
   display: flex;
