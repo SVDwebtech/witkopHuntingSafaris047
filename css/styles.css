@@ -1077,7 +1077,7 @@ body {
 }
 
 .sidebar {
-  padding: 1rem 0rem;
+  padding: 1rem 0rem 8rem;
 }
 .sidebar__faqContainer {
   display: flex;
@@ -1417,7 +1417,7 @@ main {
   align-items: center;
   gap: 2rem;
   gap: 8rem;
-  padding: 2rem 0rem;
+  padding: 2rem 0rem 8rem;
 }
 
 .about {
@@ -1426,6 +1426,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  gap: 4rem;
   position: relative;
   padding: clamp(15rem, 55vw, 100rem) 0 0;
 }
@@ -1461,6 +1462,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  gap: 4rem;
   padding: 0 2rem;
 }
 .about__aboutItemContainer {
@@ -1469,6 +1471,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  gap: 4rem;
 }
 .about__aboutWitkop > *, .about__aboutWessel > * {
   margin: 0 0 2rem;
@@ -1636,7 +1639,7 @@ main {
 }
 
 .hunting {
-  padding: 5rem 2rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

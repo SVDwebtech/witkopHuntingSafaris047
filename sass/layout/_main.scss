@@ -1,11 +1,12 @@
 main {
     @include displayFlexColumnCenter;
     gap: 8rem;
-    padding: 2rem 0rem;
+    padding: 2rem 0rem 8rem;
 }
 
 .about {
     @include displayFlexColumnCenter;
+    gap: 4rem;
     position: relative;
     padding: clamp(15rem, 55vw, 100rem) 0 0;
     @media (min-width: 450px) {
@@ -32,10 +33,12 @@ main {
     }
     &__aboutContentContainer {
         @include displayFlexColumnCenter;
+        gap: 4rem;
         padding: 0 2rem;
     }
     &__aboutItemContainer {
         @include displayFlexColumnCenter;
+        gap: 4rem;
     }
     &__aboutWitkop > *, &__aboutWessel > * {
         margin: 0 0 2rem;
@@ -172,7 +175,7 @@ main {
 }
 
 .hunting {
-    padding: 5rem 2rem;
+    padding: 0 2rem;
     @include displayFlexColumnCenter;
     gap: 3rem;
     @include respond(tab-land) {
