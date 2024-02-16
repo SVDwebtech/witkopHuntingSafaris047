@@ -229,7 +229,7 @@ main {
         width: 100%;
         height: 95vh;
         padding: 2rem 1rem 7rem 1rem;
-        overflow: scroll;
+        overflow-y: scroll;
         position: fixed;
         top: 6rem;
         left: 0;
@@ -237,7 +237,7 @@ main {
     }
     &__huntingPackageContainer {
         @include displayFlexColumnCenter;
-        gap: .4rem;
+        gap: 1rem;
         background: linear-gradient(to bottom right,
                         rgba($cp-dark, .45), 
                         rgba($cp-dark, .65) 5%,
@@ -247,8 +247,8 @@ main {
         background-color: $cp-greyBlue;
         border: 2px solid $cp-sunsetOrange;
         border-radius: $br-medium;
-        box-shadow: 0 0 20px 2px rgba($cp-dark, .3);
-        width: min(95%, 30rem);
+        box-shadow: 0 0 12px 2px rgba($cp-dark, .6);
+        width: min(100%, 30rem);
         padding: 1.25rem;
         margin: 1rem 0;
     }
@@ -261,7 +261,7 @@ main {
         min-height: 20rem;
     }
     &__huntingImgCompContainer--classic {
-        min-height: 22rem;
+        min-height: 20rem;
     }
     &__huntingImgCompContainer--grand {
         min-height: 24rem;
@@ -276,7 +276,7 @@ main {
         min-height: 15rem;
     }
     &__huntingImgCompContainer--neat {
-        min-height: 18rem;
+        min-height: 21rem;
     }
     &__huntingImgCompContainer--superb {
         min-height: 21rem;
@@ -299,23 +299,23 @@ main {
         z-index: 100;
     }
     &__huntingImgCompImage--starter {
-        top: 34%;
-        left: 48%;
+        top: 35%;
+        left: 46%;
     }
     &__huntingImgCompImage--classic {
-        top: 42%;
-        left: 60%;
+        top: 35%;
+        left: 58%;
     }
     &__huntingImgCompImage--grand {
         top: 44%;
-        left: 62%;
+        left: 58%;
     }
     &__huntingImgCompImage--elite {
         top: 42%;
-        left: 62%;
+        left: 59%;
     }
     &__huntingImgCompImage--kings {
-        top: 38%;
+        top: 36%;
         left: 62%;
     }
     &__huntingImgCompImage--buffalopackage {
@@ -338,24 +338,120 @@ main {
         top: 42%;
         left: 47%;
     }
-    &__huntingImgCompImage--warthog {
+    &__huntingImgCompImage--warthog-starter {
         transform: translate(5%, -80%);
         width: calc($huntingImgSize + 1.5rem);
     }
-    &__huntingImgCompImage--impala {
-        transform: translate(-75%, -55%);
-        width: calc($huntingImgSize - 1rem);
+    &__huntingImgCompImage--impala-starter {
+        transform: translate(-85%, -55%);
+        width: calc($huntingImgSize);
     }
-    &__huntingImgCompImage--blesbuck {
+    &__huntingImgCompImage--blesbuck-starter {
         width: calc($huntingImgSize + 1rem);
     }
-    &__huntingImgCompImage--wildebeest {
-        transform: translate(-88%, 50%);
+    &__huntingImgCompImage--wildebeest-starter {
+        transform: translate(-72%, 45%);
         width: calc($huntingImgSize + 3rem);
     }
-    &__huntingImgCompImage--zebra {
+    &__huntingImgCompImage--impala-classic {
+        transform: translate(-85%, -55%);
+        width: calc($huntingImgSize);
+    }
+    &__huntingImgCompImage--blesbuck-classic {
+        width: calc($huntingImgSize + 1rem);
+    }
+    &__huntingImgCompImage--wildebeest-classic {
+        transform: translate(-72%, 45%);
+        width: calc($huntingImgSize + 3rem);
+    }
+    &__huntingImgCompImage--zebra-classic {
         transform: translate(-114%, -22%);
         width: calc($huntingImgSize + 4rem);
+    }
+    &__huntingImgCompImage--impala-grand {
+        transform: translate(-85%, -55%);
+        width: calc($huntingImgSize);
+    }
+    &__huntingImgCompImage--blesbuck-grand {
+        width: calc($huntingImgSize + 1rem);
+    }
+    &__huntingImgCompImage--wildebeest-grand {
+        transform: translate(-72%, 45%);
+        width: calc($huntingImgSize + 3rem);
+    }
+    &__huntingImgCompImage--zebra-grand {
+        transform: translate(-114%, -22%);
+        width: calc($huntingImgSize + 5rem);
+    }
+    &__huntingImgCompImage--kudu-grand {
+        transform: translate(-120%, -115%);
+        width: calc($huntingImgSize + 4rem);
+    }
+    &__huntingImgCompImage--hartebeest-grand {
+        transform: translate(-30%, -75%);
+        width: calc($huntingImgSize + 6rem);
+    }
+    &__huntingImgCompImage--impala-elite {
+        transform: translate(-85%, -55%);
+        width: calc($huntingImgSize);
+    }
+    &__huntingImgCompImage--blesbuck-elite {
+        width: calc($huntingImgSize + 1rem);
+    }
+    &__huntingImgCompImage--wildebeest-elite {
+        transform: translate(-72%, 45%);
+        width: calc($huntingImgSize + 3rem);
+    }
+    &__huntingImgCompImage--zebra-elite {
+        transform: translate(-114%, -22%);
+        width: calc($huntingImgSize + 5rem);
+    }
+    &__huntingImgCompImage--kudu-elite {
+        transform: translate(-120%, -115%);
+        width: calc($huntingImgSize + 4rem);
+    }
+    &__huntingImgCompImage--hartebeest-elite {
+        transform: translate(-30%, -75%);
+        width: calc($huntingImgSize + 6rem);
+    }
+    &__huntingImgCompImage--sable-elite {
+        transform: translate(-185%, 28%);
+        width: calc($huntingImgSize);
+    }
+    &__huntingImgCompImage--impala-kings {
+        transform: translate(-85%, -55%);
+        width: calc($huntingImgSize);
+    }
+    &__huntingImgCompImage--blesbuck-kings {
+        width: calc($huntingImgSize + 1rem);
+    }
+    &__huntingImgCompImage--wildebeest-kings {
+        transform: translate(-72%, 45%);
+        width: calc($huntingImgSize + 3rem);
+    }
+    &__huntingImgCompImage--zebra-kings {
+        transform: translate(-114%, -22%);
+        width: calc($huntingImgSize + 5rem);
+    }
+    &__huntingImgCompImage--kudu-kings {
+        transform: translate(-120%, -115%);
+        width: calc($huntingImgSize + 4rem);
+    }
+    &__huntingImgCompImage--hartebeest-kings {
+        transform: translate(-30%, -75%);
+        width: calc($huntingImgSize + 6rem);
+    }
+    &__huntingImgCompImage--sable-kings {
+        transform: translate(-185%, 28%);
+        width: calc($huntingImgSize);
+    }
+    &__huntingImgCompImage--eland-kings {
+        transform: translate(-84%, 138%);
+        width: calc($huntingImgSize + 3rem);
+    }
+    &__huntingImgCompImage--buffalo-kings {
+        transform: translate(-10%, 95%);
+        width: calc($huntingImgSize + 1.5rem);
     }
     &__huntingImgCompImage--hartebeest {
         transform: translate(-30%, -75%);
@@ -383,83 +479,83 @@ main {
     }
     &__huntingImgCompImage--gems1-neat {
         transform: translate(-20%, 45%);
-        width: calc($huntingImgSize - 1.5rem);
+        width: calc($huntingImgSize);
     }
     &__huntingImgCompImage--gems2-neat {
         transform: translate(-50%, -60%);
-        width: calc($huntingImgSize - 1.5rem);
+        width: calc($huntingImgSize);
     }
     &__huntingImgCompImage--gems3-neat {
         transform: translate(-108%, 12%);
-        width: calc($huntingImgSize - 1.5rem);
+        width: calc($huntingImgSize);
     }
     &__huntingImgCompImage--springbuckCommon-superb {
         transform: translate(-50%, 0%);
-        width: calc($huntingImgSize + 1rem);
+        width: calc($huntingImgSize + 2rem);
     }
     &__huntingImgCompImage--gems1-superb {
         transform: translate(32%, -25%);
-        width: calc($huntingImgSize + .1rem);
+        width: calc($huntingImgSize + 1rem);
     }
     &__huntingImgCompImage--gems2-superb {
-        transform: translate(-130%, 28%);
-        width: calc($huntingImgSize - .95rem);
+        transform: translate(-140%, 32%);
+        width: calc($huntingImgSize - 1rem);
     }
     &__huntingImgCompImage--gems3-superb {
         transform: translate(-48%, -72%);
-        width: calc($huntingImgSize + .35rem);
+        width: calc($huntingImgSize + 1.35rem);
     }
     &__huntingImgCompImage--kudu-superb {
         transform: translate(-30%, 100%);
-        width: calc($huntingImgSize + .60rem);
+        width: calc($huntingImgSize + 1.60rem);
     }
     &__huntingImgCompImage--eland-superb {
         transform: translate(-98%, -50%);
-        width: calc($huntingImgSize + 3rem);
+        width: calc($huntingImgSize + 4rem);
     }
     &__huntingImgCompImage--springbuckCommon-freestateSlam {
         transform: translate(-50%, 0%);
-        width: calc($huntingImgSize + 1.5rem);
+        width: calc($huntingImgSize + 2.5rem);
     }
     &__huntingImgCompImage--springbuckWhite-freestateSlam {
         transform: translate(-50%, -90%);
-        width: calc($huntingImgSize + .5rem);
+        width: calc($huntingImgSize + 1.5rem);
     }
     &__huntingImgCompImage--springbuckBlack-freestateSlam {
         transform: translate(-110%, -40%);
-        width: calc($huntingImgSize + 1.25rem);
+        width: calc($huntingImgSize + 2.25rem);
     }
     &__huntingImgCompImage--springbuckCopper-freestateSlam {
         transform: translate(12%, -55%);
-        width: calc($huntingImgSize + 1.2rem);
+        width: calc($huntingImgSize + 2.2rem);
     }
     &__huntingImgCompImage--blesbuckCommon-freestateSlam {
         transform: translate(-10%, 25%);
-        width: calc($huntingImgSize + 2rem);
+        width: calc($huntingImgSize + 3rem);
     }
     &__huntingImgCompImage--blesbuckWhite-freestateSlam {
         transform: translate(-98%, 45%);
-        width: calc($huntingImgSize + 1rem);
+        width: calc($huntingImgSize + 2rem);
     }
     &__huntingImgCompImage--springbuckCommon-freestateClassic {
         transform: translate(-80%, 45%);
-        width: calc($huntingImgSize + 1.5rem);
+        width: calc($huntingImgSize + 2.75rem);
     }
     &__huntingImgCompImage--blesbuckCommon-freestateClassic {
         transform: translate(-50%, -95%);
-        width: calc($huntingImgSize + .5rem);
+        width: calc($huntingImgSize + 1.75rem);
     }
     &__huntingImgCompImage--redhartebeest-freestateClassic {
         transform: translate(-95%, -30%);
-        width: calc($huntingImgSize + 1.25rem);
+        width: calc($huntingImgSize + 2.5rem);
     }
     &__huntingImgCompImage--blackwildebeest-freestateClassic {
         transform: translate(-2%, -55%);
-        width: calc($huntingImgSize + 1.2rem);
+        width: calc($huntingImgSize + 2.5rem);
     }
     &__huntingImgCompImage--fellowdeer-freestateClassic {
         transform: translate(-10%, 25%);
-        width: calc($huntingImgSize + 3.5rem);
+        width: calc($huntingImgSize + 3.75rem);
     }
     &__huntingPackageDetailsContainer {
         @include displayFlexRowCenter;
