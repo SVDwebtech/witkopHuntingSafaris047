@@ -1786,6 +1786,9 @@ main {
 .hunting__huntingImgCompContainer--superb {
   min-height: 21rem;
 }
+.hunting__huntingImgCompContainer--freestateSlam {
+  min-height: 23rem;
+}
 .hunting__huntingImgCompImage {
   background-color: #e4e4e4;
   border: 1px solid #e94104;
@@ -1826,6 +1829,10 @@ main {
   left: 50%;
 }
 .hunting__huntingImgCompImage--superb {
+  top: 35%;
+  left: 50%;
+}
+.hunting__huntingImgCompImage--freestateSlam {
   top: 35%;
   left: 50%;
 }
@@ -1907,6 +1914,30 @@ main {
 .hunting__huntingImgCompImage--eland-superb {
   transform: translate(-98%, -50%);
   width: 10.5rem;
+}
+.hunting__huntingImgCompImage--springbuckCommon-freestateSlam {
+  transform: translate(-50%, 0%);
+  width: 9rem;
+}
+.hunting__huntingImgCompImage--springbuckWhite-freestateSlam {
+  transform: translate(-50%, -90%);
+  width: 8rem;
+}
+.hunting__huntingImgCompImage--springbuckBlack-freestateSlam {
+  transform: translate(-110%, -40%);
+  width: 8.75rem;
+}
+.hunting__huntingImgCompImage--springbuckCopper-freestateSlam {
+  transform: translate(12%, -55%);
+  width: 8.7rem;
+}
+.hunting__huntingImgCompImage--blesbuckCommon-freestateSlam {
+  transform: translate(-10%, 25%);
+  width: 9.5rem;
+}
+.hunting__huntingImgCompImage--blesbuckWhite-freestateSlam {
+  transform: translate(-98%, 45%);
+  width: 8.5rem;
 }
 .hunting__huntingPackageDetailsContainer {
   display: flex;

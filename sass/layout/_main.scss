@@ -281,6 +281,9 @@ main {
     &__huntingImgCompContainer--superb {
         min-height: 21rem;
     }
+    &__huntingImgCompContainer--freestateSlam {
+        min-height: 23rem;
+    }
     &__huntingImgCompImage {
         background-color: $cp-platinumWhite;
         border: 1px solid $cp-sunsetOrange;
@@ -321,6 +324,10 @@ main {
         left: 50%;
     }
     &__huntingImgCompImage--superb {
+        top: 35%;
+        left: 50%;
+    }
+    &__huntingImgCompImage--freestateSlam {
         top: 35%;
         left: 50%;
     }
@@ -402,6 +409,30 @@ main {
     &__huntingImgCompImage--eland-superb {
         transform: translate(-98%, -50%);
         width: calc($huntingImgSize + 3rem);
+    }
+    &__huntingImgCompImage--springbuckCommon-freestateSlam {
+        transform: translate(-50%, 0%);
+        width: calc($huntingImgSize + 1.5rem);
+    }
+    &__huntingImgCompImage--springbuckWhite-freestateSlam {
+        transform: translate(-50%, -90%);
+        width: calc($huntingImgSize + .5rem);
+    }
+    &__huntingImgCompImage--springbuckBlack-freestateSlam {
+        transform: translate(-110%, -40%);
+        width: calc($huntingImgSize + 1.25rem);
+    }
+    &__huntingImgCompImage--springbuckCopper-freestateSlam {
+        transform: translate(12%, -55%);
+        width: calc($huntingImgSize + 1.2rem);
+    }
+    &__huntingImgCompImage--blesbuckCommon-freestateSlam {
+        transform: translate(-10%, 25%);
+        width: calc($huntingImgSize + 2rem);
+    }
+    &__huntingImgCompImage--blesbuckWhite-freestateSlam {
+        transform: translate(-98%, 45%);
+        width: calc($huntingImgSize + 1rem);
     }
     &__huntingPackageDetailsContainer {
         @include displayFlexRowCenter;
