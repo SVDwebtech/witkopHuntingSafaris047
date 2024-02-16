@@ -1789,6 +1789,9 @@ main {
 .hunting__huntingImgCompContainer--freestateSlam {
   min-height: 23rem;
 }
+.hunting__huntingImgCompContainer--freestateClassic {
+  min-height: 23rem;
+}
 .hunting__huntingImgCompImage {
   background-color: #e4e4e4;
   border: 1px solid #e94104;
@@ -1835,6 +1838,10 @@ main {
 .hunting__huntingImgCompImage--freestateSlam {
   top: 35%;
   left: 50%;
+}
+.hunting__huntingImgCompImage--freestateClassic {
+  top: 42%;
+  left: 47%;
 }
 .hunting__huntingImgCompImage--warthog {
   transform: translate(5%, -80%);
@@ -1938,6 +1945,26 @@ main {
 .hunting__huntingImgCompImage--blesbuckWhite-freestateSlam {
   transform: translate(-98%, 45%);
   width: 8.5rem;
+}
+.hunting__huntingImgCompImage--springbuckCommon-freestateClassic {
+  transform: translate(-80%, 45%);
+  width: 9rem;
+}
+.hunting__huntingImgCompImage--blesbuckCommon-freestateClassic {
+  transform: translate(-50%, -95%);
+  width: 8rem;
+}
+.hunting__huntingImgCompImage--redhartebeest-freestateClassic {
+  transform: translate(-95%, -30%);
+  width: 8.75rem;
+}
+.hunting__huntingImgCompImage--blackwildebeest-freestateClassic {
+  transform: translate(-2%, -55%);
+  width: 8.7rem;
+}
+.hunting__huntingImgCompImage--fellowdeer-freestateClassic {
+  transform: translate(-10%, 25%);
+  width: 11rem;
 }
 .hunting__huntingPackageDetailsContainer {
   display: flex;
