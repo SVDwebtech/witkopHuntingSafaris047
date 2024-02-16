@@ -164,10 +164,7 @@ body {
 		color: $cf-dark;
 		font-size: clamp(1.4rem, 4.3vw, 1.6rem);
 		text-transform: uppercase;
-		text-align: left;
-		// @include respond(tab-land) {
-		// 	text-align: left;
-		// }
+		text-align: center;
 	}
 	&--stepsHowItWorks {
 		color: $cf-platinumWhite;
@@ -262,20 +259,23 @@ body {
 		// }
 	}
 	&--huntingPackages {
-		text-align: center;
+		text-align: left;
 	}
 	&--huntingPackageGameDesc {
 		color: $cf-platinumWhite;
 		font-size: clamp(1.2rem, 4.3vw, 1.4rem);
-		text-align: left;
+		text-align: center;
 	}
 	&--huntingPackageExtrasDesc {
-		color: $cf-greyBlue;
+		color: $cf-sunsetOrange;
 		font-size: clamp(1.2rem, 4.3vw, 1.4rem);
 		font-weight: 800;
 		text-align: left;
 	}
 	&--huntingPackageTerms {
+		text-align: left;
+	}
+	&--huntingPackageIncludeExcludePaymentTerms {
 		text-align: left;
 	}
 	&--accomm {
