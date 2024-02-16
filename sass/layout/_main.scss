@@ -278,6 +278,9 @@ main {
     &__huntingImgCompContainer--neat {
         min-height: 18rem;
     }
+    &__huntingImgCompContainer--superb {
+        min-height: 21rem;
+    }
     &__huntingImgCompImage {
         background-color: $cp-platinumWhite;
         border: 1px solid $cp-sunsetOrange;
@@ -314,6 +317,10 @@ main {
         left: 50%;
     }
     &__huntingImgCompImage--neat {
+        top: 35%;
+        left: 50%;
+    }
+    &__huntingImgCompImage--superb {
         top: 35%;
         left: 50%;
     }
@@ -371,6 +378,30 @@ main {
     &__huntingImgCompImage--gems3-neat {
         transform: translate(-108%, 12%);
         width: calc($huntingImgSize - 1.5rem);
+    }
+    &__huntingImgCompImage--springbuckCommon-superb {
+        transform: translate(-50%, 0%);
+        width: calc($huntingImgSize + 1rem);
+    }
+    &__huntingImgCompImage--gems1-superb {
+        transform: translate(32%, -25%);
+        width: calc($huntingImgSize + .1rem);
+    }
+    &__huntingImgCompImage--gems2-superb {
+        transform: translate(-130%, 28%);
+        width: calc($huntingImgSize - .95rem);
+    }
+    &__huntingImgCompImage--gems3-superb {
+        transform: translate(-48%, -72%);
+        width: calc($huntingImgSize + .35rem);
+    }
+    &__huntingImgCompImage--kudu-superb {
+        transform: translate(-30%, 100%);
+        width: calc($huntingImgSize + .60rem);
+    }
+    &__huntingImgCompImage--eland-superb {
+        transform: translate(-98%, -50%);
+        width: calc($huntingImgSize + 3rem);
     }
     &__huntingPackageDetailsContainer {
         @include displayFlexRowCenter;

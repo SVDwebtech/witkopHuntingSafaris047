@@ -1783,6 +1783,9 @@ main {
 .hunting__huntingImgCompContainer--neat {
   min-height: 18rem;
 }
+.hunting__huntingImgCompContainer--superb {
+  min-height: 21rem;
+}
 .hunting__huntingImgCompImage {
   background-color: #e4e4e4;
   border: 1px solid #e94104;
@@ -1819,6 +1822,10 @@ main {
   left: 50%;
 }
 .hunting__huntingImgCompImage--neat {
+  top: 35%;
+  left: 50%;
+}
+.hunting__huntingImgCompImage--superb {
   top: 35%;
   left: 50%;
 }
@@ -1876,6 +1883,30 @@ main {
 .hunting__huntingImgCompImage--gems3-neat {
   transform: translate(-108%, 12%);
   width: 6rem;
+}
+.hunting__huntingImgCompImage--springbuckCommon-superb {
+  transform: translate(-50%, 0%);
+  width: 8.5rem;
+}
+.hunting__huntingImgCompImage--gems1-superb {
+  transform: translate(32%, -25%);
+  width: 7.6rem;
+}
+.hunting__huntingImgCompImage--gems2-superb {
+  transform: translate(-130%, 28%);
+  width: 6.55rem;
+}
+.hunting__huntingImgCompImage--gems3-superb {
+  transform: translate(-48%, -72%);
+  width: 7.85rem;
+}
+.hunting__huntingImgCompImage--kudu-superb {
+  transform: translate(-30%, 100%);
+  width: 8.1rem;
+}
+.hunting__huntingImgCompImage--eland-superb {
+  transform: translate(-98%, -50%);
+  width: 10.5rem;
 }
 .hunting__huntingPackageDetailsContainer {
   display: flex;
