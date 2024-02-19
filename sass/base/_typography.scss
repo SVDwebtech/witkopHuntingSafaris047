@@ -285,6 +285,13 @@ body {
 			text-align: left;
 		}
 	}
+	&--accommFacilities {
+		text-align: center;
+		width: fit-content;
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
 	&--accommFigcaption {
 		color: $cf-platinumWhite;
 		font-size: clamp(1.5rem, 4.3vw, 1.7rem);
