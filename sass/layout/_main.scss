@@ -765,7 +765,7 @@ main {
         gap: 3rem;
         width: min(100%, 45rem);
         @include respond(tab-land) {
-            align-items: flex-start;
+            align-items: center;
             width: 100%;
         }
         @include respond(big-desk) {
@@ -778,7 +778,7 @@ main {
         width: min(100%, 45rem);
         @include respond(tab-land) {
             @include displayFlexRowCenter;
-            justify-content: flex-start;
+            justify-content: space-evenly;
             column-gap: 4rem;
             width: 100%;
         }
@@ -816,7 +816,13 @@ main {
         @include displayFlexColumnCenter;
         justify-content: flex-start;
         gap: 2rem;
-        background-color: $cp-dark;
+        background: linear-gradient(to bottom right,
+                        rgba($cp-dark, .45), 
+                        rgba($cp-dark, .65) 5%,
+                        rgba($cp-dark, 1) 15% 70%,
+                        rgba($cp-dark, .70) 87%, 
+                        rgba($cp-dark, .40));
+        background-color: $cp-greyBlue;
         border: 2px solid $cp-sunsetOrange;
         border-radius: $br-small;
         box-shadow: 0 0 12px 2px rgba($cp-dark, .6);

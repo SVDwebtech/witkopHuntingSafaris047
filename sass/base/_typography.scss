@@ -120,7 +120,7 @@ body {
 			text-align: left;
 		}
 	}
-	&--huntingPackages, &--accom {
+	&--huntingPackages, &--accom, &--stepsInfo {
 		text-align: center;
 	}
 	&--bylineHeadingH3 {
@@ -292,7 +292,7 @@ body {
 	}
 	&--steps, &--activitiesInfo {
 		@include respond(tab-land) {
-			text-align: left;
+			text-align: center;
 		}
 	}
 	&--stepsHowItWorks {
