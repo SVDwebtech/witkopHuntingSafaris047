@@ -2495,7 +2495,11 @@ main {
   border: 2px solid #e94104;
   border-radius: 0.25rem;
   box-shadow: 0 0 12px 2px rgba(22, 20, 19, 0.6);
-  padding: 2rem;
+  padding: 2rem 2rem 4rem;
+}
+.hunting__document {
+  border: 2px solid #e94104;
+  padding: 1rem;
 }
 .hunting__activitiesInfo {
   display: flex;

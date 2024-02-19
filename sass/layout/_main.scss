@@ -837,7 +837,11 @@ main {
         border: 2px solid $cp-sunsetOrange;
         border-radius: $br-small;
         box-shadow: 0 0 12px 2px rgba($cp-dark, .6);
-        padding: 2rem;
+        padding: 2rem 2rem 4rem;
+    }
+    &__document {
+        border: 2px solid $cp-sunsetOrange;
+        padding: 1rem;
     }
     &__activitiesInfo {
         @include displayFlexColumnCenter;
