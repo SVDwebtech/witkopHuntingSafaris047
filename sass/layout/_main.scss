@@ -36,6 +36,9 @@ main {
         gap: 4rem;
         padding: 0 2rem;
     }
+    &__contactHeadingH2 {
+        position: relative;
+    }
     &__aboutItemContainer {
         @include displayFlexColumnCenter;
         gap: 4rem;
@@ -181,6 +184,7 @@ main {
     @include respond(tab-land) {
         align-items: center;
     }
+    position: relative;
     &__huntingContentContainer {
         @include displayFlexColumnCenter;
         gap: 3rem;
@@ -921,11 +925,13 @@ main {
     @include displayFlexColumnCenter;
     align-items: stretch;
     gap: 3rem;
+    position: relative;
 }
 
 .contact {
     @include displayFlexColumnCenter;
     gap: 2rem;
+    position: relative;
 
     &__contactContentContainer {
         @include displayFlexColumnCenter;

@@ -111,7 +111,7 @@ body {
 
 	&--hunting {
 		@include respond(tab-land) {
-			text-align: left;
+			text-align: center;
 		}
 	}
 	&--hunting-main {

@@ -1,5 +1,6 @@
 .sidebar {
       padding: 1rem 0rem 8rem;
+      position: relative;
 
       &__faqContainer {
             @include displayFlexColumnCenter;

@@ -88,6 +88,10 @@
             }
       }
 
+      &__footerItem-termsAndConditions {
+            position: relative;
+      }
+
       &__copyright {
             @include displayFlexColumnCenter;
             gap: 0rem;

@@ -4,8 +4,7 @@
       @include respond(tab-land){
             justify-content: flex-start;
       }
-
-      
+      position: relative;      
       &__iconContainer {
             @include displayFlexRowCenter;
             justify-content: space-evenly;

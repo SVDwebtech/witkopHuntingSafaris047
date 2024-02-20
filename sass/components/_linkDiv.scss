@@ -1,0 +1,8 @@
+.linkDiv {
+      position: absolute;
+      left: 0;
+      top: 0;
+      &--aboutLink, &--huntingLink, &--galaryLink, &--contactLink, &--faqLink, &--socialMediaLink, &--termsAndConditionsLink {
+            top: -100px;
+      }
+}

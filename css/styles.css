@@ -266,7 +266,7 @@ body {
 }
 @media (min-width: 56.25em) {
   .headingH3--hunting {
-    text-align: left;
+    text-align: center;
   }
 }
 .headingH3--hunting-main {
@@ -760,6 +760,15 @@ body {
   background-color: #e94104;
 }
 
+.linkDiv {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.linkDiv--aboutLink, .linkDiv--huntingLink, .linkDiv--galaryLink, .linkDiv--contactLink, .linkDiv--faqLink, .linkDiv--socialMediaLink, .linkDiv--termsAndConditionsLink {
+  top: -100px;
+}
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -1072,6 +1081,7 @@ body {
   align-items: center;
   gap: 2rem;
   margin-bottom: 1rem;
+  position: relative;
 }
 @media (min-width: 56.25em) {
   .socialMedia {
@@ -1094,6 +1104,7 @@ body {
 
 .sidebar {
   padding: 1rem 0rem 8rem;
+  position: relative;
 }
 .sidebar__faqContainer {
   display: flex;
@@ -1337,6 +1348,9 @@ body {
     padding: 0 1rem;
   }
 }
+.footer__footerItem-termsAndConditions {
+  position: relative;
+}
 .footer__copyright {
   display: flex;
   flex-direction: column;
@@ -1485,6 +1499,9 @@ main {
   gap: 2rem;
   gap: 4rem;
   padding: 0 2rem;
+}
+.about__contactHeadingH2 {
+  position: relative;
 }
 .about__aboutItemContainer {
   display: flex;
@@ -1667,6 +1684,7 @@ main {
   align-items: center;
   gap: 2rem;
   gap: 3rem;
+  position: relative;
 }
 @media (min-width: 56.25em) {
   .hunting {
@@ -2601,6 +2619,7 @@ main {
   gap: 2rem;
   align-items: stretch;
   gap: 3rem;
+  position: relative;
 }
 
 .contact {
@@ -2610,6 +2629,7 @@ main {
   align-items: center;
   gap: 2rem;
   gap: 2rem;
+  position: relative;
 }
 .contact__contactContentContainer {
   display: flex;

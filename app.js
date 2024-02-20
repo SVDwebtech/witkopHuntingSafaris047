@@ -115,7 +115,7 @@ hamburgerBtn.addEventListener('click', () => {
       navItem6.style.animationDelay = '1.20s';
       navItem7.style.animationDelay = '1.30s';
       navItem8.style.animationDelay = '1.40s';
-      navItem9.style.animationDelay = '1.50s';
+      // navItem9.style.animationDelay = '1.50s';
     }, 20);
   } else {
     hamburgerMenu.classList.remove('navList--navListMoveIn')
@@ -133,7 +133,7 @@ hamburgerBtn.addEventListener('click', () => {
     navItem6.style.animationDelay = '.35s';
     navItem7.style.animationDelay = '.40s';
     navItem8.style.animationDelay = '.45s';
-    navItem9.style.animationDelay = '.50s';
+    // navItem9.style.animationDelay = '.50s';
     setTimeout(() => {
       hamburgerMenu.classList.remove('navList--display');
       hamburgerMenu.classList.add('navList--displayNone');
@@ -182,7 +182,7 @@ for(let item of navItems) {
     navItem6.style.animationDelay = '.35s';
     navItem7.style.animationDelay = '.40s';
     navItem8.style.animationDelay = '.45s';
-    navItem9.style.animationDelay = '.50s';
+    // navItem9.style.animationDelay = '.50s';
     setTimeout(() => {
       hamburgerMenu.classList.remove('navList--display');
       hamburgerMenu.classList.add('navList--displayNone');
