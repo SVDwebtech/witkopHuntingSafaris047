@@ -231,17 +231,17 @@ body {
   letter-spacing: 4px;
   text-transform: uppercase;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: rgba(22, 20, 19, 0.75);
+  -webkit-text-stroke-color: rgba(22, 20, 19, 0.45);
   text-align: center;
   line-height: 1.2;
-  background: linear-gradient(to bottom right, #e94104 30%, #437c90 50%, #161413 85%);
+  background: linear-gradient(177deg, #38caff 35%, #437c90 65%, #161413 95%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(3px 3px 2px rgba(22, 20, 19, 0.45));
+  filter: drop-shadow(3px 3px 3px rgba(22, 20, 19, 0.35));
 }
 @media (min-width: 56.25em) {
   .headingH2 {
@@ -277,7 +277,7 @@ body {
     text-align: left;
   }
 }
-.headingH3--huntingPackages, .headingH3--accom, .headingH3--stepsInfo {
+.headingH3--huntingPackages, .headingH3--huntingPriceList, .headingH3--accom, .headingH3--stepsInfo {
   text-align: center;
 }
 .headingH3--bylineHeadingH3 {
@@ -1074,6 +1074,53 @@ body {
   animation: animateNavItemsMoveOut 0.3s ease-in forwards;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #959595;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #b6b6b6;
+}
+
+.table__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: min(100%, 45rem);
+}
+@media (min-width: 37.5em) {
+  .table__container {
+    width: min(100%, 50rem);
+  }
+}
+@media (min-width: 56.25em) {
+  .table__container {
+    width: min(100%, 70rem);
+  }
+}
+.table__mainHeading {
+  border-right: none;
+}
+.table__mainHeadingEmpty {
+  border-left: none;
+}
+.table__speciesName {
+  background-color: #d7d7d7;
+  width: 75%;
+}
+.table__price {
+  text-align: right;
+}
+
 .socialMedia {
   display: flex;
   flex-direction: column;
@@ -1759,10 +1806,10 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  gap: 1rem;
+  gap: 5rem;
   justify-content: flex-start;
   background-color: #e4e4e4;
-  width: 100%, 55rem;
+  width: 100%;
   height: 95vh;
   padding: 2rem 1rem 7rem 1rem;
   overflow-y: scroll;
