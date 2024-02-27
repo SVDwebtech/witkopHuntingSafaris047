@@ -61,9 +61,10 @@ body {
 }
 
 .headingH2 {
-	font-family: "Titan One", sans-serif;
+	color: $cf-skyBlue;
+	font-family: 'Open Sans', sans-serif;
 	font-size: clamp(2.4rem, 7vw, 3.4rem);
-	font-weight: 900;
+	font-weight: 800;
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	-webkit-text-stroke-width: .5px;
@@ -72,16 +73,16 @@ body {
 	line-height: 1.2;
 
 	
-	background: linear-gradient(177deg, rgba($cp-skyBlue, 1) 35%, rgba($cf-greyBlue, 1) 65%, rgba($cf-dark, 1) 95%);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+// 	background: linear-gradient(177deg, rgba($cp-skyBlue, 1) 35%, rgba($cf-greyBlue, 1) 65%, rgba($cf-dark, 1) 95%);
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	background-position: center;
      
-	background-clip: text;
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
+// 	background-clip: text;
+//      -webkit-background-clip: text;
+//      -webkit-text-fill-color: transparent;
 
-     filter: drop-shadow(3px 3px 3px rgba($cp-dark, .35));
+     filter: drop-shadow(3px 3px 3px rgba($cp-dark, .45));
 
 	@include respond(tab-land) {
 		text-align: center;
