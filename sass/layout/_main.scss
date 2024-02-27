@@ -345,7 +345,7 @@ main {
         left: 46%;
     }
     &__huntingImgCompImage--classic {
-        top: 35%;
+        top: 45%;
         left: 59%;
     }
     &__huntingImgCompImage--grand {
@@ -409,6 +409,10 @@ main {
     &__huntingImgCompImage--zebra-classic {
         transform: translate(-114%, -22%);
         width: calc($huntingImgSize + 4rem);
+    }
+    &__huntingImgCompImage--hartebeest-classic {
+        transform: translate(-30%, -75%);
+        width: calc($huntingImgSize + 6rem);
     }
     &__huntingImgCompImage--impala-grand {
         transform: translate(-85%, -55%);
