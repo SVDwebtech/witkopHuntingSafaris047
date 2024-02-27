@@ -6,13 +6,12 @@
       }
       &__carouselImage {
             display: block;
-            height: min(65vw, 25rem);
+            height: min(62vw, 25rem);
             width: auto;
-            background: linear-gradient(to bottom right, rgba($cp-dark, .1), rgba($cp-dark, .95) 80%);
             border: 2px solid $cp-sunsetOrange;
             border-radius: $br-small;
-            box-shadow: 0 0 50px 10px rgba($cp-dark, .25);
-            padding: 0rem;
+            box-shadow: 0 0 12px 3px rgba($cp-dark, .45);
+            padding: 1rem;
             transition: opacity 1.2s;
       }
       @media (min-width: 600px) AND (min-height: 700px) {
@@ -27,15 +26,15 @@
       }
 	&__carouselNavContainer {
             @include displayFlexRowCenter;
-            min-width: 100%;
+            min-width: 95%;
       }
       &__carouselArrow {
-            width: 5rem;
-            height: 5rem;
+            width: 4rem;
+            height: 4rem;
       }
       &__carouselIndexContainer {
             @include displayFlexRowCenter;
-            gap: 1rem;
+            gap: .75rem;
       }
       &__carouselIndex {
             border: 1px solid $cp-dark;

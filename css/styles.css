@@ -711,13 +711,12 @@ body {
 }
 .carouselGallery__carouselImage {
   display: block;
-  height: min(65vw, 25rem);
+  height: min(62vw, 25rem);
   width: auto;
-  background: linear-gradient(to bottom right, rgba(22, 20, 19, 0.1), rgba(22, 20, 19, 0.95) 80%);
   border: 2px solid #e94104;
   border-radius: 0.25rem;
-  box-shadow: 0 0 50px 10px rgba(22, 20, 19, 0.25);
-  padding: 0rem;
+  box-shadow: 0 0 12px 3px rgba(22, 20, 19, 0.45);
+  padding: 1rem;
   transition: opacity 1.2s;
 }
 @media (min-width: 600px) and (min-height: 700px) {
@@ -736,11 +735,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  min-width: 100%;
+  min-width: 95%;
 }
 .carouselGallery__carouselArrow {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 .carouselGallery__carouselIndexContainer {
   display: flex;
@@ -748,7 +747,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 .carouselGallery__carouselIndex {
   border: 1px solid #161413;
