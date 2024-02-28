@@ -46,6 +46,11 @@ main {
     &__aboutWitkop > *, &__aboutWessel > * {
         margin: 0 0 2rem;
     }
+    &__aboutHeadingH5LineBreak {
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
     &__imgWitkop, &__imgWessel {
         display: block;
         width: 98%;

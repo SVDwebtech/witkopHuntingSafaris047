@@ -208,6 +208,10 @@ body {
 			text-align: center;
 		}
 	}
+	&--teamMemberTitleInH3 {
+		display: block;
+		margin-top: .25rem;
+	}
 	&--huntingPackagePrice {
 		color: $cf-platinumWhite;
 		font-size: clamp(2rem, 4.3vw, 3rem);
