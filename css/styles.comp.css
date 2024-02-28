@@ -371,6 +371,10 @@ body {
     text-align: center;
   }
 }
+.headingH5--teamMemberTitleInH3 {
+  display: block;
+  margin-top: 0.25rem;
+}
 .headingH5--huntingPackagePrice {
   color: #e4e4e4;
   font-size: clamp(2rem, 4.3vw, 3rem);
@@ -1553,6 +1557,11 @@ main {
 }
 .about__aboutWitkop > *, .about__aboutWessel > * {
   margin: 0 0 2rem;
+}
+@media (min-width: 37.5em) {
+  .about__aboutHeadingH5LineBreak {
+    display: none;
+  }
 }
 .about__imgWitkop, .about__imgWessel {
   display: block;
