@@ -566,6 +566,52 @@ body {
   margin-right: 0.5rem;
 }
 
+.associations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 2rem;
+  padding: 3rem 2rem 5rem;
+}
+.associations__figureContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.associations__figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 0.5rem;
+}
+.associations__associationLogos {
+  display: block;
+  width: 8rem;
+  height: auto;
+}
+.associations__associationLogosPHASA {
+  margin-right: 1rem;
+}
+.associations__associationLogosLHLF {
+  margin-right: 3rem;
+}
+@media (min-width: 56.25em) {
+  .associations__figureContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    gap: 8rem;
+  }
+}
+
 .btn {
   border: 1px solid #a2a2a2;
   border-bottom: 1px solid #565656;
