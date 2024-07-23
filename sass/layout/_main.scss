@@ -1,7 +1,42 @@
-main {
+.main {
     @include displayFlexColumnCenter;
     gap: 8rem;
     padding: 2rem 0rem 8rem;
+}
+
+.registrationComponent {
+    @include displayFlexColumnCenter;
+    gap: 2rem;
+    padding: 3rem 2rem 5rem;
+    background-color: red;
+    &__figureContainer {
+          @include displayFlexColumnCenter;
+    }
+    &__figure {
+          @include displayFlexColumnCenter;
+          gap: .75rem;
+    }
+    &__figcaption {
+          @include displayFlexColumnCenter;
+          gap: .25rem;
+    }
+    &__associationLogos {
+          display: block;
+          width: 8rem;
+          height: auto;
+    }
+    &__associationLogosPHASA {
+          margin-right: 1rem;
+    }
+    &__associationLogosLHLF {
+          margin-right: 3rem;
+    }
+    @include respond(tab-land) {
+          &__figureContainer {
+                @include displayFlexRowCenter;
+                gap: 8rem;
+          }
+    }
 }
 
 .about {
